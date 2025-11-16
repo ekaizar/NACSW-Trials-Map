@@ -2,9 +2,9 @@ name: Update Trials Map
 
 on:
   schedule:
-    # Run every Monday at 6 AM UTC (adjust as needed)
+    # Run every Monday at 6 AM UTC
     - cron: '0 6 * * 1'
-  workflow_dispatch:  # Allows manual trigger from GitHub UI
+  workflow_dispatch:  # Manual trigger
 
 jobs:
   scrape-and-deploy:
@@ -32,19 +32,74 @@ jobs:
         run: |
           Rscript Trialmaps_Interactive.R
       
-      - name: Update map with new data
+      - name: Verify CSV was created
         run: |
-          mkdir -p docs
-          echo "const TRIALS_DATA = " > docs/data.js
-          Rscript -e 'library(jsonlite); df <- read.csv("trials_for_google_sheets.csv"); cat(toJSON(df, pretty = TRUE))' >> docs/data.js
-          echo ";" >> docs/data.js
+          echo "Checking for CSV file..."
+          if [ -f "trials_for_google_sheets.csv" ]; then
+            echo "✓ CSV file exists"
+            wc -l trials_for_google_sheets.csv
+            head -2 trials_for_google_sheets.csv
+          else
+            echo "✗ CSV file not found!"
+            ls -la
+            exit 1
+          fi
       
-      - name: Commit and push if changed
+      - name: Convert CSV to JavaScript
+        run: |
+          echo "Creating docs directory..."
+          mkdir -p docs
+          
+          echo "Converting CSV to JSON..."
+          Rscript -e '
+            library(jsonlite)
+            
+            # Read CSV
+            cat("Reading CSV...\n")
+            df <- read.csv("trials_for_google_sheets.csv", stringsAsFactors = FALSE)
+            cat("Found", nrow(df), "rows\n")
+            
+            # Convert to JSON
+            cat("Converting to JSON...\n")
+            json_data <- toJSON(df, pretty = TRUE)
+            
+            # Write to file
+            cat("Writing to data.js...\n")
+            write("const TRIALS_DATA = ", file = "docs/data.js")
+            write(json_data, file = "docs/data.js", append = TRUE)
+            write(";", file = "docs/data.js", append = TRUE)
+            
+            cat("✓ data.js created successfully\n")
+          '
+          
+          echo "Verifying data.js..."
+          if [ -f "docs/data.js" ]; then
+            echo "✓ data.js exists"
+            ls -lh docs/data.js
+            echo "First 5 lines:"
+            head -5 docs/data.js
+          else
+            echo "✗ data.js was not created!"
+            exit 1
+          fi
+      
+      - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add -A
-          if ! git diff --quiet && ! git diff --staged --quiet; then
-            git commit -m "Auto-update trials data [skip ci]"
+          
+          echo "Checking for changes..."
+          git status
+          
+          echo "Adding files..."
+          git add docs/data.js
+          
+          echo "Committing..."
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update trials data $(date -u +%Y-%m-%d)"
+            echo "Pushing..."
             git push
+            echo "✓ Changes pushed successfully"
           fi
