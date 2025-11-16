@@ -2,9 +2,11 @@ name: Update Trials Map
 
 on:
   schedule:
-    # Run every Monday at 6 AM UTC
     - cron: '0 6 * * 1'
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   scrape-and-deploy:
@@ -103,3 +105,30 @@ jobs:
             git push
             echo "✓ Changes pushed successfully"
           fi
+```
+
+3. **Commit the change**
+
+---
+
+## ✅ What This Does
+
+The `permissions: contents: write` line gives the GitHub Actions bot permission to:
+- ✅ Read your repository (it already could)
+- ✅ **Write/push to your repository** (this was missing!)
+
+---
+
+## 🧪 Test Again
+
+1. **Save the workflow with the `permissions:` section added**
+2. **Go to Actions → Update Trials Map**
+3. **Click "Run workflow"**
+4. **This time it should push successfully!**
+
+You should see:
+```
+Pushing...
+To https://github.com/ekaizar/NASCW-Trials-Map
+   abc1234..de1e24d  main -> main
+✓ Changes pushed successfully
