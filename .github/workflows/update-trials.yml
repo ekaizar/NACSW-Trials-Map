@@ -56,16 +56,13 @@ jobs:
           Rscript -e '
             library(jsonlite)
             
-            # Read CSV
             cat("Reading CSV...\n")
             df <- read.csv("trials_for_google_sheets.csv", stringsAsFactors = FALSE)
             cat("Found", nrow(df), "rows\n")
             
-            # Convert to JSON
             cat("Converting to JSON...\n")
             json_data <- toJSON(df, pretty = TRUE)
             
-            # Write to file
             cat("Writing to data.js...\n")
             write("const TRIALS_DATA = ", file = "docs/data.js")
             write(json_data, file = "docs/data.js", append = TRUE)
@@ -89,46 +86,6 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          
-          echo "Checking for changes..."
-          git status
-          
-          echo "Adding files..."
           git add docs/data.js
-          
-          echo "Committing..."
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Auto-update trials data $(date -u +%Y-%m-%d)"
-            echo "Pushing..."
-            git push
-            echo "✓ Changes pushed successfully"
-          fi
-```
-
-3. **Commit the change**
-
----
-
-## ✅ What This Does
-
-The `permissions: contents: write` line gives the GitHub Actions bot permission to:
-- ✅ Read your repository (it already could)
-- ✅ **Write/push to your repository** (this was missing!)
-
----
-
-## 🧪 Test Again
-
-1. **Save the workflow with the `permissions:` section added**
-2. **Go to Actions → Update Trials Map**
-3. **Click "Run workflow"**
-4. **This time it should push successfully!**
-
-You should see:
-```
-Pushing...
-To https://github.com/ekaizar/NASCW-Trials-Map
-   abc1234..de1e24d  main -> main
-✓ Changes pushed successfully
+          git diff --staged --quiet || git commit -m "Auto-update trials data"
+          git push
