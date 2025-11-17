@@ -382,7 +382,7 @@ const TRIALS_DATA =
     "Title": "Kittanning, PA - 2025-12-06",
     "TrialTypes": "ELT-S, NW1, NW3",
     "EventCount": 3,
-    "Latitude": 40.8165,
+    "Latitude": 40.8665,
     "Longitude": -79.522
   },
   {
@@ -1002,6 +1002,17 @@ const TRIALS_DATA =
     "Longitude": -73.8259
   },
   {
+    "Date": "2026-02-20",
+    "Location": "San Rafael/Novato, CA",
+    "Host": "Marin Humane",
+    "EventLink": "https://training.marinhumane.org/oh-behave/events/seminars-events",
+    "Title": "San Rafael/Novato, CA - 2026-02-20",
+    "TrialTypes": "L1I, L2C, NW3",
+    "EventCount": 3,
+    "Latitude": 38.0475,
+    "Longitude": -122.3828
+  },
+  {
     "Date": "2026-02-21",
     "Location": "Clearwater, FL",
     "Host": "Hoppin' in the Hills",
@@ -1022,6 +1033,17 @@ const TRIALS_DATA =
     "EventCount": 2,
     "Latitude": 31.9679,
     "Longitude": -110.2945
+  },
+  {
+    "Date": "2026-02-24",
+    "Location": "Paso Robles, CA",
+    "Host": "Gentle Touch Pet Training",
+    "EventLink": "https://www.gentlepets.com/",
+    "Title": "Paso Robles, CA - 2026-02-24",
+    "TrialTypes": "ELT-S, L3I",
+    "EventCount": 2,
+    "Latitude": 35.6763,
+    "Longitude": -120.6901
   },
   {
     "Date": "2026-02-28",
@@ -1196,7 +1218,7 @@ const TRIALS_DATA =
     "Title": "Paso Robles, CA - 2026-03-16",
     "TrialTypes": "ELT-S, L3V, NW3",
     "EventCount": 3,
-    "Latitude": 35.6263,
+    "Latitude": 35.5763,
     "Longitude": -120.6901
   },
   {
@@ -1231,6 +1253,17 @@ const TRIALS_DATA =
     "EventCount": 3,
     "Latitude": 40.7195,
     "Longitude": -74.8357
+  },
+  {
+    "Date": "2026-03-21",
+    "Location": "East Windsor, CT",
+    "Host": "Lucky Dog Events",
+    "EventLink": "https://www.luckydogevents.com/",
+    "Title": "East Windsor, CT - 2026-03-21",
+    "TrialTypes": "ELT, L2C, NW2",
+    "EventCount": 3,
+    "Latitude": 41.9156,
+    "Longitude": -72.613
   },
   {
     "Date": "2026-03-21",
@@ -1597,6 +1630,17 @@ const TRIALS_DATA =
   },
   {
     "Date": "2026-05-02",
+    "Location": "Ashby , MA",
+    "Host": "Dogs! Carolyn Barney",
+    "EventLink": "https://carolynbarney.com/",
+    "Title": "Ashby , MA - 2026-05-02",
+    "TrialTypes": "NW1, NW2",
+    "EventCount": 2,
+    "Latitude": 42.6777,
+    "Longitude": -71.8198
+  },
+  {
+    "Date": "2026-05-02",
     "Location": "Santa Paula, CA",
     "Host": "Pink Biscuit K9s ",
     "EventLink": "https://www.pinkbiscuitk9s.com/",
@@ -1641,6 +1685,17 @@ const TRIALS_DATA =
   },
   {
     "Date": "2026-05-09",
+    "Location": "Poland Springs, ME",
+    "Host": "Bare Bones Nosework, LLC",
+    "EventLink": "https://virginiahowe.com/",
+    "Title": "Poland Springs, ME - 2026-05-09",
+    "TrialTypes": "L1I, L2I",
+    "EventCount": 2,
+    "Latitude": 43.9793,
+    "Longitude": -70.5635
+  },
+  {
+    "Date": "2026-05-09",
     "Location": "Union Grove, WI",
     "Host": "Loving Paws, LLC",
     "EventLink": "https://www.lovingpawsllc.com/",
@@ -1671,6 +1726,17 @@ const TRIALS_DATA =
     "EventCount": 4,
     "Latitude": 42.9012,
     "Longitude": -78.2567
+  },
+  {
+    "Date": "2026-05-16",
+    "Location": "Kittanning, PA",
+    "Host": "Steel City Nosework, LLC",
+    "EventLink": "https://www.nose-it-all.com/",
+    "Title": "Kittanning, PA - 2026-05-16",
+    "TrialTypes": "ELT, NW3",
+    "EventCount": 2,
+    "Latitude": 40.7665,
+    "Longitude": -79.522
   },
   {
     "Date": "2026-05-16",
@@ -1827,6 +1893,17 @@ const TRIALS_DATA =
     "Longitude": -88.1628
   },
   {
+    "Date": "2026-06-09",
+    "Location": "Jordan, MN",
+    "Host": "St. Paul Dog Training Club",
+    "EventLink": "https://spdtc.com/events-at-spdtc/",
+    "Title": "Jordan, MN - 2026-06-09",
+    "TrialTypes": "ELT, ELT-P, L1V, L2V",
+    "EventCount": 4,
+    "Latitude": 44.6663,
+    "Longitude": -93.6262
+  },
+  {
     "Date": "2026-06-13",
     "Location": "East Helena, MT",
     "Host": "Nose Work Breakfast Club",
@@ -1924,6 +2001,17 @@ const TRIALS_DATA =
     "EventCount": 4,
     "Latitude": 42.4832,
     "Longitude": -79.3346
+  },
+  {
+    "Date": "2026-09-12",
+    "Location": "Clinton, PA",
+    "Host": "Nosework Addicts, LLC ",
+    "EventLink": "https://www.noseworkaddictsllc.com/",
+    "Title": "Clinton, PA - 2026-09-12",
+    "TrialTypes": "ELT, NW3",
+    "EventCount": 2,
+    "Latitude": 41.2711,
+    "Longitude": -77.6984
   },
   {
     "Date": "2026-09-12",
