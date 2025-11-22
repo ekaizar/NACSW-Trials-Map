@@ -34,6 +34,17 @@
             margin-bottom: 3px;
         }
         
+        #header h1 a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            transition: border-color 0.2s;
+        }
+        
+        #header h1 a:hover {
+            border-bottom-color: white;
+        }
+        
         #header p {
             opacity: 0.9;
             font-size: 12px;
@@ -285,7 +296,7 @@
 </head>
 <body>
     <div id="header">
-        <h1>🗺️ NACSW Trials Map</h1>
+        <h1>🗺️ <a href="https://www.nacsw.net/events/trials-calendar/" target="_blank" rel="noopener">NACSW</a> Trials Map</h1>
         <p>Interactive map of nose work trials across the United States</p>
         <div id="lastUpdate">Loading...</div>
     </div>
