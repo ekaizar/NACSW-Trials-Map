@@ -1,116 +1,6 @@
 const TRIALS_DATA = 
 [
   {
-    "Date": "2025-11-14",
-    "Location": "Elgin, IL",
-    "Host": "Common Scents K9 ",
-    "EventLink": "https://commonscentsk9club.wixsite.com/common-scents-k9",
-    "Title": "Elgin, IL - 2025-11-14",
-    "TrialTypes": "L1C, L1I, L2C, L2I, NW1",
-    "EventCount": 5,
-    "Latitude": 42.0873,
-    "Longitude": -88.2811
-  },
-  {
-    "Date": "2025-11-14",
-    "Location": "New Freedom, PA",
-    "Host": "Firezone GS",
-    "EventLink": "https://www.firezonegiantschnauzers.com/summit-grove",
-    "Title": "New Freedom, PA - 2025-11-14",
-    "TrialTypes": "ELT, ELT-S, NW2, NW3",
-    "EventCount": 4,
-    "Latitude": 39.7379,
-    "Longitude": -76.7014
-  },
-  {
-    "Date": "2025-11-15",
-    "Location": "Albuquerque, NM",
-    "Host": "New Mexico Canine Scent Work, LLC ",
-    "EventLink": "https://www.nmcsw.com",
-    "Title": "Albuquerque, NM - 2025-11-15",
-    "TrialTypes": "L1C, NW2, NW3",
-    "EventCount": 3,
-    "Latitude": 35.0841,
-    "Longitude": -106.651
-  },
-  {
-    "Date": "2025-11-15",
-    "Location": "Bonham, TX",
-    "Host": "All About The Nose ",
-    "EventLink": "https://www.allaboutthenose.com/trials#nw3-elt",
-    "Title": "Bonham, TX - 2025-11-15",
-    "TrialTypes": "ELT, NW3",
-    "EventCount": 2,
-    "Latitude": 33.5822,
-    "Longitude": -96.1785
-  },
-  {
-    "Date": "2025-11-15",
-    "Location": "Bradenton, FL",
-    "Host": "Hoppin' in the Hills",
-    "EventLink": "https://hoppininthehillscom.wordpress.com/trial-bradenton-fl-november-15-16-2025/",
-    "Title": "Bradenton, FL - 2025-11-15",
-    "TrialTypes": "NW1, NW2",
-    "EventCount": 2,
-    "Latitude": 27.4989,
-    "Longitude": -82.5748
-  },
-  {
-    "Date": "2025-11-15",
-    "Location": "Eldred, NY",
-    "Host": "Your Dog's Place, LLC ",
-    "EventLink": "https://yourdogsplace.com/nacsw-trials/",
-    "Title": "Eldred, NY - 2025-11-15",
-    "TrialTypes": "L1I, L3C, L3I, NW2",
-    "EventCount": 4,
-    "Latitude": 41.5294,
-    "Longitude": -74.8802
-  },
-  {
-    "Date": "2025-11-15",
-    "Location": "Marbury, AL",
-    "Host": "Kaye Stevenson",
-    "EventLink": "https://fullmoontrtslabs.wixsite.com/fullmoon-teddy-roose/events",
-    "Title": "Marbury, AL - 2025-11-15",
-    "TrialTypes": "L1E, NW1, NW2",
-    "EventCount": 3,
-    "Latitude": 32.6744,
-    "Longitude": -86.461
-  },
-  {
-    "Date": "2025-11-15",
-    "Location": "Montgomery, AL",
-    "Host": "By A Nose Nosework ",
-    "EventLink": "https://www.byanosenosework.com/event-details/montgomery-al-elt-elt-1",
-    "Title": "Montgomery, AL - 2025-11-15",
-    "TrialTypes": "ELT",
-    "EventCount": 1,
-    "Latitude": 32.3777,
-    "Longitude": -86.3091
-  },
-  {
-    "Date": "2025-11-15",
-    "Location": "Welches, OR",
-    "Host": "Trust Your Dog K9 Events ",
-    "EventLink": "https://trustyourdogk9events.com/",
-    "Title": "Welches, OR - 2025-11-15",
-    "TrialTypes": "ELT, NW3",
-    "EventCount": 2,
-    "Latitude": 45.3385,
-    "Longitude": -121.9634
-  },
-  {
-    "Date": "2025-11-17",
-    "Location": "Hudson, MA",
-    "Host": "For the Love of Dogs NY LLC ",
-    "EventLink": "https://www.fortheloveofdogsny.com/nacsw-trials",
-    "Title": "Hudson, MA - 2025-11-17",
-    "TrialTypes": "ELT, NW3",
-    "EventCount": 2,
-    "Latitude": 42.3914,
-    "Longitude": -71.5677
-  },
-  {
     "Date": "2025-11-21",
     "Location": "Harrington, DE",
     "Host": "Shamrock Pot Of Gold K9 Scenter ",
@@ -756,8 +646,8 @@ const TRIALS_DATA =
     "Title": "Valencia, CA - 2026-01-10",
     "TrialTypes": "ELT, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 10.17,
-    "Longitude": -68.0004
+    "Latitude": 34.4436,
+    "Longitude": -118.6092
   },
   {
     "Date": "2026-01-17",
@@ -818,7 +708,7 @@ const TRIALS_DATA =
     "Date": "2026-01-19",
     "Location": "Redlands, CA",
     "Host": "Agile Paws Dog Sports",
-    "EventLink": "https://apds.dog",
+    "EventLink": "https://agilepawsdogsports.com/trials/january-2026-trial",
     "Title": "Redlands, CA - 2026-01-19",
     "TrialTypes": "ELT-P, NW3",
     "EventCount": 2,
@@ -884,7 +774,7 @@ const TRIALS_DATA =
     "Date": "2026-02-07",
     "Location": "Lakewood, NJ",
     "Host": "Rotts n Notts Nosework ",
-    "EventLink": "https://www.rottsnnottsnosework.com/",
+    "EventLink": "https://www.rottsnnottsnosework.com/trialsandorts",
     "Title": "Lakewood, NJ - 2026-02-07",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
@@ -1024,6 +914,17 @@ const TRIALS_DATA =
     "Longitude": -82.8001
   },
   {
+    "Date": "2026-02-21",
+    "Location": "Veneta, OR",
+    "Host": "Wells Creek Dog Training",
+    "EventLink": "https://wellscreekdogtraining.com/",
+    "Title": "Veneta, OR - 2026-02-21",
+    "TrialTypes": "NW1, NW2",
+    "EventCount": 2,
+    "Latitude": 44.0489,
+    "Longitude": -123.3515
+  },
+  {
     "Date": "2026-02-22",
     "Location": "Benson, AZ",
     "Host": "Patience Unlimited Professional Dog Training",
@@ -1097,7 +998,7 @@ const TRIALS_DATA =
     "Title": "Elgin, IL - 2026-03-06",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 41.9873,
+    "Latitude": 42.0373,
     "Longitude": -88.2811
   },
   {
@@ -1137,7 +1038,7 @@ const TRIALS_DATA =
     "Date": "2026-03-07",
     "Location": "Warrensburg, IL",
     "Host": "Kudos for Canines",
-    "EventLink": "https://kudosforcanines.com/",
+    "EventLink": "https://kudosforcanines.com/warrensburg-trial/",
     "Title": "Warrensburg, IL - 2026-03-07",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
@@ -1192,7 +1093,7 @@ const TRIALS_DATA =
     "Date": "2026-03-14",
     "Location": "Hammond, LA",
     "Host": "Dog Gone Right ",
-    "EventLink": "https://doggoneright.net/",
+    "EventLink": "https://doggoneright.net//k9-nose-work-trialsorts-html/",
     "Title": "Hammond, LA - 2026-03-14",
     "TrialTypes": "SMT",
     "EventCount": 1,
@@ -1412,7 +1313,7 @@ const TRIALS_DATA =
     "Date": "2026-04-04",
     "Location": "Stayton, OR",
     "Host": "Canine Discovery Corps ",
-    "EventLink": "https://caninediscoverycorps.wordpress.com",
+    "EventLink": "https://caninediscoverycorps.wordpress.com/premium-camp-taloali/",
     "Title": "Stayton, OR - 2026-04-04",
     "TrialTypes": "L1E, L1V, L2C, L2E",
     "EventCount": 4,
@@ -2056,6 +1957,17 @@ const TRIALS_DATA =
     "EventCount": 3,
     "Latitude": 41.7581,
     "Longitude": -93.8224
+  },
+  {
+    "Date": "2026-10-17",
+    "Location": "Staples, MN",
+    "Host": "Nose 2 Tail Dog Training LLC",
+    "EventLink": "https://nose2tail.net/",
+    "Title": "Staples, MN - 2026-10-17",
+    "TrialTypes": "ELT, NW3",
+    "EventCount": 2,
+    "Latitude": 46.355,
+    "Longitude": -94.7933
   },
   {
     "Date": "2026-11-14",
