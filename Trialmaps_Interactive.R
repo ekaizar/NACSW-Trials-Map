@@ -34,47 +34,85 @@ webpage <- tryCatch({
 
 # Extract trial information from table rows
 # New structure: trials are in table rows with .event-start and .event-name cells
-trials_raw <- webpage %>%
-  html_nodes("tr") %>%
-  lapply(function(row) {
-    # Try to get date cell
-    date_cell <- row %>% html_node("td.event-start")
-    if(is.na(date_cell)) return(NULL)
+# Event website links are in subsequent detail rows with colspan="2"
+
+# Get all table rows
+all_rows <- webpage %>% html_nodes("tr")
+
+trials_raw <- list()
+trial_index <- 0
+
+i <- 1
+while(i <= length(all_rows)) {
+  row <- all_rows[[i]]
+  
+  # Check if this is a main event row
+  date_cell <- row %>% html_node("td.event-start")
+  
+  if(!is.na(date_cell)) {
+    # This is a main event row
+    trial_index <- trial_index + 1
     
     # Get date
     date <- date_cell %>% html_text(trim = TRUE)
     
-    # Try to get event name cell
+    # Get event name cell
     name_cell <- row %>% html_node("td.event-name")
-    if(is.na(name_cell)) return(NULL)
     
-    # Get event link and info
-    event_link <- name_cell %>% html_node("a")
-    if(is.na(event_link)) return(NULL)
-    
-    # Get event ID for constructing full URL
-    event_id <- event_link %>% html_attr("event-id")
-    
-    # Get event text (contains: "Trial Types - Location hosted by Host")
-    event_text <- event_link %>% html_text(trim = TRUE)
-    
-    # Construct full event link
-    # Format appears to be: /calendar/trials/#event-{id}
-    if(!is.na(event_id)) {
-      full_link <- paste0("https://www.nacsw.net/calendar/trials/#event-", event_id)
-    } else {
-      full_link <- NA
+    if(!is.na(name_cell)) {
+      # Get event text
+      event_link <- name_cell %>% html_node("a")
+      event_text <- event_link %>% html_text(trim = TRUE)
+      
+      # Now look at subsequent rows for the actual event website link
+      # These are detail rows that appear when the event is expanded
+      actual_event_link <- NA
+      j <- i + 1
+      
+      # Check next 10 rows for detail information
+      while(j <= min(i + 10, length(all_rows))) {
+        detail_row <- all_rows[[j]]
+        
+        # Stop if we hit another event row
+        next_date_cell <- detail_row %>% html_node("td.event-start")
+        if(!is.na(next_date_cell)) break
+        
+        # Look for colspan="2" cell (contains event details)
+        colspan_cell <- detail_row %>% html_node("td[colspan='2']")
+        
+        if(!is.na(colspan_cell)) {
+          # Find links in this cell
+          links <- colspan_cell %>% html_nodes("a") %>% html_attr("href")
+          
+          # Get the first non-email link (http/https)
+          for(link in links) {
+            if(!is.na(link) && grepl("^http", link) && !grepl("^mailto:", link)) {
+              actual_event_link <- link
+              break
+            }
+          }
+          
+          if(!is.na(actual_event_link)) break
+        }
+        
+        j <- j + 1
+      }
+      
+      # Store the trial data
+      trials_raw[[trial_index]] <- data.frame(
+        Date = date,
+        EventText = event_text,
+        EventLink = actual_event_link,
+        stringsAsFactors = FALSE
+      )
     }
-    
-    # Return as data frame row
-    data.frame(
-      Date = date,
-      EventText = event_text,
-      EventLink = full_link,
-      stringsAsFactors = FALSE
-    )
-  }) %>%
-  bind_rows()
+  }
+  
+  i <- i + 1
+}
+
+# Convert list to data frame
+trials_raw <- bind_rows(trials_raw)
 
 # Remove any empty rows
 trials_raw <- trials_raw %>%
