@@ -25,13 +25,18 @@
         #header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px 20px;
+            padding: 8px 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
         }
         
         #header h1 {
-            font-size: 20px;
-            margin-bottom: 3px;
+            font-size: 18px;
+            margin: 0;
+            flex: 0 0 auto;
         }
         
         #header h1 a {
@@ -48,12 +53,33 @@
         #header p {
             opacity: 0.9;
             font-size: 12px;
+            margin: 0;
+            flex: 1 1 auto;
         }
         
         #lastUpdate {
-            margin-top: 5px;
             font-size: 11px;
             opacity: 0.8;
+            margin: 0;
+            flex: 0 0 auto;
+        }
+        
+        #filterToggle {
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 6px 20px;
+            text-align: center;
+        }
+        
+        #toggleFiltersBtn {
+            background: #f0f0f0;
+            color: #444;
+            padding: 5px 16px;
+            font-size: 12px;
+        }
+        
+        #toggleFiltersBtn:hover {
+            background: #e0e0e0;
         }
         
         #controls {
@@ -61,6 +87,10 @@
             padding: 12px 20px;
             border-bottom: 1px solid #e0e0e0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        #controls.hidden {
+            display: none;
         }
         
         .controls-container {
@@ -274,8 +304,9 @@
         }
         
         @media (max-width: 768px) {
-            #header h1 {
-                font-size: 18px;
+            #header {
+                justify-content: center;
+                text-align: center;
             }
             
             .controls-container {
@@ -299,6 +330,10 @@
         <h1>🗺️ <a href="https://www.nacsw.net/calendar/trials" target="_blank" rel="noopener">NACSW</a> Trials Map</h1>
         <p>Interactive map of nose work trials across the United States</p>
         <div id="lastUpdate">Loading...</div>
+    </div>
+    
+    <div id="filterToggle">
+        <button id="toggleFiltersBtn" aria-expanded="true">▲ Hide Filters</button>
     </div>
     
     <div id="controls">
@@ -613,6 +648,16 @@
         
         // ===== EVENT LISTENERS =====
         document.getElementById('applyFilters').addEventListener('click', applyFilters);
+        
+        // Toggle filter visibility to give the map more room
+        const toggleFiltersBtn = document.getElementById('toggleFiltersBtn');
+        toggleFiltersBtn.addEventListener('click', () => {
+            const isHidden = document.getElementById('controls').classList.toggle('hidden');
+            toggleFiltersBtn.textContent = isHidden ? '▼ Show Filters' : '▲ Hide Filters';
+            toggleFiltersBtn.setAttribute('aria-expanded', String(!isHidden));
+            // Let the layout settle, then tell Leaflet to recalculate its size
+            setTimeout(() => map.invalidateSize(), 50);
+        });
         
         document.getElementById('selectAll').addEventListener('click', () => {
             document.querySelectorAll('#eventTypeCheckboxes input[type="checkbox"]').forEach(cb => cb.checked = true);
