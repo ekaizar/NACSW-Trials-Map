@@ -25,13 +25,18 @@
         #header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px 20px;
+            padding: 8px 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
         }
         
         #header h1 {
-            font-size: 20px;
-            margin-bottom: 3px;
+            font-size: 18px;
+            margin: 0;
+            flex: 0 0 auto;
         }
         
         #header h1 a {
@@ -48,12 +53,15 @@
         #header p {
             opacity: 0.9;
             font-size: 12px;
+            margin: 0;
+            flex: 1 1 auto;
         }
         
         #lastUpdate {
-            margin-top: 5px;
             font-size: 11px;
             opacity: 0.8;
+            margin: 0;
+            flex: 0 0 auto;
         }
         
         #filterToggle {
@@ -296,8 +304,9 @@
         }
         
         @media (max-width: 768px) {
-            #header h1 {
-                font-size: 18px;
+            #header {
+                justify-content: center;
+                text-align: center;
             }
             
             .controls-container {
