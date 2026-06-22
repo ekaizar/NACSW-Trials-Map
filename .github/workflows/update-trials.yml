@@ -67,7 +67,7 @@ jobs:
             
             cat("Writing to data.js...\n")
             update_date <- trimws(gsub("\\s+", " ", format(Sys.time(), "%B %e, %Y", tz = "America/New_York")))
-            write(paste0('const DATA_UPDATED = "', update_date, '";'), file = "docs/data.js")
+            write(paste0("const DATA_UPDATED = \"", update_date, "\";"), file = "docs/data.js")
             write("const TRIALS_DATA = ", file = "docs/data.js", append=TRUE)
             write(json_data, file = "docs/data.js", append = TRUE)
             write(";", file = "docs/data.js", append = TRUE)
