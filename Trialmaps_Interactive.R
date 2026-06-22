@@ -309,12 +309,24 @@ trials_grouped <- trials_with_coords %>%
   summarize(
     Host = first(Host),
     EventLink = first(EventLink),
-    TrialTypes = paste(TrialTypes, collapse = ", "),
-    EventCount = sum(EventCount),
+    #TrialTypes = paste(TrialTypes, collapse = ", "),
+    # Combine all event types across rows for this date+location, then drop
+    # duplicates (e.g. "NW3, ELT" + "ELT" -> "NW3, ELT"). unique() preserves
+    # first-seen order, so level ordering is retained.
+    TrialTypes = {
+      t <- trimws(unlist(strsplit(TrialTypes, ",\\s*")))
+      paste(unique(t[t != ""]), collapse = ", ")
+    },
+    #EventCount = sum(EventCount),
     # Keep base coordinates
     Latitude_Base = first(Latitude),
     Longitude_Base = first(Longitude),
     .groups = 'drop'
+  ) %>%
+  # Recompute EventCount from the de-duplicated type list so it reflects the
+  # number of distinct event types actually shown on the pin.
+  mutate(
+    EventCount = lengths(strsplit(TrialTypes, ",\\s*"))
   ) %>%
   # Add jitter to coordinates for state-level visibility
   mutate(
