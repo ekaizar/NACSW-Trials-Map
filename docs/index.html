@@ -443,8 +443,26 @@
             });
         }
         
+        // Parse a "YYYY-MM-DD" string as LOCAL midnight (not UTC). Using
+        // new Date("2027-04-23") treats it as UTC, which renders one day early
+        // in US time zones. Accepts an existing Date and returns it unchanged.
+        function parseLocalDate(value) {
+            if (value instanceof Date) return value;
+            const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(value));
+            if (m) return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+            return new Date(value);
+        }
+
+        // Format a Date as a LOCAL "YYYY-MM-DD" string for <input type="date">.
+        function toInputValue(d) {
+            const y = d.getFullYear();
+            const mo = String(d.getMonth() + 1).padStart(2, '0');
+            const da = String(d.getDate()).padStart(2, '0');
+            return `${y}-${mo}-${da}`;
+        }
+
         function formatDate(dateString) {
-            const date = new Date(dateString);
+            const date = parseLocalDate(dateString);
             return date.toLocaleDateString('en-US', { 
                 weekday: 'short', 
                 year: 'numeric', 
@@ -487,7 +505,7 @@
                 }
                 
                 // Show last update time
-                const dates = allEvents.map(e => new Date(e.Date)).sort((a, b) => b - a);
+                const dates = allEvents.map(e => parseLocalDate(e.Date)).sort((a, b) => b - a);
                 const latestDate = dates[0];
 
                 // Use the timestamp written into data.js by the update workflow.
@@ -496,12 +514,8 @@
                 if (typeof DATA_UPDATED !== 'undefined' && DATA_UPDATED) {
                     updatedText = `Last updated: ${DATA_UPDATED} | `;
                 }
-
                 document.getElementById('lastUpdate').textContent =
                     `${updatedText}Latest trial: ${formatDate(latestDate)}`;
-                
-                //document.getElementById('lastUpdate').textContent = 
-                //    `Last updated: ${new Date().toLocaleDateString()} | Latest trial: ${formatDate(latestDate)}`;
                 
                 initializeFilters();
                 applyFilters();
@@ -543,23 +557,20 @@
                 checkboxContainer.appendChild(div);
             });
             
-            // Set date range: earliest trial date to one year from that date
-            const dates = allEvents.map(e => new Date(e.Date)).sort((a, b) => a - b);
-            const earliestDate = dates[0];
-            const oneYearLater = new Date(earliestDate);
-            oneYearLater.setFullYear(earliestDate.getFullYear() + 1);
-            
-            const minDate = earliestDate.toISOString().split('T')[0];
-            const maxDate = oneYearLater.toISOString().split('T')[0];
-            
-            document.getElementById('dateFrom').value = minDate;
-            document.getElementById('dateTo').value = maxDate;
+            // Default date window: today through one year from today.
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const oneYearLater = new Date(today);
+            oneYearLater.setFullYear(today.getFullYear() + 1);
+
+            document.getElementById('dateFrom').value = toInputValue(today);
+            document.getElementById('dateTo').value = toInputValue(oneYearLater);
         }
         
         // ===== APPLY FILTERS =====
         function applyFilters() {
-            const dateFrom = new Date(document.getElementById('dateFrom').value);
-            const dateTo = new Date(document.getElementById('dateTo').value);
+            const dateFrom = parseLocalDate(document.getElementById('dateFrom').value);
+            const dateTo = parseLocalDate(document.getElementById('dateTo').value);
             
             // Get checked event types
             const checkedTypes = Array.from(document.querySelectorAll('#eventTypeCheckboxes input[type="checkbox"]:checked'))
@@ -567,7 +578,7 @@
             
             // Filter trials - show trial if it includes ANY of the selected event types
             const filteredEvents = allEvents.filter(trial => {
-                const trialDate = new Date(trial.Date);
+                const trialDate = parseLocalDate(trial.Date);
                 const dateMatch = trialDate >= dateFrom && trialDate <= dateTo;
                 
                 // Check if trial has any of the selected event types
