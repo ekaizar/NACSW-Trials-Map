@@ -468,8 +468,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.noseworkaddictsllc.com/noseworkaddictsllccomevents/promise-camp-conference-center",
     "TrialTypes": "NW1, ELT",
     "EventCount": 2,
-    "Latitude": 41.2244,
-    "Longitude": -77.6832
+    "Latitude": 40.5507,
+    "Longitude": -80.3887
   },
   {
     "Date": "2026-09-12",
