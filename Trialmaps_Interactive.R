@@ -62,39 +62,86 @@ ua <- paste0("Mozilla/5.0 (Windows NT 10.0; Win64; x64) ",
              "Chrome/124.0.0.0 Safari/537.36")
 
 # The page now lists the FULL archive (back to 2012), which the server can be
-# slow to render -- a 60s timeout often gives "0 bytes received". Allow plenty
-# of time and retry a few times on a slow/transient attempt.
+# slow to render. It is also fronted by SiteGround anti-bot protection that may
+# serve a CAPTCHA challenge instead of the calendar (especially to shared/cloud
+# IPs such as GitHub Actions runners). Allow plenty of time, send a browser-like
+# request, detect the challenge, and retry with backoff.
 FETCH_TIMEOUT <- 240   # seconds per attempt
-FETCH_TRIES   <- 4     # attempts before giving up
+FETCH_TRIES   <- 5     # attempts before giving up
 
-webpage <- tryCatch({
-  if (requireNamespace("httr", quietly = TRUE)) {
-    resp <- httr::RETRY(
-      "GET", url,
-      httr::user_agent(ua),
-      httr::add_headers(
-        Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        `Accept-Language` = "en-US,en;q=0.9"
-      ),
-      httr::timeout(FETCH_TIMEOUT),
-      times      = FETCH_TRIES,
-      pause_base = 5,    # backoff grows between attempts
-      pause_cap  = 30,
-      quiet      = FALSE
-    )
-    httr::stop_for_status(resp)
-    read_html(httr::content(resp, as = "text", encoding = "UTF-8"))
-  } else {
-    # Fallback if httr isn't installed
-    options(timeout = max(getOption("timeout"), FETCH_TIMEOUT))
-    read_html(url)
+# True if the returned HTML is SiteGround's bot challenge rather than the page.
+is_blocked_page <- function(txt) {
+  grepl("sgcaptcha|/\\.well-known/sgcaptcha|captcha|Are you human",
+        txt, ignore.case = TRUE)
+}
+
+# Fetch the calendar HTML as text, retrying on transport errors, HTTP errors,
+# and anti-bot challenges. Returns the HTML text, or NULL tagged "blocked".
+fetch_calendar_text <- function(url, ua, tries, timeout) {
+  if (!requireNamespace("httr", quietly = TRUE)) {
+    stop("Package 'httr' is required for a browser-like request. Add \"httr\" ",
+         "to the workflow's install.packages() list.")
   }
-}, error = function(e) {
-  stop("❌ Error: Could not retrieve the NACSW page after ", FETCH_TRIES,
-       " attempts: ", conditionMessage(e),
-       "\n   The full-archive page can be slow; try re-running, or lower the ",
-       "history load with a larger YEARS_BACK only if that helps the server.")
-})
+  last_txt <- NULL
+  for (k in seq_len(tries)) {
+    resp <- tryCatch(
+      httr::GET(
+        url,
+        httr::user_agent(ua),
+        httr::add_headers(
+          Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          `Accept-Language` = "en-US,en;q=0.9",
+          `Upgrade-Insecure-Requests` = "1"
+        ),
+        httr::timeout(timeout)
+      ),
+      error = function(e) e
+    )
+
+    if (inherits(resp, "error")) {
+      cat(sprintf("  • Attempt %d/%d: request error: %s\n",
+                  k, tries, conditionMessage(resp)))
+    } else {
+      txt  <- httr::content(resp, as = "text", encoding = "UTF-8")
+      code <- httr::status_code(resp)
+      if (is_blocked_page(txt)) {
+        cat(sprintf("  • Attempt %d/%d: host returned an anti-bot challenge ",
+                    k, tries),
+            "(SiteGround sgcaptcha)\n", sep = "")
+        last_txt <- txt
+      } else if (code >= 400) {
+        cat(sprintf("  • Attempt %d/%d: HTTP %d\n", k, tries, code))
+        last_txt <- txt
+      } else {
+        return(txt)  # success
+      }
+    }
+
+    if (k < tries) Sys.sleep(min(60, 10 * k))  # linear backoff, capped at 60s
+  }
+  attr(last_txt, "blocked") <- TRUE
+  last_txt
+}
+
+page_text <- tryCatch(
+  fetch_calendar_text(url, ua, FETCH_TRIES, FETCH_TIMEOUT),
+  error = function(e) {
+    stop("❌ Error: Could not retrieve the NACSW page: ", conditionMessage(e))
+  }
+)
+
+if (is.null(page_text) || isTRUE(attr(page_text, "blocked"))) {
+  stop("❌ Blocked: the NACSW host (SiteGround) served an anti-bot CAPTCHA ",
+       "instead of the\n   calendar on every attempt, so the page could not be ",
+       "scraped from this IP.\n   This is a host-level block on the runner's IP, ",
+       "not a parsing problem.\n",
+       "   Options: (1) re-run later (the challenge is often intermittent);\n",
+       "   (2) render with a headless browser via rvest::read_html_live()/chromote;\n",
+       "   (3) run from a non-flagged IP (self-hosted runner or a local cron job);\n",
+       "   (4) ask NACSW to allowlist your scraper or provide a data export.")
+}
+
+webpage <- read_html(page_text)
 
 # --- Helpers ---------------------------------------------------------------
 
@@ -290,6 +337,22 @@ if (file.exists(cache_file)) {
   cat("  • No cache found, will geocode all locations\n")
 }
 
+# Normalize the cache schema. Past caches may have the longitude split across
+# two columns ('lon' and 'long') because tidygeocoder's output column name has
+# varied by version. Consolidate into a single numeric 'long' and force both
+# coordinate columns numeric, so a fully-cached run (no geocoding) still yields
+# numeric coordinates downstream.
+geocode_cache$lat  <- suppressWarnings(as.numeric(geocode_cache$lat))
+if ("lon" %in% names(geocode_cache)) {
+  geocode_cache$lon  <- suppressWarnings(as.numeric(geocode_cache$lon))
+  geocode_cache$long <- suppressWarnings(as.numeric(geocode_cache$long))
+  geocode_cache$long <- dplyr::coalesce(geocode_cache$long, geocode_cache$lon)
+  geocode_cache$lon  <- NULL
+  cat("  • Normalized cache: merged 'lon' into 'long'\n")
+} else {
+  geocode_cache$long <- suppressWarnings(as.numeric(geocode_cache$long))
+}
+
 # Find locations that need geocoding
 locations_to_geocode <- trials_clean %>%
   distinct(Location_Geocode) %>%
@@ -308,7 +371,7 @@ if (nrow(locations_to_geocode) > 0) {
   if ("lon" %in% names(new_coords) && !("long" %in% names(new_coords))) {
     new_coords <- new_coords %>% rename(long = lon)
   }
-  
+
   failed_geocodes <- new_coords %>% filter(is.na(lat) | is.na(long))
   if (nrow(failed_geocodes) > 0) {
     cat("  ⚠️  Warning:", nrow(failed_geocodes), "locations failed to geocode:\n")
