@@ -456,7 +456,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <!-- Load trials data (same data.js as the main map) -->
-    <script src="data.js"></script>
+    <script src="data_history.js"></script>
 
     <script>
         // ===== MAP INITIALIZATION =====
@@ -868,6 +868,16 @@
                    </div>`
                 : '';
 
+            // Past trials carry no event website link (EventLink is NA/blank).
+            const hasLink = trial.EventLink &&
+                            String(trial.EventLink).trim() &&
+                            String(trial.EventLink).toUpperCase() !== 'NA';
+            const linkBlock = hasLink
+                ? `<div class="popup-link">
+                       <a href="${trial.EventLink}" target="_blank" rel="noopener">View Event Details →</a>
+                   </div>`
+                : '';
+
             return `
                 <div class="popup-title">${trial.Location}</div>
                 <div class="popup-info">
@@ -883,9 +893,7 @@
                         ${eventTypesList}
                     </div>
                 </div>
-                <div class="popup-link">
-                    <a href="${trial.EventLink}" target="_blank" rel="noopener">View Event Details →</a>
-                </div>
+                ${linkBlock}
             `;
         }
 
