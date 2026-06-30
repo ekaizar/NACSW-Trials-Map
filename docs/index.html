@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NACSW Trials Map</title>
     
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     
     <style>
@@ -104,14 +103,19 @@
             margin-bottom: 0;
         }
         
+        .control-group.location-control {
+            flex: 0 0 auto;
+            min-width: 260px;
+        }
+        
         .control-group.date-control {
             flex: 0 0 auto;
-            min-width: 300px;
+            min-width: 200px;
         }
         
         .control-group.event-control {
             flex: 1;
-            min-width: 400px;
+            min-width: 350px;
         }
         
         .control-group label {
@@ -120,6 +124,53 @@
             margin-bottom: 5px;
             color: #333;
             font-size: 13px;
+        }
+        
+        .location-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .location-inputs input[type="text"],
+        .location-inputs input[type="number"] {
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+
+        .radius-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radius-row .inline-label {
+            display: inline;
+            font-weight: 600;
+            margin: 0;
+            color: #333;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        .radius-row input[type="number"] {
+            width: 90px;
+        }
+
+        .location-status {
+            font-size: 11px;
+            color: #666;
+            min-height: 14px;
+        }
+
+        .location-status.error {
+            color: #d32f2f;
+        }
+
+        .location-status.ok {
+            color: #2e7d32;
         }
         
         .date-inputs {
@@ -190,13 +241,17 @@
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
         
-        #selectAll, #deselectAll {
+        #selectAll, #deselectAll, #resetFilters, #clearLocation {
             background: #f0f0f0;
             color: #333;
         }
         
-        #selectAll:hover, #deselectAll:hover {
+        #selectAll:hover, #deselectAll:hover, #resetFilters:hover, #clearLocation:hover {
             background: #e0e0e0;
+        }
+
+        #resetFilters {
+            border: 1px solid #ccc;
         }
         
         #map {
@@ -302,6 +357,14 @@
             color: #764ba2;
             text-decoration: underline;
         }
+
+        .popup-no-link {
+            padding: 12px 15px;
+            background: #f9f9f9;
+            color: #999;
+            font-style: italic;
+            font-size: 13px;
+        }
         
         @media (max-width: 768px) {
             #header {
@@ -313,6 +376,7 @@
                 flex-direction: column;
             }
             
+            .control-group.location-control,
             .control-group.date-control,
             .control-group.event-control {
                 min-width: 100%;
@@ -338,6 +402,21 @@
     
     <div id="controls">
         <div class="controls-container">
+            <div class="control-group location-control">
+                <label>📍 Filter by Location</label>
+                <div class="location-inputs">
+                    <input type="text" id="locationInput" placeholder="City, State or ZIP">
+                    <div class="radius-row">
+                        <label class="inline-label" for="radiusInput">Radius (mi):</label>
+                        <input type="number" id="radiusInput" placeholder="Blank" min="1" max="1000" step="5">
+                    </div>
+                    <div class="button-group">
+                        <button id="clearLocation">Clear Loc</button>
+                    </div>
+                    <div id="locationStatus" class="location-status"></div>
+                </div>
+            </div>
+
             <div class="control-group date-control">
                 <label>📅 Date Range</label>
                 <div class="date-inputs">
@@ -358,13 +437,14 @@
         
         <div class="button-group">
             <button id="applyFilters">Apply Filters</button>
+            <button id="resetFilters">Reset Filters</button>
         </div>
     </div>
     
     <div id="map"></div>
     
     <div id="stats">
-        Showing <strong id="eventCount">0</strong> trials
+        Showing <strong id="eventCount">0</strong> trials<span id="statsContext"></span>
     </div>
     
     <div id="loading">
@@ -377,10 +457,8 @@
         <p id="errorMessage"></p>
     </div>
     
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
-    <!-- Load trials data -->
     <script src="data.js"></script>
     
     <script>
@@ -395,6 +473,10 @@
         // ===== STATE VARIABLES =====
         let allEvents = [];
         let markers = [];
+        let centerLocation = null;   // { lat, lon, label }
+        let centerMarker = null;     // marker for user location
+        let radiusCircle = null;     // radius visualization ring
+        let lastGeocodedQuery = "";  // track to avoid repeating API lookups
         
         // ===== EVENT COLORS =====
         const eventColors = {
@@ -442,10 +524,35 @@
                 iconAnchor: [10, 10]
             });
         }
+
+        function createCenterIcon() {
+            return L.divIcon({
+                className: 'center-marker',
+                html: `<div style="
+                    background: #d32f2f;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    border: 4px solid white;
+                    box-shadow: 0 0 0 3px #d32f2f, 0 2px 8px rgba(0,0,0,0.4);
+                "></div>`,
+                iconSize: [18, 18],
+                iconAnchor: [9, 9]
+            });
+        }
+
+        // Great-circle distance calculation
+        function haversineMiles(lat1, lon1, lat2, lon2) {
+            const R = 3958.7613; 
+            const toRad = d => d * Math.PI / 180;
+            const dLat = toRad(lat2 - lat1);
+            const dLon = toRad(lon2 - lon1);
+            const a = Math.sin(dLat / 2) ** 2 +
+                      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+                      Math.sin(dLon / 2) ** 2;
+            return 2 * R * Math.asin(Math.min(1, Math.sqrt(a)));
+        }
         
-        // Parse a "YYYY-MM-DD" string as LOCAL midnight (not UTC). Using
-        // new Date("2027-04-23") treats it as UTC, which renders one day early
-        // in US time zones. Accepts an existing Date and returns it unchanged.
         function parseLocalDate(value) {
             if (value instanceof Date) return value;
             const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(value));
@@ -453,7 +560,6 @@
             return new Date(value);
         }
 
-        // Format a Date as a LOCAL "YYYY-MM-DD" string for <input type="date">.
         function toInputValue(d) {
             const y = d.getFullYear();
             const mo = String(d.getMonth() + 1).padStart(2, '0');
@@ -477,11 +583,16 @@
             errorDiv.style.display = 'block';
             document.getElementById('errorMessage').textContent = message;
         }
+
+        function setLocationStatus(msg, kind) {
+            const el = document.getElementById('locationStatus');
+            el.textContent = msg || '';
+            el.className = 'location-status' + (kind ? ' ' + kind : '');
+        }
         
         // ===== LOAD DATA =====
         function loadData() {
             try {
-                // Data is already loaded from data.js
                 if (typeof TRIALS_DATA === 'undefined') {
                     throw new Error('Trials data not found. Make sure data.js is loaded.');
                 }
@@ -490,7 +601,6 @@
                     row.Latitude && row.Longitude && row.Date && row.TrialTypes
                 );
                 
-                // Parse TrialTypes from comma-separated string to array
                 allEvents.forEach(trial => {
                     if (typeof trial.TrialTypes === 'string') {
                         trial.TrialTypesArray = trial.TrialTypes.split(',').map(t => t.trim());
@@ -504,12 +614,9 @@
                     return;
                 }
                 
-                // Show last update time
                 const dates = allEvents.map(e => parseLocalDate(e.Date)).sort((a, b) => b - a);
                 const latestDate = dates[0];
 
-                // Use the timestamp written into data.js by the update workflow.
-                // Shown exactly as provided; the "Last updated" part is omitted if absent.
                 let updatedText = '';
                 if (typeof DATA_UPDATED !== 'undefined' && DATA_UPDATED) {
                     updatedText = `Last updated: ${DATA_UPDATED} | `;
@@ -527,14 +634,12 @@
         
         // ===== INITIALIZE FILTER CONTROLS =====
         function initializeFilters() {
-            // Get unique event types from all trials
             const allEventTypes = new Set();
             allEvents.forEach(trial => {
                 trial.TrialTypesArray.forEach(type => allEventTypes.add(type));
             });
             const eventTypes = Array.from(allEventTypes).sort();
             
-            // Populate checkboxes
             const checkboxContainer = document.getElementById('eventTypeCheckboxes');
             checkboxContainer.innerHTML = '';
             
@@ -557,7 +662,6 @@
                 checkboxContainer.appendChild(div);
             });
             
-            // Default date window: today through one year from today.
             const today = new Date();
             today.setHours(0, 0, 0, 0);
             const oneYearLater = new Date(today);
@@ -565,33 +669,97 @@
 
             document.getElementById('dateFrom').value = toInputValue(today);
             document.getElementById('dateTo').value = toInputValue(oneYearLater);
+            document.getElementById('locationInput').value = '';
+            document.getElementById('radiusInput').value = '';
+            centerLocation = null;
+            lastGeocodedQuery = "";
+            setLocationStatus('', '');
+        }
+
+        // ===== GEOCODE LOCATION =====
+        async function geocodeUserLocation(query) {
+            const url = 'https://nominatim.openstreetmap.org/search'
+                + '?format=json&limit=1&countrycodes=us'
+                + '&q=' + encodeURIComponent(query);
+
+            const resp = await fetch(url, { headers: { 'Accept': 'application/json' } });
+            if (!resp.ok) throw new Error('Geocoding status: ' + resp.status);
+            const results = await resp.json();
+            if (!results || results.length === 0) return null;
+            return {
+                lat: parseFloat(results[0].lat),
+                lon: parseFloat(results[0].lon),
+                label: results[0].display_name
+            };
         }
         
         // ===== APPLY FILTERS =====
-        function applyFilters() {
+        async function applyFilters() {
             const dateFrom = parseLocalDate(document.getElementById('dateFrom').value);
             const dateTo = parseLocalDate(document.getElementById('dateTo').value);
-            
-            // Get checked event types
+            const locQuery = document.getElementById('locationInput').value.trim();
+            const radiusInputVal = document.getElementById('radiusInput').value;
+            const radiusMiles = parseFloat(radiusInputVal);
+
+            // Handle Geocoding logic if location is provided
+            if (locQuery && locQuery !== lastGeocodedQuery) {
+                setLocationStatus('Locating...', '');
+                try {
+                    const result = await geocodeUserLocation(locQuery);
+                    if (result) {
+                        centerLocation = result;
+                        lastGeocodedQuery = locQuery;
+                        const shortLabel = result.label.split(',').slice(0, 2).join(',').trim();
+                        setLocationStatus('Centered on: ' + shortLabel, 'ok');
+                    } else {
+                        setLocationStatus('Location not found.', 'error');
+                        centerLocation = null;
+                    }
+                } catch (err) {
+                    setLocationStatus('Search failed.', 'error');
+                    centerLocation = null;
+                }
+            } else if (!locQuery) {
+                centerLocation = null;
+                lastGeocodedQuery = "";
+                setLocationStatus('', '');
+            }
+
             const checkedTypes = Array.from(document.querySelectorAll('#eventTypeCheckboxes input[type="checkbox"]:checked'))
                 .map(cb => cb.value);
             
-            // Filter trials - show trial if it includes ANY of the selected event types
-            const filteredEvents = allEvents.filter(trial => {
+            let filteredEvents = allEvents.filter(trial => {
                 const trialDate = parseLocalDate(trial.Date);
                 const dateMatch = trialDate >= dateFrom && trialDate <= dateTo;
-                
-                // Check if trial has any of the selected event types
                 const typeMatch = trial.TrialTypesArray.some(type => checkedTypes.includes(type));
-                
                 return dateMatch && typeMatch;
             });
+
+            // Distance calculation if both Location and Radius values exist
+            if (centerLocation && !isNaN(radiusMiles)) {
+                filteredEvents.forEach(trial => {
+                    trial._distance = haversineMiles(
+                        centerLocation.lat, centerLocation.lon,
+                        trial.Latitude, trial.Longitude
+                    );
+                });
+                filteredEvents = filteredEvents
+                    .filter(trial => trial._distance <= radiusMiles)
+                    .sort((a, b) => a._distance - b._distance);
+            } else {
+                filteredEvents.forEach(trial => { trial._distance = null; });
+            }
             
-            // Update map
-            displayMarkers(filteredEvents);
+            displayMarkers(filteredEvents, radiusMiles);
             
-            // Update stats
             document.getElementById('eventCount').textContent = filteredEvents.length;
+            const ctx = document.getElementById('statsContext');
+            if (centerLocation && !isNaN(radiusMiles)) {
+                const shortLabel = centerLocation.label.split(',').slice(0, 2).join(',').trim();
+                ctx.textContent = ` within ${radiusMiles} miles of ${shortLabel}`;
+            } else {
+                ctx.textContent = '';
+            }
         }
         
         // ===== GET PRIMARY COLOR FOR TRIAL =====
@@ -608,12 +776,29 @@
         }
         
         // ===== DISPLAY MARKERS ON MAP =====
-        function displayMarkers(trials) {
-            // Clear existing markers
+        function displayMarkers(trials, radiusMiles) {
             markers.forEach(marker => map.removeLayer(marker));
             markers = [];
             
-            // Add new markers with colors based on trial event types
+            if (centerMarker) { map.removeLayer(centerMarker); centerMarker = null; }
+            if (radiusCircle) { map.removeLayer(radiusCircle); radiusCircle = null; }
+
+            if (centerLocation && !isNaN(radiusMiles)) {
+                radiusCircle = L.circle([centerLocation.lat, centerLocation.lon], {
+                    radius: radiusMiles * 1609.344, // miles to meters
+                    color: '#764ba2',
+                    weight: 1,
+                    fillColor: '#667eea',
+                    fillOpacity: 0.08
+                }).addTo(map);
+
+                centerMarker = L.marker([centerLocation.lat, centerLocation.lon], { 
+                    icon: createCenterIcon(), 
+                    zIndexOffset: 1000 
+                }).bindPopup(`<div class="popup-title">Your location</div>
+                    <div class="popup-info">${centerLocation.label}</div>`).addTo(map);
+            }
+
             trials.forEach(trial => {
                 const color = getPrimaryColor(trial.TrialTypesArray);
                 const icon = createMarkerIcon(color);
@@ -625,8 +810,9 @@
                 markers.push(marker);
             });
             
-            // Fit map to show all markers if there are any
-            if (markers.length > 0) {
+            if (centerLocation && radiusCircle) {
+                map.fitBounds(radiusCircle.getBounds().pad(0.05));
+            } else if (markers.length > 0) {
                 const group = L.featureGroup(markers);
                 map.fitBounds(group.getBounds().pad(0.1));
             }
@@ -634,7 +820,6 @@
         
         // ===== CREATE POPUP CONTENT =====
         function createPopupContent(trial) {
-            // Format event types as a nice list
             const eventTypesList = trial.TrialTypesArray
                 .map(type => `<span style="
                     display: inline-block;
@@ -648,6 +833,23 @@
                 ">${type}</span>`)
                 .join(' ');
             
+            const distanceRow = (trial._distance != null)
+                ? `<div class="popup-info">
+                       <span class="popup-label">Distance:</span> ${Math.round(trial._distance)} miles
+                   </div>`
+                : '';
+
+            // Conditional validation rule for Event Site availability
+            const hasLink = trial.EventLink && 
+                            String(trial.EventLink).trim() && 
+                            String(trial.EventLink).toUpperCase() !== 'NA';
+            
+            const actionBlock = hasLink 
+                ? `<div class="popup-link">
+                       <a href="${trial.EventLink}" target="_blank" rel="noopener">View Event Details →</a>
+                   </div>`
+                : `<div class="popup-no-link">No Details Available</div>`;
+            
             return `
                 <div class="popup-title">${trial.Location}</div>
                 <div class="popup-info">
@@ -656,28 +858,46 @@
                 <div class="popup-info">
                     <span class="popup-label">Host:</span> ${trial.Host}
                 </div>
+                ${distanceRow}
                 <div class="popup-info" style="margin-top: 10px;">
                     <strong>Event Types:</strong><br>
                     <div style="margin-top: 5px;">
                         ${eventTypesList}
                     </div>
                 </div>
-                <div class="popup-link">
-                    <a href="${trial.EventLink}" target="_blank" rel="noopener">View Event Details →</a>
-                </div>
+                ${actionBlock}
             `;
         }
         
         // ===== EVENT LISTENERS =====
         document.getElementById('applyFilters').addEventListener('click', applyFilters);
         
-        // Toggle filter visibility to give the map more room
+        document.getElementById('resetFilters').addEventListener('click', () => {
+            initializeFilters();
+            applyFilters();
+        });
+
+        document.getElementById('clearLocation').addEventListener('click', () => {
+            document.getElementById('locationInput').value = '';
+            document.getElementById('radiusInput').value = '';
+            centerLocation = null;
+            lastGeocodedQuery = "";
+            setLocationStatus('', '');
+            applyFilters();
+        });
+
+        document.getElementById('locationInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                applyFilters();
+            }
+        });
+        
         const toggleFiltersBtn = document.getElementById('toggleFiltersBtn');
         toggleFiltersBtn.addEventListener('click', () => {
             const isHidden = document.getElementById('controls').classList.toggle('hidden');
             toggleFiltersBtn.textContent = isHidden ? '▼ Show Filters' : '▲ Hide Filters';
             toggleFiltersBtn.setAttribute('aria-expanded', String(!isHidden));
-            // Let the layout settle, then tell Leaflet to recalculate its size
             setTimeout(() => map.invalidateSize(), 50);
         });
         
