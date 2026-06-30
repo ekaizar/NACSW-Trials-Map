@@ -254,6 +254,25 @@
             border: 1px solid #ccc;
         }
         
+        #exportCsv {
+            background: #2e7d32;
+            color: white;
+        }
+        
+        #exportCsv:hover {
+            background: #1b5e20;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.4);
+        }
+        
+        #exportCsv:disabled {
+            background: #cfcfcf;
+            color: #777;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
         #map {
             flex: 1;
             width: 100%;
@@ -438,6 +457,7 @@
         <div class="button-group">
             <button id="applyFilters">Apply Filters</button>
             <button id="resetFilters">Reset Filters</button>
+            <button id="exportCsv">⬇ Export CSV</button>
         </div>
     </div>
     
@@ -472,6 +492,7 @@
         
         // ===== STATE VARIABLES =====
         let allEvents = [];
+        let currentFilteredEvents = []; // trials currently passing the filters (for CSV export)
         let markers = [];
         let centerLocation = null;   // { lat, lon, label }
         let centerMarker = null;     // marker for user location
@@ -750,6 +771,7 @@
                 filteredEvents.forEach(trial => { trial._distance = null; });
             }
             
+            currentFilteredEvents = filteredEvents;
             displayMarkers(filteredEvents, radiusMiles);
             
             document.getElementById('eventCount').textContent = filteredEvents.length;
@@ -869,8 +891,71 @@
             `;
         }
         
+        // ===== EXPORT FILTERED TRIALS TO CSV =====
+        function exportToCsv() {
+            if (!currentFilteredEvents || currentFilteredEvents.length === 0) {
+                alert('No trials match the current filters, so there is nothing to export.');
+                return;
+            }
+
+            // Build the column list from the union of all data fields present,
+            // excluding internal/computed properties so the export mirrors the source data.
+            const excluded = new Set(['TrialTypesArray']);
+            const keySet = new Set();
+            currentFilteredEvents.forEach(trial => {
+                Object.keys(trial).forEach(k => {
+                    if (!excluded.has(k) && !k.startsWith('_')) keySet.add(k);
+                });
+            });
+            const columns = Array.from(keySet);
+
+            // Add a distance column only when a location/radius filter produced distances.
+            const hasDistance = currentFilteredEvents.some(t => t._distance != null);
+            if (hasDistance) columns.push('DistanceMiles');
+
+            // RFC-4180 style escaping: wrap in quotes if the value contains
+            // a comma, quote, or newline, and double any embedded quotes.
+            const escapeCell = (val) => {
+                if (val === null || val === undefined) return '';
+                let s = String(val);
+                if (/[",\r\n]/.test(s)) {
+                    s = '"' + s.replace(/"/g, '""') + '"';
+                }
+                return s;
+            };
+
+            const rows = [columns.map(escapeCell).join(',')];
+            currentFilteredEvents.forEach(trial => {
+                const row = columns.map(col => {
+                    if (col === 'DistanceMiles') {
+                        return trial._distance != null
+                            ? String(Math.round(trial._distance * 10) / 10)
+                            : '';
+                    }
+                    return escapeCell(trial[col]);
+                });
+                rows.push(row.join(','));
+            });
+
+            // Prepend a UTF-8 BOM so Excel reads accented characters correctly.
+            const csv = '\uFEFF' + rows.join('\r\n');
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+
+            const stamp = new Date().toISOString().slice(0, 10);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `nacsw-trials-${stamp}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
         // ===== EVENT LISTENERS =====
         document.getElementById('applyFilters').addEventListener('click', applyFilters);
+        
+        document.getElementById('exportCsv').addEventListener('click', exportToCsv);
         
         document.getElementById('resetFilters').addEventListener('click', () => {
             initializeFilters();
