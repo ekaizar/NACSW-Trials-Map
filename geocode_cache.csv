@@ -24,7 +24,7 @@ Location,lat,long
 "Danbury, CT, USA",41.394817,-73.4540111
 "Thomaston, CT, USA",41.673499,-73.0738185
 "Simsbury, CT, USA",41.8759152,-72.8012211
-"Selbeyville, DE, USA",NA,NA
+"Selbeyville, DE, USA",38.4605900, -75.2229568
 "Bear, DE, USA",39.6185861,-75.6795539
 "Gainesville, FL, USA",29.6519684,-82.3249846
 "Orlando, FL, USA",28.5421218,-81.379045
@@ -201,7 +201,7 @@ Location,lat,long
 "White Plains, NY, USA",41.0339862,-73.7629097
 "Kennebunkport, ME, USA",43.3614989,-70.4771132
 "Yamhill, OR, USA",45.2298399,-123.2180414
-"Beliot, WI, USA",NA,NA
+"Beliot, WI, USA",42.50834, -89.031124
 "Franklin, GA, USA",34.3678347,-83.2107222
 "Plant City, FL, USA",28.01633,-82.1234803
 "York, PA, USA",39.962493,-76.7276989
@@ -264,7 +264,7 @@ Location,lat,long
 "Cambria, CA, USA",35.5513597,-121.0872908
 "Dunkirk, NY, USA",42.483224,-79.3345605
 "Meeker, CO, USA",40.0374733,-107.913129
-"Easton and Lutherville, MD, USA",NA,NA
+"Easton and Lutherville, MD, USA",39.41980, -76.613808
 "Johnstown, NY, USA",43.006075,-74.3720027
 "North Bend, WA, USA",47.4957757,-121.784889
 "Greenfield, MA, USA",42.5876342,-72.6002068
@@ -312,7 +312,7 @@ Location,lat,long
 "Linden, MI, USA",42.8146748,-83.7821563
 "Palmyra, VA, USA",37.8647,-78.2615037
 "Kenosha, WI, USA",42.5846773,-87.8212263
-"Nazareth/Windgap, PA, USA",NA,NA
+"Nazareth/Windgap, PA, USA",40.740284, -75.310255
 "Gunnison, CO, USA",38.6476702,-107.0603126
 "New Hope, PA, USA",40.3642728,-74.9512785
 "Wrightstown, WI, USA",44.3261356,-88.1628482
