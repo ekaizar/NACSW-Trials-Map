@@ -82,7 +82,6 @@ FETCH_TRIES   <- 5     # attempts before giving up
 TRY_LIGHTWEIGHT_FIRST <- TRUE  # attempt one quick httr GET before going headless
 HEADLESS_SETTLE       <- 8     # extra seconds to let calendar rows finish rendering
 
-
 # True if the returned HTML is SiteGround's bot challenge rather than the page.
 is_blocked_page <- function(txt) {
   grepl("sgcaptcha|/\\.well-known/sgcaptcha|captcha|Are you human",
@@ -137,22 +136,132 @@ fetch_calendar_text <- function(url, ua, tries, timeout) {
   last_txt
 }
 
-page_text <- tryCatch(
-  fetch_calendar_text(url, ua, FETCH_TRIES, FETCH_TIMEOUT),
-  error = function(e) {
-    stop("❌ Error: Could not retrieve the NACSW page: ", conditionMessage(e))
+# --- Headless-browser fetch (Option 1: pass the SiteGround JS challenge) ------
+
+# Configure Chrome for CI/container environments: GitHub Actions runs as root
+# (Chrome then needs --no-sandbox), and containers often have a tiny /dev/shm
+# (--disable-dev-shm-usage avoids crashes). Wrapped defensively so that a
+# differing chromote version can never hard-stop the run here.
+if (requireNamespace("chromote", quietly = TRUE)) {
+  tryCatch(
+    chromote::set_chrome_args(c(
+      chromote::get_chrome_args(),
+      "--no-sandbox",
+      "--disable-dev-shm-usage"
+    )),
+    error = function(e) invisible(NULL)
+  )
+}
+
+# Render the calendar in headless Chrome and return the fully-rendered HTML as
+# text. Same contract as fetch_calendar_text(): returns HTML text on success,
+# or a string tagged attr(, "blocked") = TRUE if the challenge never cleared.
+fetch_calendar_text_live <- function(url, tries, timeout, settle) {
+  if (!requireNamespace("chromote", quietly = TRUE)) {
+    stop("Package 'chromote' is required for the headless-browser fallback. ",
+         "Add \"chromote\" to the workflow's install.packages() list, and make ",
+         "sure a Chrome/Chromium binary is available on the runner.")
   }
-)
+
+  # TRUE once the rendered DOM is the real calendar: no challenge markers left,
+  # and at least one YYYY-MM-DD date (i.e. event rows) is present.
+  looks_ready <- function(html) {
+    !is.null(html) && nzchar(html) &&
+      !is_blocked_page(html) && grepl("\\d{4}-\\d{2}-\\d{2}", html)
+  }
+
+  # Serialize the current live DOM (post-JavaScript) to an HTML string.
+  get_html <- function(b) {
+    tryCatch(
+      b$Runtime$evaluate("document.documentElement.outerHTML")$result$value,
+      error = function(e) NULL
+    )
+  }
+
+  last_html <- NULL
+  for (k in seq_len(tries)) {
+    b <- tryCatch(chromote::ChromoteSession$new(), error = function(e) e)
+    if (inherits(b, "error")) {
+      cat(sprintf("  • Headless attempt %d/%d: could not start Chrome: %s\n",
+                  k, tries, conditionMessage(b)))
+      if (k < tries) Sys.sleep(min(60, 10 * k))
+      next
+    }
+
+    html <- tryCatch({
+      b$Page$navigate(url, wait_ = TRUE)
+      # Chrome auto-solves the sgcaptcha challenge and redirects to the real
+      # page. Poll the live DOM until that has happened (or time runs out).
+      deadline <- Sys.time() + timeout
+      cur <- get_html(b)
+      while (!looks_ready(cur) && Sys.time() < deadline) {
+        Sys.sleep(2)
+        cur <- get_html(b)
+      }
+      Sys.sleep(settle)   # let any late-rendering rows settle
+      get_html(b)         # final snapshot
+    }, error = function(e) e)
+
+    tryCatch(b$close(), error = function(e) invisible(NULL))
+
+    if (inherits(html, "error")) {
+      cat(sprintf("  • Headless attempt %d/%d: render error: %s\n",
+                  k, tries, conditionMessage(html)))
+    } else if (looks_ready(html)) {
+      cat(sprintf("  • Headless attempt %d/%d: challenge cleared, page rendered\n",
+                  k, tries))
+      return(html)  # success
+    } else {
+      cat(sprintf("  • Headless attempt %d/%d: challenge did not clear ",
+                  k, tries), "(SiteGround sgcaptcha)\n", sep = "")
+      last_html <- html
+    }
+
+    if (k < tries) Sys.sleep(min(60, 10 * k))
+  }
+
+  if (is.null(last_html)) last_html <- ""   # so the attribute can attach
+  attr(last_html, "blocked") <- TRUE
+  last_html
+}
+
+# Fetch strategy: try one quick lightweight request first (works whenever the
+# runner IP is not flagged), then fall back to headless Chrome, which can pass
+# the SiteGround JavaScript challenge.
+page_text <- NULL
+
+if (TRY_LIGHTWEIGHT_FIRST) {
+  cat("  • Trying a lightweight request first...\n")
+  page_text <- tryCatch(
+    fetch_calendar_text(url, ua, tries = 1, timeout = 60),
+    error = function(e) {
+      cat("  • Lightweight request errored:", conditionMessage(e), "\n")
+      NULL
+    }
+  )
+}
 
 if (is.null(page_text) || isTRUE(attr(page_text, "blocked"))) {
-  stop("❌ Blocked: the NACSW host (SiteGround) served an anti-bot CAPTCHA ",
-       "instead of the\n   calendar on every attempt, so the page could not be ",
-       "scraped from this IP.\n   This is a host-level block on the runner's IP, ",
-       "not a parsing problem.\n",
-       "   Options: (1) re-run later (the challenge is often intermittent);\n",
-       "   (2) render with a headless browser via rvest::read_html_live()/chromote;\n",
-       "   (3) run from a non-flagged IP (self-hosted runner or a local cron job);\n",
-       "   (4) ask NACSW to allowlist your scraper or provide a data export.")
+  cat("  • Falling back to a headless browser to pass the anti-bot challenge...\n")
+  page_text <- tryCatch(
+    fetch_calendar_text_live(url, FETCH_TRIES, FETCH_TIMEOUT, HEADLESS_SETTLE),
+    error = function(e) {
+      stop("❌ Error: headless-browser fetch could not run: ",
+           conditionMessage(e))
+    }
+  )
+}
+
+if (is.null(page_text) || isTRUE(attr(page_text, "blocked"))) {
+  stop("❌ Blocked: even a headless browser could not get past SiteGround's\n",
+       "   anti-bot challenge on every attempt. The challenge is served before\n",
+       "   the calendar, so nothing could be scraped from this IP.\n",
+       "   Remaining options:\n",
+       "   (1) re-run later (the challenge is often intermittent, and GitHub\n",
+       "       rotates runner IPs between runs);\n",
+       "   (2) run from a non-flagged IP (self-hosted runner or a local cron\n",
+       "       job on a residential connection) -- the most reliable fix;\n",
+       "   (3) ask NACSW to allowlist your scraper or provide a data export.")
 }
 
 webpage <- read_html(page_text)
