@@ -69,6 +69,20 @@ ua <- paste0("Mozilla/5.0 (Windows NT 10.0; Win64; x64) ",
 FETCH_TIMEOUT <- 240   # seconds per attempt
 FETCH_TRIES   <- 5     # attempts before giving up
 
+# Headless-browser fallback (Option 1). When the lightweight httr request is met
+# with SiteGround's sgcaptcha challenge, re-fetch with a real headless Chrome
+# (via the 'chromote' package). Chrome executes the challenge's JavaScript,
+# solves the proof-of-work, follows the redirect, and returns the real calendar
+# HTML -- exactly as a normal browser would.
+#   Requirements on the runner:
+#     * the 'chromote' R package installed, and
+#     * a Chrome/Chromium binary (GitHub's ubuntu-latest images ship one;
+#       chromote finds it automatically, or point it at one via env var
+#       CHROMOTE_CHROME=/path/to/chrome).
+TRY_LIGHTWEIGHT_FIRST <- TRUE  # attempt one quick httr GET before going headless
+HEADLESS_SETTLE       <- 8     # extra seconds to let calendar rows finish rendering
+
+
 # True if the returned HTML is SiteGround's bot challenge rather than the page.
 is_blocked_page <- function(txt) {
   grepl("sgcaptcha|/\\.well-known/sgcaptcha|captcha|Are you human",
