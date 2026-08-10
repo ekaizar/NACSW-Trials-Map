@@ -23,6 +23,7 @@ library(tidygeocoder)
 
 # Set options
 options(timeout = 300)
+options(chromote.timeout = 120)
 
 ################################################################################
 # CONFIGURATION
