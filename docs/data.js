@@ -1,113 +1,14 @@
-const DATA_UPDATED = "November 2, 2026";
+const DATA_UPDATED = "November 9, 2026";
 const TRIALS_DATA = 
 [
-  {
-    "Date": "2024-11-02",
-    "Location": "Callaway, VA",
-    "Host": "Canny K9 Companions LLC",
-    "TrialTypes": "ELT-S, NW1, NW2",
-    "EventCount": 3,
-    "Latitude": 37.0351,
-    "Longitude": -80.0677
-  },
-  {
-    "Date": "2024-11-02",
-    "Location": "Greenview, IL",
-    "Host": "Capitol Canine Dog Sports",
-    "TrialTypes": "NW1, NW2",
-    "EventCount": 2,
-    "Latitude": 40.0804,
-    "Longitude": -89.7658
-  },
-  {
-    "Date": "2024-11-02",
-    "Location": "Kennebunkport, ME",
-    "Host": "Elizabeth Dutton",
-    "TrialTypes": "ELT-P, NW3",
-    "EventCount": 2,
-    "Latitude": 43.3225,
-    "Longitude": -70.4351
-  },
-  {
-    "Date": "2024-11-02",
-    "Location": "Mays Landing, NJ",
-    "Host": "Rotts-n-Notts Nosework, LLC",
-    "TrialTypes": "NW3, L1E, NW1",
-    "EventCount": 3,
-    "Latitude": 39.4377,
-    "Longitude": -74.718
-  },
-  {
-    "Date": "2024-11-02",
-    "Location": "Mill Spring, NC",
-    "Host": "Foothills Canine Academy, LLC",
-    "TrialTypes": "NW3",
-    "EventCount": 1,
-    "Latitude": 35.2552,
-    "Longitude": -82.177
-  },
-  {
-    "Date": "2024-11-02",
-    "Location": "Shawnee, OK",
-    "Host": "The Doggie Spot, LLC",
-    "TrialTypes": "ELT, NW3",
-    "EventCount": 2,
-    "Latitude": 35.3539,
-    "Longitude": -96.9542
-  },
-  {
-    "Date": "2024-11-02",
-    "Location": "Valencia, CA",
-    "Host": "Pink Biscuit K9s",
-    "TrialTypes": "L1I, L2I, L1C, L2C",
-    "EventCount": 4,
-    "Latitude": 34.4336,
-    "Longitude": -118.5164
-  },
-  {
-    "Date": "2024-11-02",
-    "Location": "Wappingers Falls, NY",
-    "Host": "Top Notch Dogs, LLC",
-    "TrialTypes": "ELT-P, ELT-S, L1C",
-    "EventCount": 3,
-    "Latitude": 41.5512,
-    "Longitude": -73.8934
-  },
-  {
-    "Date": "2024-11-03",
-    "Location": "McMinnville, OR",
-    "Host": "Doglandia LLC and Carol Forsberg",
-    "TrialTypes": "NW2, ELT",
-    "EventCount": 2,
-    "Latitude": 45.2535,
-    "Longitude": -123.1692
-  },
-  {
-    "Date": "2024-11-04",
-    "Location": "Duluth, GA",
-    "Host": "Right Choice Dog Training, LLC",
-    "TrialTypes": "NW3, ELT",
-    "EventCount": 2,
-    "Latitude": 34.0287,
-    "Longitude": -84.1603
-  },
-  {
-    "Date": "2024-11-08",
-    "Location": "Montrose, CO",
-    "Host": "Mountain Dogs, LLC",
-    "TrialTypes": "NW3, ELT",
-    "EventCount": 2,
-    "Latitude": 38.4856,
-    "Longitude": -107.8331
-  },
   {
     "Date": "2024-11-09",
     "Location": "Canoga Park, CA",
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW1, L3I, L3C",
     "EventCount": 3,
-    "Latitude": 34.2155,
-    "Longitude": -118.5517
+    "Latitude": 34.1869,
+    "Longitude": -118.5558
   },
   {
     "Date": "2024-11-09",
@@ -115,8 +16,8 @@ const TRIALS_DATA =
     "Host": "Pocono Nose Work",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 41.5699,
-    "Longitude": -74.8804
+    "Latitude": 41.5288,
+    "Longitude": -74.865
   },
   {
     "Date": "2024-11-09",
@@ -124,8 +25,8 @@ const TRIALS_DATA =
     "Host": "Anita Cheesman and Jessica Koester",
     "TrialTypes": "NW1, L1C",
     "EventCount": 2,
-    "Latitude": 33.1545,
-    "Longitude": -117.0715
+    "Latitude": 33.1088,
+    "Longitude": -117.0568
   },
   {
     "Date": "2024-11-09",
@@ -133,8 +34,8 @@ const TRIALS_DATA =
     "Host": "Sniffers Anonymous",
     "TrialTypes": "NW3, L1I, L1C",
     "EventCount": 3,
-    "Latitude": 34.7536,
-    "Longitude": -86.5971
+    "Latitude": 34.7458,
+    "Longitude": -86.5752
   },
   {
     "Date": "2024-11-09",
@@ -142,8 +43,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "NW3, L2I, NW2",
     "EventCount": 3,
-    "Latitude": 43.4517,
-    "Longitude": -70.9437
+    "Latitude": 43.4021,
+    "Longitude": -71.011
   },
   {
     "Date": "2024-11-09",
@@ -151,8 +52,8 @@ const TRIALS_DATA =
     "Host": "Fur Better Fur Worse, LLC",
     "TrialTypes": "ELT-S",
     "EventCount": 1,
-    "Latitude": 41.4948,
-    "Longitude": -90.5111
+    "Latitude": 41.4585,
+    "Longitude": -90.4681
   },
   {
     "Date": "2024-11-09",
@@ -160,8 +61,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY, LLC",
     "TrialTypes": "L3I, L3C, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 40.9447,
-    "Longitude": -73.7715
+    "Latitude": 40.9346,
+    "Longitude": -73.8159
   },
   {
     "Date": "2024-11-09",
@@ -169,8 +70,8 @@ const TRIALS_DATA =
     "Host": "Northwest Obedience Club Inc.",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 42.0711,
-    "Longitude": -88.1089
+    "Latitude": 42.0229,
+    "Longitude": -88.112
   },
   {
     "Date": "2024-11-10",
@@ -178,8 +79,8 @@ const TRIALS_DATA =
     "Host": "Hoppin’ in the Hills",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 28.1776,
-    "Longitude": -82.6021
+    "Latitude": 28.1939,
+    "Longitude": -82.5532
   },
   {
     "Date": "2024-11-11",
@@ -187,8 +88,8 @@ const TRIALS_DATA =
     "Host": "Anita Cheesman and Jessica Koester",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 33.0802,
-    "Longitude": -117.0321
+    "Latitude": 33.0823,
+    "Longitude": -117.1278
   },
   {
     "Date": "2024-11-11",
@@ -196,8 +97,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "L1C, L2I, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 35.635,
-    "Longitude": -120.6474
+    "Latitude": 35.6666,
+    "Longitude": -120.7016
   },
   {
     "Date": "2024-11-15",
@@ -205,8 +106,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT, ELT-P, NW2, NW1",
     "EventCount": 5,
-    "Latitude": 38.96,
-    "Longitude": -75.5728
+    "Latitude": 38.9084,
+    "Longitude": -75.578
   },
   {
     "Date": "2024-11-15",
@@ -214,8 +115,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "L2C, NW2, NW1, L1C",
     "EventCount": 4,
-    "Latitude": 34.1292,
-    "Longitude": -117.5755
+    "Latitude": 34.1332,
+    "Longitude": -117.5962
   },
   {
     "Date": "2024-11-16",
@@ -223,8 +124,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "ELT-S, NW1, L2C, L2I",
     "EventCount": 4,
-    "Latitude": 47.2948,
-    "Longitude": -122.2796
+    "Latitude": 47.2661,
+    "Longitude": -122.2545
   },
   {
     "Date": "2024-11-16",
@@ -232,8 +133,8 @@ const TRIALS_DATA =
     "Host": "MasterPeace Dog Training",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 42.0341,
-    "Longitude": -71.2319
+    "Latitude": 42.0684,
+    "Longitude": -71.2424
   },
   {
     "Date": "2024-11-16",
@@ -241,8 +142,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 30.6026,
-    "Longitude": -98.3017
+    "Latitude": 30.5971,
+    "Longitude": -98.2957
   },
   {
     "Date": "2024-11-16",
@@ -250,8 +151,8 @@ const TRIALS_DATA =
     "Host": "Sierra Sniffing Canines",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 39.258,
-    "Longitude": -120.9878
+    "Latitude": 39.3068,
+    "Longitude": -121.0031
   },
   {
     "Date": "2024-11-16",
@@ -259,8 +160,8 @@ const TRIALS_DATA =
     "Host": "Patience Unlimited Professional Dog Training",
     "TrialTypes": "NW1, L1C, L1E, L1I",
     "EventCount": 4,
-    "Latitude": 32.1737,
-    "Longitude": -110.9968
+    "Latitude": 32.2398,
+    "Longitude": -110.9525
   },
   {
     "Date": "2024-11-16",
@@ -268,8 +169,8 @@ const TRIALS_DATA =
     "Host": "Whole Dog Institute, LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 36.4002,
-    "Longitude": -79.3678
+    "Latitude": 36.3653,
+    "Longitude": -79.3825
   },
   {
     "Date": "2024-11-23",
@@ -277,8 +178,8 @@ const TRIALS_DATA =
     "Host": "Kiddie Christie",
     "TrialTypes": "L1E, NW1, NW3",
     "EventCount": 3,
-    "Latitude": 44.1549,
-    "Longitude": -123.1034
+    "Latitude": 44.0995,
+    "Longitude": -123.079
   },
   {
     "Date": "2024-11-23",
@@ -286,8 +187,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 38.8452,
-    "Longitude": -107.8892
+    "Latitude": 38.7872,
+    "Longitude": -107.8296
   },
   {
     "Date": "2024-11-23",
@@ -295,8 +196,8 @@ const TRIALS_DATA =
     "Host": "Your Dog Knows LLC",
     "TrialTypes": "NW3, L3I, L1V",
     "EventCount": 3,
-    "Latitude": 37.7544,
-    "Longitude": -78.2318
+    "Latitude": 37.7882,
+    "Longitude": -78.2853
   },
   {
     "Date": "2024-11-23",
@@ -304,8 +205,8 @@ const TRIALS_DATA =
     "Host": "Paws n' Sniff",
     "TrialTypes": "NW1, L1E, ELT-S",
     "EventCount": 3,
-    "Latitude": 40.5443,
-    "Longitude": -75.1665
+    "Latitude": 40.5627,
+    "Longitude": -75.2177
   },
   {
     "Date": "2024-11-23",
@@ -313,8 +214,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "NW3, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 40.4649,
-    "Longitude": -79.4138
+    "Latitude": 40.4877,
+    "Longitude": -79.4636
   },
   {
     "Date": "2024-11-23",
@@ -322,8 +223,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 36.0089,
-    "Longitude": -86.507
+    "Latitude": 35.9912,
+    "Longitude": -86.5094
   },
   {
     "Date": "2024-11-29",
@@ -331,8 +232,8 @@ const TRIALS_DATA =
     "Host": "JavaK9s",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 33.5062,
-    "Longitude": -117.6901
+    "Latitude": 33.4161,
+    "Longitude": -117.646
   },
   {
     "Date": "2024-11-29",
@@ -340,8 +241,8 @@ const TRIALS_DATA =
     "Host": "Tracey Costa",
     "TrialTypes": "ELT, L1C, NW2",
     "EventCount": 3,
-    "Latitude": 42.1151,
-    "Longitude": -71.2292
+    "Latitude": 42.0168,
+    "Longitude": -71.2039
   },
   {
     "Date": "2024-11-30",
@@ -349,8 +250,8 @@ const TRIALS_DATA =
     "Host": "Gretchen Hofheins-Wackerfuss",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.8578,
-    "Longitude": -92.9375
+    "Latitude": 44.8449,
+    "Longitude": -92.9658
   },
   {
     "Date": "2024-11-30",
@@ -358,8 +259,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 34.1806,
-    "Longitude": -84.1178
+    "Latitude": 34.229,
+    "Longitude": -84.0966
   },
   {
     "Date": "2024-11-30",
@@ -367,8 +268,8 @@ const TRIALS_DATA =
     "Host": "NEWK9 Scent Work LLC",
     "TrialTypes": "ELT-S, ELT",
     "EventCount": 2,
-    "Latitude": 44.5066,
-    "Longitude": -88.0588
+    "Latitude": 44.5556,
+    "Longitude": -88.0574
   },
   {
     "Date": "2024-11-30",
@@ -376,8 +277,8 @@ const TRIALS_DATA =
     "Host": "Sirius K-9 Solutions",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.617,
-    "Longitude": -74.8222
+    "Latitude": 40.6089,
+    "Longitude": -74.8728
   },
   {
     "Date": "2024-11-30",
@@ -385,8 +286,8 @@ const TRIALS_DATA =
     "Host": "Central Coast Nosework Club, Inc.",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 35.3406,
-    "Longitude": -120.8454
+    "Latitude": 35.3183,
+    "Longitude": -120.8663
   },
   {
     "Date": "2024-11-30",
@@ -394,8 +295,8 @@ const TRIALS_DATA =
     "Host": "Hoppin’ in the Hills",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 28.0161,
-    "Longitude": -82.1571
+    "Latitude": 28.0653,
+    "Longitude": -82.0922
   },
   {
     "Date": "2024-11-30",
@@ -403,8 +304,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 40.2062,
-    "Longitude": -75.3081
+    "Latitude": 40.1953,
+    "Longitude": -75.3199
   },
   {
     "Date": "2024-12-06",
@@ -412,8 +313,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "ELT-P, ELT",
     "EventCount": 2,
-    "Latitude": 42.5853,
-    "Longitude": -88.0695
+    "Latitude": 42.5383,
+    "Longitude": -88.1385
   },
   {
     "Date": "2024-12-06",
@@ -421,8 +322,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "ELT-P, ELT-S, L2C",
     "EventCount": 3,
-    "Latitude": 42.2127,
-    "Longitude": -83.5858
+    "Latitude": 42.1951,
+    "Longitude": -83.5793
   },
   {
     "Date": "2024-12-07",
@@ -430,8 +331,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 42.9733,
-    "Longitude": -78.1801
+    "Latitude": 42.9635,
+    "Longitude": -78.1827
   },
   {
     "Date": "2024-12-07",
@@ -439,8 +340,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT-P, ELT-S",
     "EventCount": 2,
-    "Latitude": 38.9839,
-    "Longitude": -76.7417
+    "Latitude": 38.9634,
+    "Longitude": -76.7425
   },
   {
     "Date": "2024-12-07",
@@ -448,8 +349,8 @@ const TRIALS_DATA =
     "Host": "Let's Talk Dogs, LLC and About Face K9 Academy",
     "TrialTypes": "ELT-P, NW2",
     "EventCount": 2,
-    "Latitude": 46.6903,
-    "Longitude": -122.9837
+    "Latitude": 46.7595,
+    "Longitude": -122.967
   },
   {
     "Date": "2024-12-07",
@@ -457,8 +358,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 40.0523,
-    "Longitude": -75.6033
+    "Latitude": 40.132,
+    "Longitude": -75.6144
   },
   {
     "Date": "2024-12-07",
@@ -466,8 +367,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.0827,
-    "Longitude": -81.319
+    "Latitude": 29.1308,
+    "Longitude": -81.3315
   },
   {
     "Date": "2024-12-07",
@@ -475,8 +376,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.3553,
-    "Longitude": -118.9487
+    "Latitude": 34.3943,
+    "Longitude": -118.8836
   },
   {
     "Date": "2024-12-07",
@@ -484,8 +385,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "L3V, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 41.2987,
-    "Longitude": -75.3699
+    "Latitude": 41.2891,
+    "Longitude": -75.2877
   },
   {
     "Date": "2024-12-07",
@@ -493,8 +394,8 @@ const TRIALS_DATA =
     "Host": "Clermont County Dog Training Club",
     "TrialTypes": "ELT, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 38.5419,
-    "Longitude": -84.796
+    "Latitude": 38.4875,
+    "Longitude": -84.8826
   },
   {
     "Date": "2024-12-09",
@@ -502,8 +403,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 37.9165,
-    "Longitude": -121.3366
+    "Latitude": 38.0066,
+    "Longitude": -121.2735
   },
   {
     "Date": "2024-12-13",
@@ -511,8 +412,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT-P, ELT-S, NW1",
     "EventCount": 4,
-    "Latitude": 40.6169,
-    "Longitude": -74.9293
+    "Latitude": 40.5478,
+    "Longitude": -74.9377
   },
   {
     "Date": "2024-12-14",
@@ -520,8 +421,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.1094,
-    "Longitude": -117.6405
+    "Latitude": 34.0265,
+    "Longitude": -117.6715
   },
   {
     "Date": "2024-12-21",
@@ -529,8 +430,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "L1V, L2I, NW1, L2E",
     "EventCount": 4,
-    "Latitude": 30.5371,
-    "Longitude": -97.8178
+    "Latitude": 30.5245,
+    "Longitude": -97.839
   },
   {
     "Date": "2024-12-21",
@@ -538,8 +439,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training, LLC",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 33.0357,
-    "Longitude": -82.4583
+    "Latitude": 33.0468,
+    "Longitude": -82.3892
   },
   {
     "Date": "2024-12-21",
@@ -547,8 +448,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT-P, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 39.3568,
-    "Longitude": -76.8835
+    "Latitude": 39.354,
+    "Longitude": -76.8629
   },
   {
     "Date": "2024-12-27",
@@ -556,8 +457,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT-P, ELT, ELT-S",
     "EventCount": 3,
-    "Latitude": 39.0403,
-    "Longitude": -76.6197
+    "Latitude": 39.0644,
+    "Longitude": -76.569
   },
   {
     "Date": "2024-12-28",
@@ -565,8 +466,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Magic",
     "TrialTypes": "L1V, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 48.7775,
-    "Longitude": -122.4494
+    "Latitude": 48.7742,
+    "Longitude": -122.5087
   },
   {
     "Date": "2024-12-28",
@@ -574,8 +475,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 34.1667,
-    "Longitude": -84.0939
+    "Latitude": 34.2121,
+    "Longitude": -84.181
   },
   {
     "Date": "2024-12-28",
@@ -583,8 +484,8 @@ const TRIALS_DATA =
     "Host": "Helix Fairweather & Doglandia, LLC",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 44.9455,
-    "Longitude": -123.0039
+    "Latitude": 44.9127,
+    "Longitude": -123.0209
   },
   {
     "Date": "2024-12-28",
@@ -592,8 +493,8 @@ const TRIALS_DATA =
     "Host": "Blockade Runners Flyball",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 37.2531,
-    "Longitude": -76.6782
+    "Latitude": 37.26,
+    "Longitude": -76.7265
   },
   {
     "Date": "2024-12-29",
@@ -601,8 +502,8 @@ const TRIALS_DATA =
     "Host": "Think Pawsitive Dog Training",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 43.0531,
-    "Longitude": -88.2818
+    "Latitude": 43.0329,
+    "Longitude": -88.268
   },
   {
     "Date": "2024-12-31",
@@ -610,8 +511,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 39.3535,
-    "Longitude": -88.6251
+    "Latitude": 39.3794,
+    "Longitude": -88.5958
   },
   {
     "Date": "2025-01-03",
@@ -619,8 +520,8 @@ const TRIALS_DATA =
     "Host": "Savvy Dog Sports",
     "TrialTypes": "ELT-S, ELT",
     "EventCount": 2,
-    "Latitude": 43.2256,
-    "Longitude": -77.9696
+    "Latitude": 43.2597,
+    "Longitude": -77.8928
   },
   {
     "Date": "2025-01-03",
@@ -628,8 +529,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT, ELT-P, ELT-S",
     "EventCount": 3,
-    "Latitude": 39.752,
-    "Longitude": -77.3738
+    "Latitude": 39.7197,
+    "Longitude": -77.289
   },
   {
     "Date": "2025-01-04",
@@ -637,8 +538,8 @@ const TRIALS_DATA =
     "Host": "Linda Buchanan",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 33.2774,
-    "Longitude": -117.2404
+    "Latitude": 33.2551,
+    "Longitude": -117.2466
   },
   {
     "Date": "2025-01-09",
@@ -646,8 +547,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Labradors",
     "TrialTypes": "ELT-S, NW3, ELT, ELT-P",
     "EventCount": 4,
-    "Latitude": 39.0198,
-    "Longitude": -76.0515
+    "Latitude": 39.0704,
+    "Longitude": -76.1073
   },
   {
     "Date": "2025-01-10",
@@ -655,8 +556,8 @@ const TRIALS_DATA =
     "Host": "Paws Plus Training, LLC",
     "TrialTypes": "NW3, NW1, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 37.5612,
-    "Longitude": -76.409
+    "Latitude": 37.5119,
+    "Longitude": -76.4923
   },
   {
     "Date": "2025-01-11",
@@ -664,8 +565,8 @@ const TRIALS_DATA =
     "Host": "Dog Fun Forever, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 36.0877,
-    "Longitude": -79.7635
+    "Latitude": 36.0944,
+    "Longitude": -79.8309
   },
   {
     "Date": "2025-01-11",
@@ -673,8 +574,8 @@ const TRIALS_DATA =
     "Host": "Hoppin’ in the Hills",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 27.8672,
-    "Longitude": -82.1917
+    "Latitude": 27.8552,
+    "Longitude": -82.2678
   },
   {
     "Date": "2025-01-13",
@@ -682,8 +583,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 37.7356,
-    "Longitude": -120.8173
+    "Latitude": 37.7987,
+    "Longitude": -120.8276
   },
   {
     "Date": "2025-01-18",
@@ -691,8 +592,8 @@ const TRIALS_DATA =
     "Host": "Daphne Melillo",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 32.7896,
-    "Longitude": -86.6247
+    "Latitude": 32.8399,
+    "Longitude": -86.5913
   },
   {
     "Date": "2025-01-18",
@@ -700,8 +601,8 @@ const TRIALS_DATA =
     "Host": "Wells Creek Dog Training",
     "TrialTypes": "ELT, L1I, NW2",
     "EventCount": 3,
-    "Latitude": 44.0743,
-    "Longitude": -123.382
+    "Latitude": 44.0388,
+    "Longitude": -123.3375
   },
   {
     "Date": "2025-01-18",
@@ -709,8 +610,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot of Gold K9 Scenter",
     "TrialTypes": "ELT-S, L2I, L2C, ELT",
     "EventCount": 4,
-    "Latitude": 40.4647,
-    "Longitude": -74.9079
+    "Latitude": 40.4713,
+    "Longitude": -74.8898
   },
   {
     "Date": "2025-01-18",
@@ -718,8 +619,8 @@ const TRIALS_DATA =
     "Host": "Heng Ten K9 Training",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 30.6014,
-    "Longitude": -98.233
+    "Latitude": 30.6007,
+    "Longitude": -98.2432
   },
   {
     "Date": "2025-01-18",
@@ -727,8 +628,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.6993,
-    "Longitude": -82.0397
+    "Latitude": 29.6597,
+    "Longitude": -82.0046
   },
   {
     "Date": "2025-01-18",
@@ -736,8 +637,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY, LLC",
     "TrialTypes": "NW2, NW3, ELT-S",
     "EventCount": 3,
-    "Latitude": 40.9265,
-    "Longitude": -73.8263
+    "Latitude": 40.8896,
+    "Longitude": -73.7642
   },
   {
     "Date": "2025-01-18",
@@ -745,8 +646,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 34.0866,
-    "Longitude": -117.1883
+    "Latitude": 34.0451,
+    "Longitude": -117.1526
   },
   {
     "Date": "2025-01-18",
@@ -754,8 +655,8 @@ const TRIALS_DATA =
     "Host": "Helix Fairweather & Doglandia, LLC",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 45.1437,
-    "Longitude": -123.438
+    "Latitude": 45.0985,
+    "Longitude": -123.3555
   },
   {
     "Date": "2025-01-25",
@@ -763,8 +664,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training, LLC",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 34.1237,
-    "Longitude": -83.2038
+    "Latitude": 34.0975,
+    "Longitude": -83.2322
   },
   {
     "Date": "2025-01-25",
@@ -772,8 +673,8 @@ const TRIALS_DATA =
     "Host": "The Doggie Spot, LLC",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 35.2858,
-    "Longitude": -96.9831
+    "Latitude": 35.2363,
+    "Longitude": -96.9598
   },
   {
     "Date": "2025-01-31",
@@ -781,8 +682,8 @@ const TRIALS_DATA =
     "Host": "Anita Cheesman and Jessica Koester",
     "TrialTypes": "ELT-S, NW3",
     "EventCount": 2,
-    "Latitude": 33.1876,
-    "Longitude": -117.2571
+    "Latitude": 33.1827,
+    "Longitude": -117.2815
   },
   {
     "Date": "2025-02-01",
@@ -790,8 +691,8 @@ const TRIALS_DATA =
     "Host": "Scentwork.org",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.2304,
-    "Longitude": -118.5315
+    "Latitude": 34.2422,
+    "Longitude": -118.5684
   },
   {
     "Date": "2025-02-08",
@@ -799,8 +700,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses LLC",
     "TrialTypes": "ELT, NW1",
     "EventCount": 2,
-    "Latitude": 35.8841,
-    "Longitude": -86.3957
+    "Latitude": 35.8645,
+    "Longitude": -86.3767
   },
   {
     "Date": "2025-02-08",
@@ -808,8 +709,8 @@ const TRIALS_DATA =
     "Host": "Kiddy Christie",
     "TrialTypes": "NW3, L1C, NW1",
     "EventCount": 3,
-    "Latitude": 44.0622,
-    "Longitude": -123.3185
+    "Latitude": 44.0482,
+    "Longitude": -123.3537
   },
   {
     "Date": "2025-02-14",
@@ -817,8 +718,8 @@ const TRIALS_DATA =
     "Host": "The Sniffing Hound",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.1223,
-    "Longitude": -75.8875
+    "Latitude": 40.0769,
+    "Longitude": -75.8986
   },
   {
     "Date": "2025-02-15",
@@ -826,8 +727,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Magic",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 48.7082,
-    "Longitude": -122.4443
+    "Latitude": 48.7542,
+    "Longitude": -122.4755
   },
   {
     "Date": "2025-02-15",
@@ -835,8 +736,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot of Gold K9 Scenter",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 40.4707,
-    "Longitude": -74.8276
+    "Latitude": 40.5538,
+    "Longitude": -74.8456
   },
   {
     "Date": "2025-02-15",
@@ -844,8 +745,8 @@ const TRIALS_DATA =
     "Host": "Rotts-n-Notts Nosework, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.1363,
-    "Longitude": -74.2279
+    "Latitude": 40.0933,
+    "Longitude": -74.2141
   },
   {
     "Date": "2025-02-15",
@@ -853,8 +754,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "L3C, L1I, NW2",
     "EventCount": 3,
-    "Latitude": 39.472,
-    "Longitude": -76.6416
+    "Latitude": 39.4114,
+    "Longitude": -76.6574
   },
   {
     "Date": "2025-02-15",
@@ -862,8 +763,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 39.9085,
-    "Longitude": -74.7885
+    "Latitude": 39.9022,
+    "Longitude": -74.8216
   },
   {
     "Date": "2025-02-15",
@@ -871,8 +772,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 37.6622,
-    "Longitude": -121.0406
+    "Latitude": 37.6732,
+    "Longitude": -121.0045
   },
   {
     "Date": "2025-02-15",
@@ -880,8 +781,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY, LLC",
     "TrialTypes": "L1I, L2C, NW3",
     "EventCount": 3,
-    "Latitude": 41.0595,
-    "Longitude": -73.7857
+    "Latitude": 41.0088,
+    "Longitude": -73.7183
   },
   {
     "Date": "2025-02-15",
@@ -889,8 +790,8 @@ const TRIALS_DATA =
     "Host": "Whole Dog Institute, LLC",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 35.7325,
-    "Longitude": -77.8902
+    "Latitude": 35.6677,
+    "Longitude": -77.9522
   },
   {
     "Date": "2025-02-16",
@@ -898,8 +799,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "ELT, ELT-S",
     "EventCount": 2,
-    "Latitude": 33.9659,
-    "Longitude": -117.6754
+    "Latitude": 34.007,
+    "Longitude": -117.6566
   },
   {
     "Date": "2025-02-22",
@@ -907,8 +808,8 @@ const TRIALS_DATA =
     "Host": "The Can Do K9, LLC",
     "TrialTypes": "NW1, NW3",
     "EventCount": 2,
-    "Latitude": 35.0476,
-    "Longitude": -106.6146
+    "Latitude": 35.0688,
+    "Longitude": -106.6969
   },
   {
     "Date": "2025-02-23",
@@ -916,8 +817,8 @@ const TRIALS_DATA =
     "Host": "Patience Unlimited Professional Dog Training",
     "TrialTypes": "NW3, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 31.9785,
-    "Longitude": -110.2599
+    "Latitude": 31.9386,
+    "Longitude": -110.3339
   },
   {
     "Date": "2025-02-24",
@@ -925,8 +826,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "NW3, L2V, L1V",
     "EventCount": 3,
-    "Latitude": 35.6255,
-    "Longitude": -120.6972
+    "Latitude": 35.5885,
+    "Longitude": -120.6848
   },
   {
     "Date": "2025-02-28",
@@ -934,8 +835,8 @@ const TRIALS_DATA =
     "Host": "Marin Humane",
     "TrialTypes": "L1C, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 38.0093,
-    "Longitude": -122.5117
+    "Latitude": 37.9727,
+    "Longitude": -122.4922
   },
   {
     "Date": "2025-03-01",
@@ -943,8 +844,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.1739,
-    "Longitude": -74.7106
+    "Latitude": 41.1344,
+    "Longitude": -74.7392
   },
   {
     "Date": "2025-03-01",
@@ -952,8 +853,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 29.8307,
-    "Longitude": -82.0239
+    "Latitude": 29.7403,
+    "Longitude": -82.0642
   },
   {
     "Date": "2025-03-01",
@@ -961,8 +862,8 @@ const TRIALS_DATA =
     "Host": "About Face K9 Academy and Let's Talk Dogs, LLC",
     "TrialTypes": "NW3, L1C, L1I",
     "EventCount": 3,
-    "Latitude": 46.805,
-    "Longitude": -123.2789
+    "Latitude": 46.8301,
+    "Longitude": -123.2412
   },
   {
     "Date": "2025-03-01",
@@ -970,8 +871,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "ELT-S, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 38.5885,
-    "Longitude": -77.0597
+    "Latitude": 38.5299,
+    "Longitude": -77.0402
   },
   {
     "Date": "2025-03-01",
@@ -979,8 +880,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 34.3458,
-    "Longitude": -119.0144
+    "Latitude": 34.3805,
+    "Longitude": -119.066
   },
   {
     "Date": "2025-03-01",
@@ -988,8 +889,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.2185,
-    "Longitude": -79.5541
+    "Latitude": 40.2386,
+    "Longitude": -79.5735
   },
   {
     "Date": "2025-03-02",
@@ -997,8 +898,8 @@ const TRIALS_DATA =
     "Host": "The Doggie Spot, LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 35.376,
-    "Longitude": -96.9699
+    "Latitude": 35.3307,
+    "Longitude": -96.9742
   },
   {
     "Date": "2025-03-07",
@@ -1006,8 +907,8 @@ const TRIALS_DATA =
     "Host": "For Your K9",
     "TrialTypes": "L1C, L2C, L1I, L2I",
     "EventCount": 4,
-    "Latitude": 42.0853,
-    "Longitude": -88.2917
+    "Latitude": 41.9953,
+    "Longitude": -88.2697
   },
   {
     "Date": "2025-03-07",
@@ -1015,8 +916,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW3, ELT, ELT-S, L1I",
     "EventCount": 4,
-    "Latitude": 40.1826,
-    "Longitude": -75.5481
+    "Latitude": 40.1453,
+    "Longitude": -75.5881
   },
   {
     "Date": "2025-03-07",
@@ -1024,8 +925,8 @@ const TRIALS_DATA =
     "Host": "K9 Nose Adventures, LLC",
     "TrialTypes": "ELT, NW1, NW2, L1C, L1I",
     "EventCount": 5,
-    "Latitude": 36.2245,
-    "Longitude": -79.938
+    "Latitude": 36.2325,
+    "Longitude": -79.9379
   },
   {
     "Date": "2025-03-08",
@@ -1033,8 +934,8 @@ const TRIALS_DATA =
     "Host": "Paws Plus Training, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 37.343,
-    "Longitude": -78.4267
+    "Latitude": 37.3091,
+    "Longitude": -78.4185
   },
   {
     "Date": "2025-03-08",
@@ -1042,8 +943,8 @@ const TRIALS_DATA =
     "Host": "Beyond Elevation K9 Training",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 40.5968,
-    "Longitude": -105.0776
+    "Latitude": 40.5848,
+    "Longitude": -105.0973
   },
   {
     "Date": "2025-03-08",
@@ -1051,8 +952,8 @@ const TRIALS_DATA =
     "Host": "Bay State Sniffers",
     "TrialTypes": "L1C, ELT-S, L1I, L3I",
     "EventCount": 4,
-    "Latitude": 42.058,
-    "Longitude": -71.2467
+    "Latitude": 42.1053,
+    "Longitude": -71.2636
   },
   {
     "Date": "2025-03-08",
@@ -1060,8 +961,8 @@ const TRIALS_DATA =
     "Host": "Southeast Scent Work Alliance, LLC",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 34.2696,
-    "Longitude": -85.1362
+    "Latitude": 34.2916,
+    "Longitude": -85.2145
   },
   {
     "Date": "2025-03-08",
@@ -1069,8 +970,8 @@ const TRIALS_DATA =
     "Host": "KBP Dog Training",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.306,
-    "Longitude": -93.9684
+    "Latitude": 41.3692,
+    "Longitude": -94.0019
   },
   {
     "Date": "2025-03-10",
@@ -1078,8 +979,8 @@ const TRIALS_DATA =
     "Host": "Linda Buchanan",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 33.9731,
-    "Longitude": -117.3526
+    "Latitude": 33.9736,
+    "Longitude": -117.4147
   },
   {
     "Date": "2025-03-14",
@@ -1087,8 +988,8 @@ const TRIALS_DATA =
     "Host": "Successful Sniffer",
     "TrialTypes": "NW3, ELT-S, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 33.4959,
-    "Longitude": -112.0466
+    "Latitude": 33.4062,
+    "Longitude": -112.1233
   },
   {
     "Date": "2025-03-14",
@@ -1096,8 +997,8 @@ const TRIALS_DATA =
     "Host": "Oriole Dog Training Club",
     "TrialTypes": "NW3, L2I, NW2",
     "EventCount": 3,
-    "Latitude": 39.5265,
-    "Longitude": -76.6021
+    "Latitude": 39.5631,
+    "Longitude": -76.5753
   },
   {
     "Date": "2025-03-15",
@@ -1105,8 +1006,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Magic",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 48.9672,
-    "Longitude": -122.7193
+    "Latitude": 48.9977,
+    "Longitude": -122.7155
   },
   {
     "Date": "2025-03-15",
@@ -1114,8 +1015,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.241,
-    "Longitude": -74.0522
+    "Latitude": 41.2288,
+    "Longitude": -74.0449
   },
   {
     "Date": "2025-03-15",
@@ -1123,8 +1024,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 34.2494,
-    "Longitude": -83.7972
+    "Latitude": 34.2825,
+    "Longitude": -83.7869
   },
   {
     "Date": "2025-03-15",
@@ -1132,8 +1033,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "ELT-S, L1V, L1I",
     "EventCount": 3,
-    "Latitude": 47.3877,
-    "Longitude": -122.2669
+    "Latitude": 47.4221,
+    "Longitude": -122.2244
   },
   {
     "Date": "2025-03-15",
@@ -1141,8 +1042,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "ELT-S, NW2, L1C, L1E",
     "EventCount": 4,
-    "Latitude": 30.4313,
-    "Longitude": -97.6224
+    "Latitude": 30.4289,
+    "Longitude": -97.6676
   },
   {
     "Date": "2025-03-15",
@@ -1150,8 +1051,8 @@ const TRIALS_DATA =
     "Host": "Canny K9 Companions LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 37.3061,
-    "Longitude": -79.5925
+    "Latitude": 37.3844,
+    "Longitude": -79.5686
   },
   {
     "Date": "2025-03-15",
@@ -1159,8 +1060,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.5781,
-    "Longitude": -77.0332
+    "Latitude": 39.6176,
+    "Longitude": -76.9525
   },
   {
     "Date": "2025-03-17",
@@ -1168,8 +1069,8 @@ const TRIALS_DATA =
     "Host": "CalCoastal Dog Owners Group",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 36.9945,
-    "Longitude": -121.7436
+    "Latitude": 37.0284,
+    "Longitude": -121.7989
   },
   {
     "Date": "2025-03-22",
@@ -1177,8 +1078,8 @@ const TRIALS_DATA =
     "Host": "My Dog Smells LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 43.0478,
-    "Longitude": -74.342
+    "Latitude": 43.0028,
+    "Longitude": -74.3906
   },
   {
     "Date": "2025-03-22",
@@ -1186,8 +1087,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 42.5395,
-    "Longitude": -88.1214
+    "Latitude": 42.5658,
+    "Longitude": -88.1164
   },
   {
     "Date": "2025-03-22",
@@ -1195,8 +1096,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 35.4913,
-    "Longitude": -86.4833
+    "Latitude": 35.508,
+    "Longitude": -86.4268
   },
   {
     "Date": "2025-03-22",
@@ -1204,8 +1105,8 @@ const TRIALS_DATA =
     "Host": "Hoppin’ in the Hills",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 27.9411,
-    "Longitude": -82.4163
+    "Latitude": 27.942,
+    "Longitude": -82.4952
   },
   {
     "Date": "2025-03-22",
@@ -1213,8 +1114,8 @@ const TRIALS_DATA =
     "Host": "Paws Plus Training, LLC",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 36.935,
-    "Longitude": -77.0096
+    "Latitude": 36.9942,
+    "Longitude": -77.0248
   },
   {
     "Date": "2025-03-23",
@@ -1222,8 +1123,8 @@ const TRIALS_DATA =
     "Host": "Two Paws Up Dog Training, LLC",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 44.0349,
-    "Longitude": -103.237
+    "Latitude": 44.0521,
+    "Longitude": -103.2371
   },
   {
     "Date": "2025-03-23",
@@ -1231,8 +1132,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "NW1",
     "EventCount": 1,
-    "Latitude": 34.076,
-    "Longitude": -117.6398
+    "Latitude": 34.0581,
+    "Longitude": -117.6489
   },
   {
     "Date": "2025-03-28",
@@ -1240,8 +1141,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.9739,
-    "Longitude": -73.8745
+    "Latitude": 41.0015,
+    "Longitude": -73.8374
   },
   {
     "Date": "2025-03-28",
@@ -1249,8 +1150,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "SMT, ELT-S, L2I",
     "EventCount": 3,
-    "Latitude": 42.9983,
-    "Longitude": -83.6727
+    "Latitude": 43.0164,
+    "Longitude": -83.7191
   },
   {
     "Date": "2025-03-28",
@@ -1258,8 +1159,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT-P, ELT, ELT-S",
     "EventCount": 3,
-    "Latitude": 39.3883,
-    "Longitude": -77.4122
+    "Latitude": 39.4478,
+    "Longitude": -77.4365
   },
   {
     "Date": "2025-03-28",
@@ -1267,8 +1168,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "NW3, L1C, NW2, NW1",
     "EventCount": 4,
-    "Latitude": 39.0825,
-    "Longitude": -108.5867
+    "Latitude": 39.0535,
+    "Longitude": -108.5321
   },
   {
     "Date": "2025-03-28",
@@ -1276,8 +1177,8 @@ const TRIALS_DATA =
     "Host": "Kristina Leipzig, Doglandia LLC and Carol Forsberg",
     "TrialTypes": "ELT-S",
     "EventCount": 1,
-    "Latitude": 44.9764,
-    "Longitude": -123.037
+    "Latitude": 44.982,
+    "Longitude": -122.9846
   },
   {
     "Date": "2025-03-28",
@@ -1285,8 +1186,8 @@ const TRIALS_DATA =
     "Host": "Hoppin’ in the Hills",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 28.4089,
-    "Longitude": -82.5605
+    "Latitude": 28.3704,
+    "Longitude": -82.5573
   },
   {
     "Date": "2025-03-29",
@@ -1294,8 +1195,8 @@ const TRIALS_DATA =
     "Host": "George and Shannon Carpenter",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 42.5728,
-    "Longitude": -88.8308
+    "Latitude": 42.5577,
+    "Longitude": -88.8209
   },
   {
     "Date": "2025-03-29",
@@ -1303,8 +1204,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 40.3435,
-    "Longitude": -75.6299
+    "Latitude": 40.3129,
+    "Longitude": -75.6398
   },
   {
     "Date": "2025-03-29",
@@ -1312,8 +1213,8 @@ const TRIALS_DATA =
     "Host": "All Fur Fun",
     "TrialTypes": "ELT-P, NW3",
     "EventCount": 2,
-    "Latitude": 34.4108,
-    "Longitude": -119.8442
+    "Latitude": 34.4808,
+    "Longitude": -119.7818
   },
   {
     "Date": "2025-03-29",
@@ -1321,8 +1222,8 @@ const TRIALS_DATA =
     "Host": "The Sniffing Hound",
     "TrialTypes": "ELT-S, ELT",
     "EventCount": 2,
-    "Latitude": 39.8725,
-    "Longitude": -75.7522
+    "Latitude": 39.8162,
+    "Longitude": -75.6788
   },
   {
     "Date": "2025-03-29",
@@ -1330,8 +1231,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines",
     "TrialTypes": "NW3, L1C, L2I",
     "EventCount": 3,
-    "Latitude": 42.4602,
-    "Longitude": -88.7572
+    "Latitude": 42.4698,
+    "Longitude": -88.7211
   },
   {
     "Date": "2025-03-29",
@@ -1339,8 +1240,8 @@ const TRIALS_DATA =
     "Host": "Brookside Pet Training Studio for Dogs",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 38.8832,
-    "Longitude": -94.8605
+    "Latitude": 38.8647,
+    "Longitude": -94.8251
   },
   {
     "Date": "2025-03-30",
@@ -1348,8 +1249,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "L2V, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 41.9066,
-    "Longitude": -72.6316
+    "Latitude": 41.9222,
+    "Longitude": -72.6323
   },
   {
     "Date": "2025-04-03",
@@ -1357,8 +1258,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.0952,
-    "Longitude": -84.3357
+    "Latitude": 34.1058,
+    "Longitude": -84.2532
   },
   {
     "Date": "2025-04-04",
@@ -1366,8 +1267,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Labradors",
     "TrialTypes": "SMT, L1V, L2V",
     "EventCount": 3,
-    "Latitude": 38.8012,
-    "Longitude": -76.066
+    "Latitude": 38.777,
+    "Longitude": -76.1225
   },
   {
     "Date": "2025-04-05",
@@ -1375,8 +1276,8 @@ const TRIALS_DATA =
     "Host": "Common Scents K9 Scent Work Club of Elgin",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 42.0569,
-    "Longitude": -88.7291
+    "Latitude": 42.108,
+    "Longitude": -88.7244
   },
   {
     "Date": "2025-04-05",
@@ -1384,8 +1285,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "ELT, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 40.7905,
-    "Longitude": -79.514
+    "Latitude": 40.8405,
+    "Longitude": -79.4955
   },
   {
     "Date": "2025-04-05",
@@ -1393,8 +1294,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Magic",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 48.9477,
-    "Longitude": -122.1177
+    "Latitude": 48.9444,
+    "Longitude": -122.1051
   },
   {
     "Date": "2025-04-05",
@@ -1402,8 +1303,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "ELT-S, L2C, L3E",
     "EventCount": 3,
-    "Latitude": 42.6725,
-    "Longitude": -78.3626
+    "Latitude": 42.689,
+    "Longitude": -78.3401
   },
   {
     "Date": "2025-04-05",
@@ -1411,8 +1312,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "ELT, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 34.2528,
-    "Longitude": -119.0039
+    "Latitude": 34.2866,
+    "Longitude": -118.9998
   },
   {
     "Date": "2025-04-05",
@@ -1420,8 +1321,8 @@ const TRIALS_DATA =
     "Host": "Patience Unlimited Professional Dog Training",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 32.2436,
-    "Longitude": -110.9331
+    "Latitude": 32.2254,
+    "Longitude": -110.9712
   },
   {
     "Date": "2025-04-05",
@@ -1429,8 +1330,8 @@ const TRIALS_DATA =
     "Host": "Northwest Obedience Club Inc.",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 42.275,
-    "Longitude": -88.4683
+    "Latitude": 42.3133,
+    "Longitude": -88.4661
   },
   {
     "Date": "2025-04-11",
@@ -1438,8 +1339,8 @@ const TRIALS_DATA =
     "Host": "Sarah Becker, Sea Change Canine LLC & Carol Forsberg",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 48.1206,
-    "Longitude": -123.1201
+    "Latitude": 48.0464,
+    "Longitude": -123.0999
   },
   {
     "Date": "2025-04-12",
@@ -1447,8 +1348,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "NW3, L1C, L1E",
     "EventCount": 3,
-    "Latitude": 47.2701,
-    "Longitude": -122.204
+    "Latitude": 47.3549,
+    "Longitude": -122.2067
   },
   {
     "Date": "2025-04-12",
@@ -1456,8 +1357,8 @@ const TRIALS_DATA =
     "Host": "KBP Dog Training",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 41.9992,
-    "Longitude": -93.9013
+    "Latitude": 42.0048,
+    "Longitude": -93.9588
   },
   {
     "Date": "2025-04-12",
@@ -1465,8 +1366,8 @@ const TRIALS_DATA =
     "Host": "Barns And Noses, LLC",
     "TrialTypes": "ELT, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 41.4949,
-    "Longitude": -81.1656
+    "Latitude": 41.4514,
+    "Longitude": -81.1901
   },
   {
     "Date": "2025-04-12",
@@ -1474,8 +1375,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "ELT, ELT-S, L2E",
     "EventCount": 3,
-    "Latitude": 40.1648,
-    "Longitude": -77.1641
+    "Latitude": 40.1938,
+    "Longitude": -77.1564
   },
   {
     "Date": "2025-04-12",
@@ -1483,8 +1384,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "ELT, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 41.3476,
-    "Longitude": -105.587
+    "Latitude": 41.2998,
+    "Longitude": -105.5858
   },
   {
     "Date": "2025-04-12",
@@ -1492,8 +1393,8 @@ const TRIALS_DATA =
     "Host": "Indiana Scentwork",
     "TrialTypes": "NW3, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 41.6866,
-    "Longitude": -86.9266
+    "Latitude": 41.7471,
+    "Longitude": -86.92
   },
   {
     "Date": "2025-04-12",
@@ -1501,8 +1402,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY, LLC",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 41.2493,
-    "Longitude": -73.9268
+    "Latitude": 41.2896,
+    "Longitude": -73.9442
   },
   {
     "Date": "2025-04-12",
@@ -1510,8 +1411,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "ELT, L1C, L2C",
     "EventCount": 3,
-    "Latitude": 41.9628,
-    "Longitude": -73.8741
+    "Latitude": 41.9688,
+    "Longitude": -73.937
   },
   {
     "Date": "2025-04-12",
@@ -1519,8 +1420,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 29.9525,
-    "Longitude": -82.1393
+    "Latitude": 29.9484,
+    "Longitude": -82.1149
   },
   {
     "Date": "2025-04-14",
@@ -1528,8 +1429,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "L2E, L3E, ELT",
     "EventCount": 3,
-    "Latitude": 38.5351,
-    "Longitude": -121.4954
+    "Latitude": 38.5743,
+    "Longitude": -121.539
   },
   {
     "Date": "2025-04-18",
@@ -1537,8 +1438,8 @@ const TRIALS_DATA =
     "Host": "K9 Nose Adventures, LLC",
     "TrialTypes": "ELT, NW3, ELT-S, L2C",
     "EventCount": 4,
-    "Latitude": 35.6751,
-    "Longitude": -79.8192
+    "Latitude": 35.6884,
+    "Longitude": -79.8191
   },
   {
     "Date": "2025-04-18",
@@ -1546,8 +1447,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "ELT, NW3, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 39.1109,
-    "Longitude": -108.5287
+    "Latitude": 39.0741,
+    "Longitude": -108.5401
   },
   {
     "Date": "2025-04-18",
@@ -1555,8 +1456,8 @@ const TRIALS_DATA =
     "Host": "HeavenScent Sniffers",
     "TrialTypes": "ELT, NW3, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 42.2074,
-    "Longitude": -72.2961
+    "Latitude": 42.1398,
+    "Longitude": -72.3773
   },
   {
     "Date": "2025-04-18",
@@ -1564,8 +1465,8 @@ const TRIALS_DATA =
     "Host": "Tami Sullivan",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 43.2017,
-    "Longitude": -77.6364
+    "Latitude": 43.1153,
+    "Longitude": -77.6028
   },
   {
     "Date": "2025-04-19",
@@ -1573,8 +1474,8 @@ const TRIALS_DATA =
     "Host": "Hoppin’ in the Hills",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 28.5186,
-    "Longitude": -82.3501
+    "Latitude": 28.5322,
+    "Longitude": -82.4116
   },
   {
     "Date": "2025-04-19",
@@ -1582,8 +1483,8 @@ const TRIALS_DATA =
     "Host": "Paws n' Sniff",
     "TrialTypes": "NW3, L3E, ELT-S",
     "EventCount": 3,
-    "Latitude": 40.8522,
-    "Longitude": -75.4653
+    "Latitude": 40.8105,
+    "Longitude": -75.4509
   },
   {
     "Date": "2025-04-24",
@@ -1591,8 +1492,8 @@ const TRIALS_DATA =
     "Host": "The Bay Team",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 37.9738,
-    "Longitude": -122.0397
+    "Latitude": 38.0079,
+    "Longitude": -122.0691
   },
   {
     "Date": "2025-04-25",
@@ -1600,8 +1501,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "ELT, NW2, L2C, L3I",
     "EventCount": 4,
-    "Latitude": 44.845,
-    "Longitude": -93.1816
+    "Latitude": 44.8619,
+    "Longitude": -93.1301
   },
   {
     "Date": "2025-04-26",
@@ -1609,8 +1510,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training LLC",
     "TrialTypes": "L1C, L1I",
     "EventCount": 2,
-    "Latitude": 30.8963,
-    "Longitude": -84.6027
+    "Latitude": 30.9208,
+    "Longitude": -84.6219
   },
   {
     "Date": "2025-04-26",
@@ -1618,8 +1519,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.3249,
-    "Longitude": -78.6617
+    "Latitude": 42.315,
+    "Longitude": -78.6299
   },
   {
     "Date": "2025-04-26",
@@ -1627,8 +1528,8 @@ const TRIALS_DATA =
     "Host": "Obedience Training Club of Palm Beach County",
     "TrialTypes": "L1E, NW2, NW1, L1C",
     "EventCount": 4,
-    "Latitude": 27.4258,
-    "Longitude": -80.305
+    "Latitude": 27.4789,
+    "Longitude": -80.3307
   },
   {
     "Date": "2025-04-26",
@@ -1636,8 +1537,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 42.9973,
-    "Longitude": -87.9384
+    "Latitude": 43.0091,
+    "Longitude": -88.0298
   },
   {
     "Date": "2025-04-26",
@@ -1645,8 +1546,8 @@ const TRIALS_DATA =
     "Host": "Dog Gone Right",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 30.5041,
-    "Longitude": -90.412
+    "Latitude": 30.5176,
+    "Longitude": -90.5001
   },
   {
     "Date": "2025-04-26",
@@ -1654,8 +1555,8 @@ const TRIALS_DATA =
     "Host": "The Big Sniff, LLC",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 42.9842,
-    "Longitude": -71.0821
+    "Latitude": 42.9684,
+    "Longitude": -71.1
   },
   {
     "Date": "2025-04-26",
@@ -1663,8 +1564,8 @@ const TRIALS_DATA =
     "Host": "Canine Discovery Corps",
     "TrialTypes": "L1I, L2C, ELT",
     "EventCount": 3,
-    "Latitude": 44.7255,
-    "Longitude": -122.659
+    "Latitude": 44.728,
+    "Longitude": -122.6154
   },
   {
     "Date": "2025-04-26",
@@ -1672,8 +1573,8 @@ const TRIALS_DATA =
     "Host": "K9 Nosen Around, LLC",
     "TrialTypes": "L1V, NW1, L2V, NW2",
     "EventCount": 4,
-    "Latitude": 40.2124,
-    "Longitude": -74.9412
+    "Latitude": 40.2078,
+    "Longitude": -74.8995
   },
   {
     "Date": "2025-04-26",
@@ -1681,8 +1582,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "ELT-P, ELT-S, L1C",
     "EventCount": 3,
-    "Latitude": 42.3247,
-    "Longitude": -72.6466
+    "Latitude": 42.3072,
+    "Longitude": -72.5993
   },
   {
     "Date": "2025-04-26",
@@ -1690,8 +1591,8 @@ const TRIALS_DATA =
     "Host": "Camelot Shepherds, Inc.",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 35.1345,
-    "Longitude": -84.7658
+    "Latitude": 35.1487,
+    "Longitude": -84.7294
   },
   {
     "Date": "2025-04-26",
@@ -1699,8 +1600,8 @@ const TRIALS_DATA =
     "Host": "Beyond Elevation K9",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 40.8557,
-    "Longitude": -105.5912
+    "Latitude": 40.85,
+    "Longitude": -105.5588
   },
   {
     "Date": "2025-04-26",
@@ -1708,8 +1609,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 44.7383,
-    "Longitude": -85.613
+    "Latitude": 44.7886,
+    "Longitude": -85.6056
   },
   {
     "Date": "2025-04-26",
@@ -1717,8 +1618,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW1, NW2, L2V, L1C",
     "EventCount": 4,
-    "Latitude": 39.3193,
-    "Longitude": -76.9069
+    "Latitude": 39.3058,
+    "Longitude": -76.9861
   },
   {
     "Date": "2025-05-01",
@@ -1726,8 +1627,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 34.2729,
-    "Longitude": -83.8414
+    "Latitude": 34.2516,
+    "Longitude": -83.8327
   },
   {
     "Date": "2025-05-02",
@@ -1735,8 +1636,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "NW3, ELT-P, L3E, L3C",
     "EventCount": 4,
-    "Latitude": 43.6769,
-    "Longitude": -93.9662
+    "Latitude": 43.6225,
+    "Longitude": -93.9965
   },
   {
     "Date": "2025-05-02",
@@ -1744,8 +1645,8 @@ const TRIALS_DATA =
     "Host": "Waggin Work",
     "TrialTypes": "NW3, ELT, ELT-S",
     "EventCount": 3,
-    "Latitude": 41.0789,
-    "Longitude": -73.8856
+    "Latitude": 41.0522,
+    "Longitude": -73.9449
   },
   {
     "Date": "2025-05-03",
@@ -1753,8 +1654,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 41.022,
-    "Longitude": -90.5541
+    "Latitude": 41.0873,
+    "Longitude": -90.5338
   },
   {
     "Date": "2025-05-03",
@@ -1762,8 +1663,8 @@ const TRIALS_DATA =
     "Host": "Carolyn Barney dba Dogs!",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 42.6585,
-    "Longitude": -71.7915
+    "Latitude": 42.7055,
+    "Longitude": -71.834
   },
   {
     "Date": "2025-05-03",
@@ -1771,8 +1672,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 45.6591,
-    "Longitude": -109.2466
+    "Latitude": 45.6671,
+    "Longitude": -109.2675
   },
   {
     "Date": "2025-05-03",
@@ -1780,8 +1681,8 @@ const TRIALS_DATA =
     "Host": "Foothills Canine Academy, LLC",
     "TrialTypes": "L1V, NW1, NW3",
     "EventCount": 3,
-    "Latitude": 34.5681,
-    "Longitude": -82.1084
+    "Latitude": 34.5605,
+    "Longitude": -82.0811
   },
   {
     "Date": "2025-05-03",
@@ -1789,8 +1690,8 @@ const TRIALS_DATA =
     "Host": "B. L. McMutts",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 37.4534,
-    "Longitude": -122.2362
+    "Latitude": 37.509,
+    "Longitude": -122.2588
   },
   {
     "Date": "2025-05-03",
@@ -1798,8 +1699,8 @@ const TRIALS_DATA =
     "Host": "Trust Your Dog K9 Events",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 45.397,
-    "Longitude": -122.3115
+    "Latitude": 45.4368,
+    "Longitude": -122.3043
   },
   {
     "Date": "2025-05-03",
@@ -1807,8 +1708,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "ELT, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 34.331,
-    "Longitude": -119.0108
+    "Latitude": 34.4007,
+    "Longitude": -119.0585
   },
   {
     "Date": "2025-05-03",
@@ -1816,8 +1717,8 @@ const TRIALS_DATA =
     "Host": "Trisha Thompson and Sharon Smith",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 45.7263,
-    "Longitude": -121.521
+    "Latitude": 45.709,
+    "Longitude": -121.5005
   },
   {
     "Date": "2025-05-09",
@@ -1825,8 +1726,8 @@ const TRIALS_DATA =
     "Host": "Paws n' Sniff",
     "TrialTypes": "L3C, L2I, NW2",
     "EventCount": 3,
-    "Latitude": 41.2925,
-    "Longitude": -75.3198
+    "Latitude": 41.2888,
+    "Longitude": -75.3103
   },
   {
     "Date": "2025-05-09",
@@ -1834,8 +1735,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.2285,
-    "Longitude": -74.3295
+    "Latitude": 41.2343,
+    "Longitude": -74.3891
   },
   {
     "Date": "2025-05-10",
@@ -1843,8 +1744,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "L1V, L2I, L1C, L3V",
     "EventCount": 4,
-    "Latitude": 42.8768,
-    "Longitude": -78.221
+    "Latitude": 42.92,
+    "Longitude": -78.2153
   },
   {
     "Date": "2025-05-10",
@@ -1852,8 +1753,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Labradors",
     "TrialTypes": "NW3, ELT-S",
     "EventCount": 2,
-    "Latitude": 38.8696,
-    "Longitude": -75.7827
+    "Latitude": 38.8968,
+    "Longitude": -75.8098
   },
   {
     "Date": "2025-05-10",
@@ -1861,8 +1762,8 @@ const TRIALS_DATA =
     "Host": "Virginia Howe",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 44.0425,
-    "Longitude": -70.3168
+    "Latitude": 44.0678,
+    "Longitude": -70.3448
   },
   {
     "Date": "2025-05-10",
@@ -1870,8 +1771,8 @@ const TRIALS_DATA =
     "Host": "Rachelle Bailey-Austin/About Face K9 Academy & Dorothy Turley/Let's Talk Dogs, LLC",
     "TrialTypes": "ELT-S, NW2",
     "EventCount": 2,
-    "Latitude": 46.8833,
-    "Longitude": -122.681
+    "Latitude": 46.895,
+    "Longitude": -122.7098
   },
   {
     "Date": "2025-05-10",
@@ -1879,8 +1780,8 @@ const TRIALS_DATA =
     "Host": "All Fur Fun",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.4073,
-    "Longitude": -119.7149
+    "Latitude": 34.4126,
+    "Longitude": -119.7361
   },
   {
     "Date": "2025-05-13",
@@ -1888,8 +1789,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "L2C, NW1",
     "EventCount": 2,
-    "Latitude": 35.6579,
-    "Longitude": -120.6841
+    "Latitude": 35.5821,
+    "Longitude": -120.6762
   },
   {
     "Date": "2025-05-16",
@@ -1897,8 +1798,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "ELT, NW3, ELT-P",
     "EventCount": 3,
-    "Latitude": 38.478,
-    "Longitude": -107.8634
+    "Latitude": 38.4637,
+    "Longitude": -107.8885
   },
   {
     "Date": "2025-05-16",
@@ -1906,8 +1807,8 @@ const TRIALS_DATA =
     "Host": "CalCoastal Dog Owners Group",
     "TrialTypes": "ELT-S, L2C, L3C",
     "EventCount": 3,
-    "Latitude": 36.8747,
-    "Longitude": -121.7914
+    "Latitude": 36.9209,
+    "Longitude": -121.7076
   },
   {
     "Date": "2025-05-17",
@@ -1915,8 +1816,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "ELT, L2V, L2I",
     "EventCount": 3,
-    "Latitude": 47.4769,
-    "Longitude": -122.3094
+    "Latitude": 47.4213,
+    "Longitude": -122.3172
   },
   {
     "Date": "2025-05-17",
@@ -1924,8 +1825,8 @@ const TRIALS_DATA =
     "Host": "The Brainy Canine",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 42.7071,
-    "Longitude": -74.4484
+    "Latitude": 42.6309,
+    "Longitude": -74.5214
   },
   {
     "Date": "2025-05-17",
@@ -1933,8 +1834,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 39.6693,
-    "Longitude": -77.3608
+    "Latitude": 39.7088,
+    "Longitude": -77.3465
   },
   {
     "Date": "2025-05-17",
@@ -1942,8 +1843,8 @@ const TRIALS_DATA =
     "Host": "N.E.W K9 Scent Work LLC",
     "TrialTypes": "L1C, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 44.2496,
-    "Longitude": -88.1814
+    "Latitude": 44.2125,
+    "Longitude": -88.1141
   },
   {
     "Date": "2025-05-17",
@@ -1951,8 +1852,8 @@ const TRIALS_DATA =
     "Host": "Dogs Make Scents",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 41.995,
-    "Longitude": -71.2118
+    "Latitude": 41.9607,
+    "Longitude": -71.1633
   },
   {
     "Date": "2025-05-17",
@@ -1960,8 +1861,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.4838,
-    "Longitude": -73.035
+    "Latitude": 42.4324,
+    "Longitude": -73.0391
   },
   {
     "Date": "2025-05-17",
@@ -1969,8 +1870,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "NW1, ELT",
     "EventCount": 2,
-    "Latitude": 40.1112,
-    "Longitude": -75.4984
+    "Latitude": 40.0728,
+    "Longitude": -75.5048
   },
   {
     "Date": "2025-05-23",
@@ -1978,8 +1879,8 @@ const TRIALS_DATA =
     "Host": "Anita Cheesman and Jessica Koester",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 32.8678,
-    "Longitude": -117.2447
+    "Latitude": 32.811,
+    "Longitude": -117.273
   },
   {
     "Date": "2025-05-24",
@@ -1987,8 +1888,8 @@ const TRIALS_DATA =
     "Host": "My Dog Smells LLC",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 42.7073,
-    "Longitude": -74.0503
+    "Latitude": 42.6829,
+    "Longitude": -74.0695
   },
   {
     "Date": "2025-05-24",
@@ -1996,8 +1897,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "ELT-P, L1I, L3I",
     "EventCount": 3,
-    "Latitude": 42.9721,
-    "Longitude": -78.2251
+    "Latitude": 43.0062,
+    "Longitude": -78.2186
   },
   {
     "Date": "2025-05-24",
@@ -2005,8 +1906,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "L3I, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 40.0057,
-    "Longitude": -76.3259
+    "Latitude": 40.0134,
+    "Longitude": -76.3531
   },
   {
     "Date": "2025-05-24",
@@ -2014,8 +1915,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "ELT-S, NW2, NW3, ELT",
     "EventCount": 4,
-    "Latitude": 41.4894,
-    "Longitude": -72.0273
+    "Latitude": 41.5503,
+    "Longitude": -72.0432
   },
   {
     "Date": "2025-05-24",
@@ -2023,8 +1924,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT-S, NW1, ELT-P",
     "EventCount": 4,
-    "Latitude": 40.8528,
-    "Longitude": -74.4847
+    "Latitude": 40.898,
+    "Longitude": -74.4871
   },
   {
     "Date": "2025-05-24",
@@ -2032,8 +1933,8 @@ const TRIALS_DATA =
     "Host": "Think Pawsitive Dog Training",
     "TrialTypes": "NW1, L1V, L1C",
     "EventCount": 3,
-    "Latitude": 43.026,
-    "Longitude": -88.2703
+    "Latitude": 43.0668,
+    "Longitude": -88.3357
   },
   {
     "Date": "2025-05-24",
@@ -2041,8 +1942,8 @@ const TRIALS_DATA =
     "Host": "Trust Your Dog K9 Events",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 45.3201,
-    "Longitude": -121.9595
+    "Latitude": 45.3002,
+    "Longitude": -121.9382
   },
   {
     "Date": "2025-05-29",
@@ -2050,8 +1951,8 @@ const TRIALS_DATA =
     "Host": "Wag Between Barks",
     "TrialTypes": "ELT-S, ELT, NW3",
     "EventCount": 3,
-    "Latitude": 37.2672,
-    "Longitude": -107.5969
+    "Latitude": 37.2441,
+    "Longitude": -107.6264
   },
   {
     "Date": "2025-05-30",
@@ -2059,8 +1960,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "NW3, ELT, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 41.6059,
-    "Longitude": -75.2166
+    "Latitude": 41.5954,
+    "Longitude": -75.2872
   },
   {
     "Date": "2025-05-30",
@@ -2068,8 +1969,8 @@ const TRIALS_DATA =
     "Host": "Fur Better Fur Worse Dog Training",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 41.4706,
-    "Longitude": -90.4779
+    "Latitude": 41.4569,
+    "Longitude": -90.5626
   },
   {
     "Date": "2025-05-31",
@@ -2077,8 +1978,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "NW2, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 42.9848,
-    "Longitude": -78.8058
+    "Latitude": 42.995,
+    "Longitude": -78.8122
   },
   {
     "Date": "2025-05-31",
@@ -2086,8 +1987,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "L1V, NW1, NW3",
     "EventCount": 3,
-    "Latitude": 45.6236,
-    "Longitude": -109.2444
+    "Latitude": 45.667,
+    "Longitude": -109.2971
   },
   {
     "Date": "2025-05-31",
@@ -2095,8 +1996,8 @@ const TRIALS_DATA =
     "Host": "The K9 Nose",
     "TrialTypes": "NW1, L1I, L2I",
     "EventCount": 3,
-    "Latitude": 44.856,
-    "Longitude": -93.511
+    "Latitude": 44.8269,
+    "Longitude": -93.4283
   },
   {
     "Date": "2025-05-31",
@@ -2104,8 +2005,8 @@ const TRIALS_DATA =
     "Host": "Napa Valley Dog Training Club",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 38.5121,
-    "Longitude": -122.3283
+    "Latitude": 38.4959,
+    "Longitude": -122.3404
   },
   {
     "Date": "2025-05-31",
@@ -2113,8 +2014,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 41.1654,
-    "Longitude": -80.3656
+    "Latitude": 41.0996,
+    "Longitude": -80.3385
   },
   {
     "Date": "2025-05-31",
@@ -2122,8 +2023,8 @@ const TRIALS_DATA =
     "Host": "2 Nose You Is 2 Loves You",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.9902,
-    "Longitude": -85.7867
+    "Latitude": 41.011,
+    "Longitude": -85.7347
   },
   {
     "Date": "2025-06-06",
@@ -2131,8 +2032,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "SMT, ELT",
     "EventCount": 2,
-    "Latitude": 38.2895,
-    "Longitude": -104.5926
+    "Latitude": 38.283,
+    "Longitude": -104.6621
   },
   {
     "Date": "2025-06-06",
@@ -2140,8 +2041,8 @@ const TRIALS_DATA =
     "Host": "Waggin’ Work",
     "TrialTypes": "ELT, NW2, L2C",
     "EventCount": 3,
-    "Latitude": 41.9743,
-    "Longitude": -73.1083
+    "Latitude": 41.9381,
+    "Longitude": -73.0841
   },
   {
     "Date": "2025-06-07",
@@ -2149,8 +2050,8 @@ const TRIALS_DATA =
     "Host": "Nosework Breakfast Club",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 46.4773,
-    "Longitude": -111.9873
+    "Latitude": 46.4559,
+    "Longitude": -111.939
   },
   {
     "Date": "2025-06-07",
@@ -2158,8 +2059,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 34.2381,
-    "Longitude": -84.1681
+    "Latitude": 34.2507,
+    "Longitude": -84.1894
   },
   {
     "Date": "2025-06-07",
@@ -2167,8 +2068,8 @@ const TRIALS_DATA =
     "Host": "Fur Better Fur Worse Dog Training",
     "TrialTypes": "ELT-S, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 41.5517,
-    "Longitude": -90.5505
+    "Latitude": 41.5584,
+    "Longitude": -90.6239
   },
   {
     "Date": "2025-06-07",
@@ -2176,8 +2077,8 @@ const TRIALS_DATA =
     "Host": "Country K9 Nosework, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 45.3871,
-    "Longitude": -117.2299
+    "Latitude": 45.4084,
+    "Longitude": -117.2477
   },
   {
     "Date": "2025-06-07",
@@ -2185,8 +2086,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Detectives",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 42.4837,
-    "Longitude": -123.3412
+    "Latitude": 42.4627,
+    "Longitude": -123.3306
   },
   {
     "Date": "2025-06-07",
@@ -2194,8 +2095,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW1, NW2, ELT-S, ELT",
     "EventCount": 4,
-    "Latitude": 40.108,
-    "Longitude": -75.122
+    "Latitude": 40.1505,
+    "Longitude": -75.0453
   },
   {
     "Date": "2025-06-07",
@@ -2203,8 +2104,8 @@ const TRIALS_DATA =
     "Host": "Your Dog Knows, LLC",
     "TrialTypes": "NW1, L1I",
     "EventCount": 2,
-    "Latitude": 37.8327,
-    "Longitude": -78.2989
+    "Latitude": 37.8742,
+    "Longitude": -78.2176
   },
   {
     "Date": "2025-06-07",
@@ -2212,8 +2113,8 @@ const TRIALS_DATA =
     "Host": "N.E.W. K9 Scent Work, LLC",
     "TrialTypes": "ELT-P, L2C, L3I",
     "EventCount": 3,
-    "Latitude": 44.2785,
-    "Longitude": -88.1747
+    "Latitude": 44.3709,
+    "Longitude": -88.1718
   },
   {
     "Date": "2025-06-13",
@@ -2221,8 +2122,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "NW3, ELT-S, L1V, L2E, L3V",
     "EventCount": 5,
-    "Latitude": 44.6366,
-    "Longitude": -93.615
+    "Latitude": 44.703,
+    "Longitude": -93.6513
   },
   {
     "Date": "2025-06-14",
@@ -2230,8 +2131,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "ELT-P, ELT-S, L2C",
     "EventCount": 3,
-    "Latitude": 42.4626,
-    "Longitude": -72.8771
+    "Latitude": 42.4148,
+    "Longitude": -72.9363
   },
   {
     "Date": "2025-06-14",
@@ -2239,8 +2140,8 @@ const TRIALS_DATA =
     "Host": "Everydog, LLC",
     "TrialTypes": "L2I, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 42.609,
-    "Longitude": -70.9156
+    "Latitude": 42.5756,
+    "Longitude": -70.905
   },
   {
     "Date": "2025-06-14",
@@ -2248,8 +2149,8 @@ const TRIALS_DATA =
     "Host": "The Brainy Canine",
     "TrialTypes": "ELT-P, ELT",
     "EventCount": 2,
-    "Latitude": 42.4161,
-    "Longitude": -76.5932
+    "Latitude": 42.4567,
+    "Longitude": -76.5171
   },
   {
     "Date": "2025-06-14",
@@ -2257,8 +2158,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "NW1, ELT-P",
     "EventCount": 2,
-    "Latitude": 42.7683,
-    "Longitude": -83.7354
+    "Latitude": 42.8447,
+    "Longitude": -83.7901
   },
   {
     "Date": "2025-06-20",
@@ -2266,8 +2167,8 @@ const TRIALS_DATA =
     "Host": "Beyond Elevation K9",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 40.4099,
-    "Longitude": -104.7356
+    "Latitude": 40.4655,
+    "Longitude": -104.68
   },
   {
     "Date": "2025-06-20",
@@ -2275,8 +2176,8 @@ const TRIALS_DATA =
     "Host": "Central Coast Nosework Club of California, Inc.",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 35.3132,
-    "Longitude": -120.3945
+    "Latitude": 35.3938,
+    "Longitude": -120.3259
   },
   {
     "Date": "2025-06-20",
@@ -2284,8 +2185,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 34.0655,
-    "Longitude": -117.6244
+    "Latitude": 34.1072,
+    "Longitude": -117.6443
   },
   {
     "Date": "2025-06-20",
@@ -2293,8 +2194,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 41.2745,
-    "Longitude": -74.3124
+    "Latitude": 41.2565,
+    "Longitude": -74.3616
   },
   {
     "Date": "2025-06-21",
@@ -2302,8 +2203,8 @@ const TRIALS_DATA =
     "Host": "Columbia Canine Sports Center",
     "TrialTypes": "ELT, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 39.1383,
-    "Longitude": -92.6703
+    "Latitude": 39.1005,
+    "Longitude": -92.6705
   },
   {
     "Date": "2025-06-21",
@@ -2311,8 +2212,8 @@ const TRIALS_DATA =
     "Host": "Outside The Box Dog Training, LLC",
     "TrialTypes": "L1C, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 44.806,
-    "Longitude": -93.0506
+    "Latitude": 44.8785,
+    "Longitude": -93.0816
   },
   {
     "Date": "2025-06-21",
@@ -2320,8 +2221,8 @@ const TRIALS_DATA =
     "Host": "Think Pawsitive Dog Training",
     "TrialTypes": "NW2",
     "EventCount": 1,
-    "Latitude": 43.066,
-    "Longitude": -88.8052
+    "Latitude": 42.983,
+    "Longitude": -88.8114
   },
   {
     "Date": "2025-06-21",
@@ -2329,8 +2230,8 @@ const TRIALS_DATA =
     "Host": "Robin Ford Dog Training, LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 41.6465,
-    "Longitude": -83.5867
+    "Latitude": 41.6731,
+    "Longitude": -83.5764
   },
   {
     "Date": "2025-06-21",
@@ -2338,8 +2239,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework LLC",
     "TrialTypes": "NW3, L2C, NW1",
     "EventCount": 3,
-    "Latitude": 34.1032,
-    "Longitude": -84.5371
+    "Latitude": 34.0682,
+    "Longitude": -84.51
   },
   {
     "Date": "2025-06-25",
@@ -2347,8 +2248,8 @@ const TRIALS_DATA =
     "Host": "Peninsula Dog Obedience Group",
     "TrialTypes": "NW1, NW2, NW3, ELT",
     "EventCount": 4,
-    "Latitude": 60.5233,
-    "Longitude": -151.2894
+    "Latitude": 60.5273,
+    "Longitude": -151.2588
   },
   {
     "Date": "2025-06-28",
@@ -2356,8 +2257,8 @@ const TRIALS_DATA =
     "Host": "K9 InScentives",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 40.0056,
-    "Longitude": -74.9664
+    "Latitude": 40.0164,
+    "Longitude": -74.9636
   },
   {
     "Date": "2025-06-28",
@@ -2365,8 +2266,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Magic",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 48.8116,
-    "Longitude": -122.2382
+    "Latitude": 48.8887,
+    "Longitude": -122.2391
   },
   {
     "Date": "2025-06-28",
@@ -2374,8 +2275,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 42.5851,
-    "Longitude": -87.8575
+    "Latitude": 42.6131,
+    "Longitude": -87.8325
   },
   {
     "Date": "2025-06-28",
@@ -2383,8 +2284,8 @@ const TRIALS_DATA =
     "Host": "HeavenScent Sniffers",
     "TrialTypes": "ELT, L1V, NW1",
     "EventCount": 3,
-    "Latitude": 41.9875,
-    "Longitude": -72.4733
+    "Latitude": 42.0026,
+    "Longitude": -72.4645
   },
   {
     "Date": "2025-06-28",
@@ -2392,8 +2293,8 @@ const TRIALS_DATA =
     "Host": "Bark and Bond LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 44.9165,
-    "Longitude": -93.0949
+    "Latitude": 44.9075,
+    "Longitude": -93.1334
   },
   {
     "Date": "2025-06-28",
@@ -2401,8 +2302,8 @@ const TRIALS_DATA =
     "Host": "Sharon Smith",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 45.6718,
-    "Longitude": -121.8905
+    "Latitude": 45.736,
+    "Longitude": -121.8779
   },
   {
     "Date": "2025-07-04",
@@ -2410,8 +2311,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot Of Gold K9 Scenter",
     "TrialTypes": "ELT, NW3, L2I, ELT-S",
     "EventCount": 4,
-    "Latitude": 42.2803,
-    "Longitude": -72.9055
+    "Latitude": 42.2144,
+    "Longitude": -72.8612
   },
   {
     "Date": "2025-07-05",
@@ -2419,8 +2320,8 @@ const TRIALS_DATA =
     "Host": "Ev-ry Earthdog, LLC",
     "TrialTypes": "NW3, NW1, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 40.049,
-    "Longitude": -74.971
+    "Latitude": 40.015,
+    "Longitude": -74.9745
   },
   {
     "Date": "2025-07-11",
@@ -2428,8 +2329,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 39.2463,
-    "Longitude": -106.2828
+    "Latitude": 39.2855,
+    "Longitude": -106.3265
   },
   {
     "Date": "2025-07-12",
@@ -2437,8 +2338,8 @@ const TRIALS_DATA =
     "Host": "Nose 2 Tail Dog Training LLC",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 46.373,
-    "Longitude": -94.2278
+    "Latitude": 46.3142,
+    "Longitude": -94.2001
   },
   {
     "Date": "2025-07-12",
@@ -2446,8 +2347,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.3835,
-    "Longitude": -83.3404
+    "Latitude": 42.375,
+    "Longitude": -83.3535
   },
   {
     "Date": "2025-07-18",
@@ -2455,8 +2356,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "NW3, NW1, NW2, L1C, L1I",
     "EventCount": 5,
-    "Latitude": 39.2867,
-    "Longitude": -106.2876
+    "Latitude": 39.2358,
+    "Longitude": -106.2956
   },
   {
     "Date": "2025-07-19",
@@ -2464,8 +2365,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "ELT-S, NW1, L1C",
     "EventCount": 3,
-    "Latitude": 41.3726,
-    "Longitude": -75.6751
+    "Latitude": 41.3998,
+    "Longitude": -75.5858
   },
   {
     "Date": "2025-07-19",
@@ -2473,8 +2374,8 @@ const TRIALS_DATA =
     "Host": "Columbia Canine Sports Center",
     "TrialTypes": "NW3, L1C, L1I",
     "EventCount": 3,
-    "Latitude": 39.145,
-    "Longitude": -92.6788
+    "Latitude": 39.1198,
+    "Longitude": -92.6545
   },
   {
     "Date": "2025-07-19",
@@ -2482,8 +2383,8 @@ const TRIALS_DATA =
     "Host": "Gretchen Hofheins-Wackerfuss",
     "TrialTypes": "NW1, ELT-S, ELT-P",
     "EventCount": 3,
-    "Latitude": 45.018,
-    "Longitude": -92.742
+    "Latitude": 45.0623,
+    "Longitude": -92.7432
   },
   {
     "Date": "2025-07-19",
@@ -2491,8 +2392,8 @@ const TRIALS_DATA =
     "Host": "MasterPeace Dog Training",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 42.1291,
-    "Longitude": -71.2468
+    "Latitude": 42.1078,
+    "Longitude": -71.3008
   },
   {
     "Date": "2025-07-21",
@@ -2500,8 +2401,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.9173,
-    "Longitude": -74.433
+    "Latitude": 42.9433,
+    "Longitude": -74.4111
   },
   {
     "Date": "2025-08-02",
@@ -2509,8 +2410,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines, LLC",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 39.0297,
-    "Longitude": -88.7184
+    "Latitude": 39.1025,
+    "Longitude": -88.7655
   },
   {
     "Date": "2025-08-02",
@@ -2518,8 +2419,8 @@ const TRIALS_DATA =
     "Host": "Alaska Dog Sports, LLC",
     "TrialTypes": "NW3, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 61.1674,
-    "Longitude": -149.9005
+    "Latitude": 61.2324,
+    "Longitude": -149.9414
   },
   {
     "Date": "2025-08-02",
@@ -2527,8 +2428,8 @@ const TRIALS_DATA =
     "Host": "Fur Better Fur Worse Dog Training",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 41.5573,
-    "Longitude": -90.5134
+    "Latitude": 41.505,
+    "Longitude": -90.5313
   },
   {
     "Date": "2025-08-02",
@@ -2536,8 +2437,8 @@ const TRIALS_DATA =
     "Host": "Think Pawsitive Dog Training LLC",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 43.0491,
-    "Longitude": -88.7473
+    "Latitude": 43.0011,
+    "Longitude": -88.7215
   },
   {
     "Date": "2025-08-02",
@@ -2545,8 +2446,8 @@ const TRIALS_DATA =
     "Host": "Nose 2 Tail Dog Training, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 46.28,
-    "Longitude": -94.4562
+    "Latitude": 46.3726,
+    "Longitude": -94.5128
   },
   {
     "Date": "2025-08-02",
@@ -2554,8 +2455,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "L1I, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 45.2213,
-    "Longitude": -109.2077
+    "Latitude": 45.1583,
+    "Longitude": -109.2556
   },
   {
     "Date": "2025-08-02",
@@ -2563,8 +2464,8 @@ const TRIALS_DATA =
     "Host": "Suzan Tessier",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 43.184,
-    "Longitude": -77.6405
+    "Latitude": 43.192,
+    "Longitude": -77.6452
   },
   {
     "Date": "2025-08-11",
@@ -2572,8 +2473,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "L1C, L2I, ELT",
     "EventCount": 3,
-    "Latitude": 35.5995,
-    "Longitude": -121.1351
+    "Latitude": 35.5179,
+    "Longitude": -121.0499
   },
   {
     "Date": "2025-08-15",
@@ -2581,8 +2482,8 @@ const TRIALS_DATA =
     "Host": "JavaK9s, LLC",
     "TrialTypes": "ELT-P, L1C, L1I",
     "EventCount": 3,
-    "Latitude": 33.6825,
-    "Longitude": -118.0234
+    "Latitude": 33.678,
+    "Longitude": -118.0256
   },
   {
     "Date": "2025-08-16",
@@ -2590,8 +2491,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "L3C, ELT-S, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 39.0463,
-    "Longitude": -77.0163
+    "Latitude": 39.0265,
+    "Longitude": -76.9991
   },
   {
     "Date": "2025-08-16",
@@ -2599,8 +2500,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs, LLC",
     "TrialTypes": "L2I, NW2, L1I, NW1",
     "EventCount": 4,
-    "Latitude": 41.2359,
-    "Longitude": -73.7333
+    "Latitude": 41.2032,
+    "Longitude": -73.7687
   },
   {
     "Date": "2025-08-16",
@@ -2608,8 +2509,8 @@ const TRIALS_DATA =
     "Host": "Kiddy Christie",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 43.7226,
-    "Longitude": -124.0716
+    "Latitude": 43.7159,
+    "Longitude": -124.1069
   },
   {
     "Date": "2025-08-22",
@@ -2617,8 +2518,8 @@ const TRIALS_DATA =
     "Host": "Force Free Dale, LLC",
     "TrialTypes": "NW3, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 42.305,
-    "Longitude": -84.0469
+    "Latitude": 42.2968,
+    "Longitude": -84.0501
   },
   {
     "Date": "2025-08-23",
@@ -2626,8 +2527,8 @@ const TRIALS_DATA =
     "Host": "Helix Fairweather & Doglandia, LLC",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 45.1507,
-    "Longitude": -122.9456
+    "Latitude": 45.156,
+    "Longitude": -122.9479
   },
   {
     "Date": "2025-08-23",
@@ -2635,8 +2536,8 @@ const TRIALS_DATA =
     "Host": "My Dog Smells, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.9638,
-    "Longitude": -74.3493
+    "Latitude": 42.9691,
+    "Longitude": -74.3795
   },
   {
     "Date": "2025-08-23",
@@ -2644,8 +2545,8 @@ const TRIALS_DATA =
     "Host": "Spot-On K9 Coaching",
     "TrialTypes": "NW3, L1C, L1I",
     "EventCount": 3,
-    "Latitude": 42.6821,
-    "Longitude": -71.3737
+    "Latitude": 42.6339,
+    "Longitude": -71.4101
   },
   {
     "Date": "2025-08-29",
@@ -2653,8 +2554,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "NW1, L2I, NW3",
     "EventCount": 3,
-    "Latitude": 45.2571,
-    "Longitude": -108.8959
+    "Latitude": 45.3081,
+    "Longitude": -108.9197
   },
   {
     "Date": "2025-08-30",
@@ -2662,8 +2563,8 @@ const TRIALS_DATA =
     "Host": "McLean Pups, LLC",
     "TrialTypes": "L1V, L1E",
     "EventCount": 2,
-    "Latitude": 43.1299,
-    "Longitude": -70.7564
+    "Latitude": 43.127,
+    "Longitude": -70.8225
   },
   {
     "Date": "2025-08-30",
@@ -2671,8 +2572,8 @@ const TRIALS_DATA =
     "Host": "North Texas Nosework Club",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 32.7149,
-    "Longitude": -97.3199
+    "Latitude": 32.7268,
+    "Longitude": -97.3329
   },
   {
     "Date": "2025-08-30",
@@ -2680,8 +2581,8 @@ const TRIALS_DATA =
     "Host": "HeavenScent Sniffers",
     "TrialTypes": "NW3, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 41.8594,
-    "Longitude": -71.9752
+    "Latitude": 41.9217,
+    "Longitude": -71.9619
   },
   {
     "Date": "2025-08-31",
@@ -2689,8 +2590,8 @@ const TRIALS_DATA =
     "Host": "Nosework Breakfast Club",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 46.6267,
-    "Longitude": -112.0758
+    "Latitude": 46.6284,
+    "Longitude": -112.0639
   },
   {
     "Date": "2025-09-05",
@@ -2698,8 +2599,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Labradors",
     "TrialTypes": "ELT, NW3, ELT-S",
     "EventCount": 3,
-    "Latitude": 39.0354,
-    "Longitude": -76.0636
+    "Latitude": 38.9981,
+    "Longitude": -76.0267
   },
   {
     "Date": "2025-09-06",
@@ -2707,8 +2608,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 42.462,
-    "Longitude": -79.3165
+    "Latitude": 42.4528,
+    "Longitude": -79.373
   },
   {
     "Date": "2025-09-06",
@@ -2716,8 +2617,8 @@ const TRIALS_DATA =
     "Host": "The Bay Team",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 37.3107,
-    "Longitude": -122.32
+    "Latitude": 37.2716,
+    "Longitude": -122.2822
   },
   {
     "Date": "2025-09-06",
@@ -2725,8 +2626,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "NW2, L2E, L2C",
     "EventCount": 3,
-    "Latitude": 47.5086,
-    "Longitude": -121.7646
+    "Latitude": 47.4814,
+    "Longitude": -121.8199
   },
   {
     "Date": "2025-09-12",
@@ -2734,8 +2635,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW3, ELT, ELT-S",
     "EventCount": 3,
-    "Latitude": 39.4203,
-    "Longitude": -77.4465
+    "Latitude": 39.4289,
+    "Longitude": -77.4268
   },
   {
     "Date": "2025-09-12",
@@ -2743,8 +2644,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "ELT, ELT-S, NW3",
     "EventCount": 3,
-    "Latitude": 40.0622,
-    "Longitude": -75.9386
+    "Latitude": 40.0617,
+    "Longitude": -75.9489
   },
   {
     "Date": "2025-09-12",
@@ -2752,8 +2653,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "ELT, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 44.6863,
-    "Longitude": -93.2923
+    "Latitude": 44.6489,
+    "Longitude": -93.2524
   },
   {
     "Date": "2025-09-12",
@@ -2761,8 +2662,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "ELT-P, ELT-S, L2V, L1E",
     "EventCount": 4,
-    "Latitude": 41.8976,
-    "Longitude": -75.7396
+    "Latitude": 41.8596,
+    "Longitude": -75.7102
   },
   {
     "Date": "2025-09-13",
@@ -2770,8 +2671,8 @@ const TRIALS_DATA =
     "Host": "KBP Dog Training",
     "TrialTypes": "ELT-S, ELT",
     "EventCount": 2,
-    "Latitude": 41.9836,
-    "Longitude": -93.5754
+    "Latitude": 41.9804,
+    "Longitude": -93.5854
   },
   {
     "Date": "2025-09-13",
@@ -2779,8 +2680,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.0074,
-    "Longitude": -73.0931
+    "Latitude": 41.9517,
+    "Longitude": -73.1173
   },
   {
     "Date": "2025-09-13",
@@ -2788,8 +2689,8 @@ const TRIALS_DATA =
     "Host": "Two Paws Up Dog Training, LLC",
     "TrialTypes": "NW3, L1C, L1I",
     "EventCount": 3,
-    "Latitude": 43.8665,
-    "Longitude": -103.1773
+    "Latitude": 43.8377,
+    "Longitude": -103.1603
   },
   {
     "Date": "2025-09-13",
@@ -2797,8 +2698,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training, LLC",
     "TrialTypes": "L2V, NW2, ELT-S, L1C",
     "EventCount": 4,
-    "Latitude": 33.0202,
-    "Longitude": -82.3962
+    "Latitude": 33.0509,
+    "Longitude": -82.4769
   },
   {
     "Date": "2025-09-13",
@@ -2806,8 +2707,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.4838,
-    "Longitude": -80.0234
+    "Latitude": 40.4502,
+    "Longitude": -80.0111
   },
   {
     "Date": "2025-09-15",
@@ -2815,8 +2716,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 40.3344,
-    "Longitude": -75.4404
+    "Latitude": 40.2924,
+    "Longitude": -75.469
   },
   {
     "Date": "2025-09-19",
@@ -2824,8 +2725,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "NW3, ELT-S, L1C, NW2",
     "EventCount": 4,
-    "Latitude": 42.9753,
-    "Longitude": -83.6634
+    "Latitude": 43.0182,
+    "Longitude": -83.6929
   },
   {
     "Date": "2025-09-19",
@@ -2833,8 +2734,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, NW3, NW2",
     "EventCount": 3,
-    "Latitude": 39.1175,
-    "Longitude": -108.7658
+    "Latitude": 39.1147,
+    "Longitude": -108.7588
   },
   {
     "Date": "2025-09-20",
@@ -2842,8 +2743,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "NW3, ELT-S, L2I, ELT",
     "EventCount": 4,
-    "Latitude": 34.1875,
-    "Longitude": -84.1454
+    "Latitude": 34.1593,
+    "Longitude": -84.1229
   },
   {
     "Date": "2025-09-20",
@@ -2851,8 +2752,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "NW3, L1E, NW2",
     "EventCount": 3,
-    "Latitude": 39.666,
-    "Longitude": -76.2218
+    "Latitude": 39.6909,
+    "Longitude": -76.1928
   },
   {
     "Date": "2025-09-20",
@@ -2860,8 +2761,8 @@ const TRIALS_DATA =
     "Host": "Rotts-n-Notts Nosework, LLC",
     "TrialTypes": "NW3, L2I, NW2",
     "EventCount": 3,
-    "Latitude": 39.5251,
-    "Longitude": -74.6753
+    "Latitude": 39.4902,
+    "Longitude": -74.6537
   },
   {
     "Date": "2025-09-20",
@@ -2869,8 +2770,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.5306,
-    "Longitude": -73.908
+    "Latitude": 41.5497,
+    "Longitude": -73.9114
   },
   {
     "Date": "2025-09-20",
@@ -2878,8 +2779,8 @@ const TRIALS_DATA =
     "Host": "All About The Nose",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 32.783,
-    "Longitude": -96.5752
+    "Latitude": 32.7214,
+    "Longitude": -96.6168
   },
   {
     "Date": "2025-09-20",
@@ -2887,8 +2788,8 @@ const TRIALS_DATA =
     "Host": "Marin Humane",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 38.1506,
-    "Longitude": -122.5228
+    "Latitude": 38.0759,
+    "Longitude": -122.6044
   },
   {
     "Date": "2025-09-20",
@@ -2896,8 +2797,8 @@ const TRIALS_DATA =
     "Host": "Canine Discovery Corps",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 43.9182,
-    "Longitude": -121.3944
+    "Latitude": 43.8608,
+    "Longitude": -121.4419
   },
   {
     "Date": "2025-09-20",
@@ -2905,8 +2806,8 @@ const TRIALS_DATA =
     "Host": "The Big Sniff, LLC",
     "TrialTypes": "NW2, L2E, L2V",
     "EventCount": 3,
-    "Latitude": 43.7334,
-    "Longitude": -71.319
+    "Latitude": 43.7032,
+    "Longitude": -71.3404
   },
   {
     "Date": "2025-09-20",
@@ -2914,8 +2815,8 @@ const TRIALS_DATA =
     "Host": "Sharon Smith",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 45.7439,
-    "Longitude": -121.4868
+    "Latitude": 45.7285,
+    "Longitude": -121.4519
   },
   {
     "Date": "2025-09-26",
@@ -2923,8 +2824,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "L2E, NW2, NW1, L2I, NW3",
     "EventCount": 5,
-    "Latitude": 39.7574,
-    "Longitude": -75.7185
+    "Latitude": 39.8283,
+    "Longitude": -75.6901
   },
   {
     "Date": "2025-09-27",
@@ -2932,8 +2833,8 @@ const TRIALS_DATA =
     "Host": "Saints2Source, LLC",
     "TrialTypes": "NW3, ELT-P, ELT",
     "EventCount": 3,
-    "Latitude": 42.1391,
-    "Longitude": -73.5407
+    "Latitude": 42.1019,
+    "Longitude": -73.5435
   },
   {
     "Date": "2025-09-27",
@@ -2941,8 +2842,8 @@ const TRIALS_DATA =
     "Host": "Happy Dog Concepts, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 38.8098,
-    "Longitude": -90.2731
+    "Latitude": 38.7964,
+    "Longitude": -90.3315
   },
   {
     "Date": "2025-09-27",
@@ -2950,8 +2851,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 37.7041,
-    "Longitude": -76.3737
+    "Latitude": 37.7152,
+    "Longitude": -76.4216
   },
   {
     "Date": "2025-09-27",
@@ -2959,8 +2860,8 @@ const TRIALS_DATA =
     "Host": "Dogs Makes Scents",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 43.7803,
-    "Longitude": -71.4082
+    "Latitude": 43.7751,
+    "Longitude": -71.3841
   },
   {
     "Date": "2025-09-27",
@@ -2968,8 +2869,8 @@ const TRIALS_DATA =
     "Host": "Wells Creek Dog Training",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 43.7002,
-    "Longitude": -124.095
+    "Latitude": 43.6767,
+    "Longitude": -124.0849
   },
   {
     "Date": "2025-09-27",
@@ -2977,8 +2878,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "L3E, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 39.7529,
-    "Longitude": -77.6089
+    "Latitude": 39.7895,
+    "Longitude": -77.5521
   },
   {
     "Date": "2025-10-03",
@@ -2986,8 +2887,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW3, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 41.5297,
-    "Longitude": -73.1599
+    "Latitude": 41.5645,
+    "Longitude": -73.084
   },
   {
     "Date": "2025-10-04",
@@ -2995,8 +2896,8 @@ const TRIALS_DATA =
     "Host": "Nose 2 Tail Dog Training LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 46.6604,
-    "Longitude": -94.1251
+    "Latitude": 46.6606,
+    "Longitude": -94.1116
   },
   {
     "Date": "2025-10-04",
@@ -3004,8 +2905,8 @@ const TRIALS_DATA =
     "Host": "The Big Sniff, LLC",
     "TrialTypes": "ELT, L3I, L2C",
     "EventCount": 3,
-    "Latitude": 42.7928,
-    "Longitude": -71.4708
+    "Latitude": 42.7972,
+    "Longitude": -71.4383
   },
   {
     "Date": "2025-10-04",
@@ -3013,8 +2914,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 41.7822,
-    "Longitude": -74.0994
+    "Latitude": 41.7029,
+    "Longitude": -74.1277
   },
   {
     "Date": "2025-10-04",
@@ -3022,8 +2923,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 40.1536,
-    "Longitude": -79.7783
+    "Latitude": 40.1336,
+    "Longitude": -79.7356
   },
   {
     "Date": "2025-10-06",
@@ -3031,8 +2932,8 @@ const TRIALS_DATA =
     "Host": "CalCoastal Dog Owners Group",
     "TrialTypes": "ELT-S, NW1, L2I, NW2",
     "EventCount": 4,
-    "Latitude": 36.2629,
-    "Longitude": -121.4231
+    "Latitude": 36.1885,
+    "Longitude": -121.3949
   },
   {
     "Date": "2025-10-10",
@@ -3040,8 +2941,8 @@ const TRIALS_DATA =
     "Host": "Think Pawsitive Dog Training LLC",
     "TrialTypes": "ELT, L2C, L1E",
     "EventCount": 3,
-    "Latitude": 43.4451,
-    "Longitude": -88.1443
+    "Latitude": 43.4017,
+    "Longitude": -88.1367
   },
   {
     "Date": "2025-10-11",
@@ -3049,8 +2950,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "ELT-P, ELT-S",
     "EventCount": 2,
-    "Latitude": 44.882,
-    "Longitude": -93.3077
+    "Latitude": 44.8639,
+    "Longitude": -93.2903
   },
   {
     "Date": "2025-10-11",
@@ -3058,8 +2959,8 @@ const TRIALS_DATA =
     "Host": "KBP Dog Training",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 41.6806,
-    "Longitude": -93.2272
+    "Latitude": 41.7243,
+    "Longitude": -93.2304
   },
   {
     "Date": "2025-10-11",
@@ -3067,8 +2968,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "L1C, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 45.6267,
-    "Longitude": -109.2925
+    "Latitude": 45.5885,
+    "Longitude": -109.3004
   },
   {
     "Date": "2025-10-11",
@@ -3076,8 +2977,8 @@ const TRIALS_DATA =
     "Host": "Whole Dog Institute, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 35.9857,
-    "Longitude": -78.9266
+    "Latitude": 35.9751,
+    "Longitude": -78.865
   },
   {
     "Date": "2025-10-11",
@@ -3085,8 +2986,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Magic",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 48.8814,
-    "Longitude": -122.5915
+    "Latitude": 48.8639,
+    "Longitude": -122.591
   },
   {
     "Date": "2025-10-11",
@@ -3094,8 +2995,8 @@ const TRIALS_DATA =
     "Host": "Paws 4 Thought Dog Training, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.4379,
-    "Longitude": -105.0263
+    "Latitude": 40.3844,
+    "Longitude": -105.054
   },
   {
     "Date": "2025-10-11",
@@ -3103,8 +3004,8 @@ const TRIALS_DATA =
     "Host": "Saints2Source, LLC",
     "TrialTypes": "NW2, NW3, ELT",
     "EventCount": 3,
-    "Latitude": 41.1568,
-    "Longitude": -73.9511
+    "Latitude": 41.1701,
+    "Longitude": -73.9766
   },
   {
     "Date": "2025-10-11",
@@ -3112,8 +3013,8 @@ const TRIALS_DATA =
     "Host": "Marin Humane",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 38.4409,
-    "Longitude": -122.9309
+    "Latitude": 38.432,
+    "Longitude": -122.9409
   },
   {
     "Date": "2025-10-11",
@@ -3121,8 +3022,8 @@ const TRIALS_DATA =
     "Host": "Canine Discovery Corps",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 43.1701,
-    "Longitude": -123.3229
+    "Latitude": 43.1771,
+    "Longitude": -123.3875
   },
   {
     "Date": "2025-10-11",
@@ -3130,8 +3031,8 @@ const TRIALS_DATA =
     "Host": "Successful Sniffer",
     "TrialTypes": "ELT-P, ELT, NW3",
     "EventCount": 3,
-    "Latitude": 34.915,
-    "Longitude": -111.7543
+    "Latitude": 34.8213,
+    "Longitude": -111.7765
   },
   {
     "Date": "2025-10-17",
@@ -3139,8 +3040,8 @@ const TRIALS_DATA =
     "Host": "Beyond Elevation K9",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.3168,
-    "Longitude": -104.6251
+    "Latitude": 39.3203,
+    "Longitude": -104.5868
   },
   {
     "Date": "2025-10-17",
@@ -3148,8 +3049,8 @@ const TRIALS_DATA =
     "Host": "Chestnut Hill Canine Sports",
     "TrialTypes": "NW3, L2C, NW1",
     "EventCount": 3,
-    "Latitude": 33.9225,
-    "Longitude": -84.0289
+    "Latitude": 33.9932,
+    "Longitude": -83.9619
   },
   {
     "Date": "2025-10-17",
@@ -3157,8 +3058,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "L1V, ELT-S, L2C, L2E",
     "EventCount": 4,
-    "Latitude": 41.3478,
-    "Longitude": -75.3057
+    "Latitude": 41.3097,
+    "Longitude": -75.3688
   },
   {
     "Date": "2025-10-18",
@@ -3166,8 +3067,8 @@ const TRIALS_DATA =
     "Host": "Rachelle Bailey-Austin/About Face K9 Academy & Dorothy Turley/Let's Talk Dogs, LLC",
     "TrialTypes": "L3I, L2C, NW2",
     "EventCount": 3,
-    "Latitude": 46.6716,
-    "Longitude": -122.9916
+    "Latitude": 46.7627,
+    "Longitude": -123.0042
   },
   {
     "Date": "2025-10-18",
@@ -3175,8 +3076,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "ELT, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 42.4877,
-    "Longitude": -78.4896
+    "Latitude": 42.5269,
+    "Longitude": -78.4516
   },
   {
     "Date": "2025-10-18",
@@ -3184,8 +3085,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 40.0706,
-    "Longitude": -75.232
+    "Latitude": 40.0462,
+    "Longitude": -75.2591
   },
   {
     "Date": "2025-10-18",
@@ -3193,8 +3094,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 43.383,
-    "Longitude": -71.036
+    "Latitude": 43.376,
+    "Longitude": -70.9672
   },
   {
     "Date": "2025-10-18",
@@ -3202,8 +3103,8 @@ const TRIALS_DATA =
     "Host": "Sierra Sniffing Canines",
     "TrialTypes": "L1I, L2I, ELT",
     "EventCount": 3,
-    "Latitude": 39.3061,
-    "Longitude": -121.0467
+    "Latitude": 39.2999,
+    "Longitude": -121.0162
   },
   {
     "Date": "2025-10-18",
@@ -3211,8 +3112,8 @@ const TRIALS_DATA =
     "Host": "Willoughby Training",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 41.6396,
-    "Longitude": -72.9804
+    "Latitude": 41.7229,
+    "Longitude": -73.0342
   },
   {
     "Date": "2025-10-18",
@@ -3220,8 +3121,8 @@ const TRIALS_DATA =
     "Host": "Your Dog Knows, LLC",
     "TrialTypes": "ELT, L1V, L2V",
     "EventCount": 3,
-    "Latitude": 37.9721,
-    "Longitude": -78.1993
+    "Latitude": 37.9064,
+    "Longitude": -78.2552
   },
   {
     "Date": "2025-10-18",
@@ -3229,8 +3130,8 @@ const TRIALS_DATA =
     "Host": "CalCoastal Dog Owners Group",
     "TrialTypes": "L3V, L2V, L1V",
     "EventCount": 3,
-    "Latitude": 36.8815,
-    "Longitude": -121.707
+    "Latitude": 36.8655,
+    "Longitude": -121.7886
   },
   {
     "Date": "2025-10-19",
@@ -3238,8 +3139,8 @@ const TRIALS_DATA =
     "Host": "B.L. McMutts",
     "TrialTypes": "L1V, L3V",
     "EventCount": 2,
-    "Latitude": 37.0476,
-    "Longitude": -121.6174
+    "Latitude": 37.0832,
+    "Longitude": -121.6256
   },
   {
     "Date": "2025-10-24",
@@ -3247,8 +3148,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "ELT, SMT",
     "EventCount": 2,
-    "Latitude": 39.008,
-    "Longitude": -104.3465
+    "Latitude": 38.9896,
+    "Longitude": -104.3156
   },
   {
     "Date": "2025-10-24",
@@ -3256,8 +3157,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Point Labradors",
     "TrialTypes": "ELT, ELT-S, L2V, L2C, L3C",
     "EventCount": 5,
-    "Latitude": 38.8026,
-    "Longitude": -76.0278
+    "Latitude": 38.8066,
+    "Longitude": -76.0706
   },
   {
     "Date": "2025-10-24",
@@ -3265,8 +3166,8 @@ const TRIALS_DATA =
     "Host": "Paws Plus Training, LLC",
     "TrialTypes": "NW3, NW1, NW2, ELT-P",
     "EventCount": 4,
-    "Latitude": 37.881,
-    "Longitude": -78.2908
+    "Latitude": 37.9126,
+    "Longitude": -78.3085
   },
   {
     "Date": "2025-10-24",
@@ -3274,8 +3175,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 42.2384,
-    "Longitude": -83.5663
+    "Latitude": 42.2343,
+    "Longitude": -83.596
   },
   {
     "Date": "2025-10-25",
@@ -3283,8 +3184,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 47.3066,
-    "Longitude": -122.244
+    "Latitude": 47.2755,
+    "Longitude": -122.1883
   },
   {
     "Date": "2025-10-25",
@@ -3292,8 +3193,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.5209,
-    "Longitude": -73.9143
+    "Latitude": 41.4934,
+    "Longitude": -73.8588
   },
   {
     "Date": "2025-10-25",
@@ -3301,8 +3202,8 @@ const TRIALS_DATA =
     "Host": "Trust Your Dog K9 Events",
     "TrialTypes": "NW3, L3I, L3C",
     "EventCount": 3,
-    "Latitude": 45.7312,
-    "Longitude": -121.3087
+    "Latitude": 45.674,
+    "Longitude": -121.2979
   },
   {
     "Date": "2025-10-25",
@@ -3310,8 +3211,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.8725,
-    "Longitude": -89.117
+    "Latitude": 39.8854,
+    "Longitude": -89.2132
   },
   {
     "Date": "2025-10-25",
@@ -3319,8 +3220,8 @@ const TRIALS_DATA =
     "Host": "Virginia Howe",
     "TrialTypes": "NW1, NW3",
     "EventCount": 2,
-    "Latitude": 43.978,
-    "Longitude": -70.3191
+    "Latitude": 44.0364,
+    "Longitude": -70.3256
   },
   {
     "Date": "2025-10-25",
@@ -3328,8 +3229,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW3, NW1, L1C",
     "EventCount": 3,
-    "Latitude": 39.3379,
-    "Longitude": -76.9348
+    "Latitude": 39.2621,
+    "Longitude": -76.9204
   },
   {
     "Date": "2025-10-27",
@@ -3337,8 +3238,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training LLC",
     "TrialTypes": "NW3, ELT, ELT-P",
     "EventCount": 3,
-    "Latitude": 33.4987,
-    "Longitude": -84.3641
+    "Latitude": 33.4765,
+    "Longitude": -84.397
   },
   {
     "Date": "2025-10-27",
@@ -3346,8 +3247,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "NW2, ELT-P",
     "EventCount": 2,
-    "Latitude": 36.6848,
-    "Longitude": -121.2532
+    "Latitude": 36.7041,
+    "Longitude": -121.244
   },
   {
     "Date": "2025-10-31",
@@ -3355,8 +3256,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "SMT, NW3",
     "EventCount": 2,
-    "Latitude": 44.5146,
-    "Longitude": -92.861
+    "Latitude": 44.5506,
+    "Longitude": -92.919
   },
   {
     "Date": "2025-10-31",
@@ -3364,8 +3265,8 @@ const TRIALS_DATA =
     "Host": "Dog Gone Right",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 30.6487,
-    "Longitude": -90.3546
+    "Latitude": 30.6144,
+    "Longitude": -90.4382
   },
   {
     "Date": "2025-10-31",
@@ -3373,8 +3274,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, NW3, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 40.0189,
-    "Longitude": -107.8647
+    "Latitude": 40.0756,
+    "Longitude": -107.9434
   },
   {
     "Date": "2025-10-31",
@@ -3382,8 +3283,8 @@ const TRIALS_DATA =
     "Host": "Canine Discovery Corps",
     "TrialTypes": "ELT, NW1, L3C",
     "EventCount": 3,
-    "Latitude": 45.0228,
-    "Longitude": -122.6599
+    "Latitude": 45.036,
+    "Longitude": -122.6342
   },
   {
     "Date": "2025-11-01",
@@ -3391,8 +3292,8 @@ const TRIALS_DATA =
     "Host": "George Carpenter",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 42.4829,
-    "Longitude": -89.0484
+    "Latitude": 42.5528,
+    "Longitude": -89.0285
   },
   {
     "Date": "2025-11-01",
@@ -3400,8 +3301,8 @@ const TRIALS_DATA =
     "Host": "HeavenScent Sniffers",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.106,
-    "Longitude": -71.9499
+    "Latitude": 42.1499,
+    "Longitude": -71.9913
   },
   {
     "Date": "2025-11-01",
@@ -3409,8 +3310,8 @@ const TRIALS_DATA =
     "Host": "Elizabeth Dutton",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 43.353,
-    "Longitude": -70.5183
+    "Latitude": 43.3874,
+    "Longitude": -70.4897
   },
   {
     "Date": "2025-11-01",
@@ -3418,8 +3319,8 @@ const TRIALS_DATA =
     "Host": "Foothills Canine Academy, LLC",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 35.2828,
-    "Longitude": -82.194
+    "Latitude": 35.3426,
+    "Longitude": -82.1241
   },
   {
     "Date": "2025-11-01",
@@ -3427,8 +3328,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.5333,
-    "Longitude": -76.5851
+    "Latitude": 39.5547,
+    "Longitude": -76.6184
   },
   {
     "Date": "2025-11-01",
@@ -3436,8 +3337,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 41.6184,
-    "Longitude": -73.8888
+    "Latitude": 41.5876,
+    "Longitude": -73.9569
   },
   {
     "Date": "2025-11-01",
@@ -3445,8 +3346,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework LLC",
     "TrialTypes": "L1C, L3I, L3C, L1I",
     "EventCount": 4,
-    "Latitude": 34.1418,
-    "Longitude": -84.4811
+    "Latitude": 34.1294,
+    "Longitude": -84.4926
   },
   {
     "Date": "2025-11-01",
@@ -3454,8 +3355,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Detectives",
     "TrialTypes": "ELT-S, L1C",
     "EventCount": 2,
-    "Latitude": 45.2695,
-    "Longitude": -123.2477
+    "Latitude": 45.222,
+    "Longitude": -123.2037
   },
   {
     "Date": "2025-11-05",
@@ -3463,8 +3364,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.4141,
-    "Longitude": -119.0913
+    "Latitude": 34.4092,
+    "Longitude": -119.0549
   },
   {
     "Date": "2025-11-07",
@@ -3472,8 +3373,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT-S, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 38.4499,
-    "Longitude": -107.8447
+    "Latitude": 38.5127,
+    "Longitude": -107.8635
   },
   {
     "Date": "2025-11-07",
@@ -3481,8 +3382,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 34.0883,
-    "Longitude": -117.5366
+    "Latitude": 34.1137,
+    "Longitude": -117.596
   },
   {
     "Date": "2025-11-08",
@@ -3490,8 +3391,8 @@ const TRIALS_DATA =
     "Host": "Kiddy Christie",
     "TrialTypes": "NW1, NW2, ELT-S, L1E",
     "EventCount": 4,
-    "Latitude": 44.127,
-    "Longitude": -123.0225
+    "Latitude": 44.0893,
+    "Longitude": -123.0666
   },
   {
     "Date": "2025-11-08",
@@ -3499,8 +3400,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 42.681,
-    "Longitude": -88.5376
+    "Latitude": 42.657,
+    "Longitude": -88.5057
   },
   {
     "Date": "2025-11-08",
@@ -3508,8 +3409,8 @@ const TRIALS_DATA =
     "Host": "Jen Huot",
     "TrialTypes": "NW3, ELT, ELT-P",
     "EventCount": 3,
-    "Latitude": 38.5417,
-    "Longitude": -122.9931
+    "Latitude": 38.5543,
+    "Longitude": -122.9432
   },
   {
     "Date": "2025-11-08",
@@ -3517,8 +3418,8 @@ const TRIALS_DATA =
     "Host": "Rotts-n-Notts Nosework, LLC",
     "TrialTypes": "NW3, L2E, NW2",
     "EventCount": 3,
-    "Latitude": 39.4928,
-    "Longitude": -74.7025
+    "Latitude": 39.4867,
+    "Longitude": -74.6764
   },
   {
     "Date": "2025-11-08",
@@ -3526,8 +3427,8 @@ const TRIALS_DATA =
     "Host": "Paws n' Sniff",
     "TrialTypes": "ELT-P, NW3",
     "EventCount": 2,
-    "Latitude": 40.5204,
-    "Longitude": -76.4314
+    "Latitude": 40.5824,
+    "Longitude": -76.3573
   },
   {
     "Date": "2025-11-08",
@@ -3535,8 +3436,8 @@ const TRIALS_DATA =
     "Host": "Patience Unlimited Professional Dog Training",
     "TrialTypes": "NW3, L2C, NW2",
     "EventCount": 3,
-    "Latitude": 32.1787,
-    "Longitude": -110.964
+    "Latitude": 32.227,
+    "Longitude": -110.9438
   },
   {
     "Date": "2025-11-11",
@@ -3544,8 +3445,8 @@ const TRIALS_DATA =
     "Host": "Jen Huot",
     "TrialTypes": "ELT-P",
     "EventCount": 1,
-    "Latitude": 38.5422,
-    "Longitude": -122.9545
+    "Latitude": 38.4713,
+    "Longitude": -123.0012
   },
   {
     "Date": "2025-11-12",
@@ -3553,8 +3454,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Detectives, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 46.1752,
-    "Longitude": -123.8505
+    "Latitude": 46.2237,
+    "Longitude": -123.8211
   },
   {
     "Date": "2025-11-14",
@@ -3562,8 +3463,8 @@ const TRIALS_DATA =
     "Host": "Common Scents K9",
     "TrialTypes": "L1C, L2C, L1I, L2I, NW1",
     "EventCount": 5,
-    "Latitude": 42.01,
-    "Longitude": -88.2964
+    "Latitude": 42.0856,
+    "Longitude": -88.2826
   },
   {
     "Date": "2025-11-14",
@@ -3571,8 +3472,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 39.747,
-    "Longitude": -76.6848
+    "Latitude": 39.7381,
+    "Longitude": -76.7233
   },
   {
     "Date": "2025-11-15",
@@ -3580,8 +3481,8 @@ const TRIALS_DATA =
     "Host": "New Mexico Canine Scent Work, LLC",
     "TrialTypes": "NW3, L1C, NW2",
     "EventCount": 3,
-    "Latitude": 35.105,
-    "Longitude": -106.6629
+    "Latitude": 35.1115,
+    "Longitude": -106.6637
   },
   {
     "Date": "2025-11-15",
@@ -3589,8 +3490,8 @@ const TRIALS_DATA =
     "Host": "All About The Nose",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 33.5612,
-    "Longitude": -96.2116
+    "Latitude": 33.5697,
+    "Longitude": -96.1665
   },
   {
     "Date": "2025-11-15",
@@ -3598,8 +3499,8 @@ const TRIALS_DATA =
     "Host": "Hoppin' in the Hills",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 27.5395,
-    "Longitude": -82.5256
+    "Latitude": 27.4839,
+    "Longitude": -82.5965
   },
   {
     "Date": "2025-11-15",
@@ -3607,8 +3508,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "L1I, NW2, L3I, L3C",
     "EventCount": 4,
-    "Latitude": 41.5432,
-    "Longitude": -74.9226
+    "Latitude": 41.5244,
+    "Longitude": -74.8333
   },
   {
     "Date": "2025-11-15",
@@ -3616,8 +3517,8 @@ const TRIALS_DATA =
     "Host": "Kaye Stevenson",
     "TrialTypes": "NW2, NW1, L1E",
     "EventCount": 3,
-    "Latitude": 32.6798,
-    "Longitude": -86.4833
+    "Latitude": 32.6696,
+    "Longitude": -86.4131
   },
   {
     "Date": "2025-11-15",
@@ -3625,8 +3526,8 @@ const TRIALS_DATA =
     "Host": "By A Nose Nosework",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 32.3678,
-    "Longitude": -86.2993
+    "Latitude": 32.3929,
+    "Longitude": -86.2833
   },
   {
     "Date": "2025-11-15",
@@ -3634,8 +3535,8 @@ const TRIALS_DATA =
     "Host": "Trust Your Dog K9 Events",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 45.2994,
-    "Longitude": -121.9258
+    "Latitude": 45.3008,
+    "Longitude": -121.986
   },
   {
     "Date": "2025-11-17",
@@ -3643,8 +3544,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.4071,
-    "Longitude": -71.563
+    "Latitude": 42.4069,
+    "Longitude": -71.593
   },
   {
     "Date": "2025-11-21",
@@ -3652,8 +3553,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot Of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT-S, NW2, NW1, L1C, ELT",
     "EventCount": 6,
-    "Latitude": 38.9575,
-    "Longitude": -75.5622
+    "Latitude": 38.9619,
+    "Longitude": -75.5864
   },
   {
     "Date": "2025-11-21",
@@ -3661,8 +3562,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 35.391,
-    "Longitude": -120.3665
+    "Latitude": 35.3475,
+    "Longitude": -120.376
   },
   {
     "Date": "2025-11-22",
@@ -3670,8 +3571,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 39.0379,
-    "Longitude": -76.5769
+    "Latitude": 39.0322,
+    "Longitude": -76.6172
   },
   {
     "Date": "2025-11-22",
@@ -3679,8 +3580,8 @@ const TRIALS_DATA =
     "Host": "Linda Culliton",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 30.6837,
-    "Longitude": -86.11
+    "Latitude": 30.7086,
+    "Longitude": -86.1622
   },
   {
     "Date": "2025-11-22",
@@ -3688,8 +3589,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "ELT, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 38.8548,
-    "Longitude": -107.8214
+    "Latitude": 38.8211,
+    "Longitude": -107.8235
   },
   {
     "Date": "2025-11-22",
@@ -3697,8 +3598,8 @@ const TRIALS_DATA =
     "Host": "MasterPeace Dog Training",
     "TrialTypes": "L3C, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 42.0416,
-    "Longitude": -71.2494
+    "Latitude": 42.0283,
+    "Longitude": -71.2347
   },
   {
     "Date": "2025-11-22",
@@ -3706,8 +3607,8 @@ const TRIALS_DATA =
     "Host": "Paws n' Sniff",
     "TrialTypes": "L1C, NW1, L2I, L2E",
     "EventCount": 4,
-    "Latitude": 40.5233,
-    "Longitude": -75.1446
+    "Latitude": 40.5517,
+    "Longitude": -75.2008
   },
   {
     "Date": "2025-11-22",
@@ -3715,8 +3616,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "ELT-S, NW2, NW1, L1I",
     "EventCount": 4,
-    "Latitude": 30.5437,
-    "Longitude": -98.3122
+    "Latitude": 30.539,
+    "Longitude": -98.2463
   },
   {
     "Date": "2025-11-22",
@@ -3724,8 +3625,8 @@ const TRIALS_DATA =
     "Host": "K9 InScentives",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 39.925,
-    "Longitude": -74.8103
+    "Latitude": 39.9152,
+    "Longitude": -74.8481
   },
   {
     "Date": "2025-11-22",
@@ -3733,8 +3634,8 @@ const TRIALS_DATA =
     "Host": "Dogs Make Scents",
     "TrialTypes": "ELT, L1E, L1C",
     "EventCount": 3,
-    "Latitude": 41.9794,
-    "Longitude": -71.15
+    "Latitude": 41.9656,
+    "Longitude": -71.1572
   },
   {
     "Date": "2025-11-22",
@@ -3742,8 +3643,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 42.575,
-    "Longitude": -88.1413
+    "Latitude": 42.5265,
+    "Longitude": -88.0943
   },
   {
     "Date": "2025-11-22",
@@ -3751,8 +3652,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 35.989,
-    "Longitude": -86.5084
+    "Latitude": 35.9504,
+    "Longitude": -86.5182
   },
   {
     "Date": "2025-11-28",
@@ -3760,8 +3661,8 @@ const TRIALS_DATA =
     "Host": "JavaK9s, LLC",
     "TrialTypes": "NW3, ELT-S",
     "EventCount": 2,
-    "Latitude": 33.4815,
-    "Longitude": -117.741
+    "Latitude": 33.438,
+    "Longitude": -117.7054
   },
   {
     "Date": "2025-11-28",
@@ -3769,8 +3670,8 @@ const TRIALS_DATA =
     "Host": "The Bay Team",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 37.2892,
-    "Longitude": -121.9348
+    "Latitude": 37.3568,
+    "Longitude": -121.9109
   },
   {
     "Date": "2025-11-29",
@@ -3778,8 +3679,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 34.0858,
-    "Longitude": -84.3079
+    "Latitude": 34.1139,
+    "Longitude": -84.3069
   },
   {
     "Date": "2025-11-29",
@@ -3787,8 +3688,8 @@ const TRIALS_DATA =
     "Host": "Savvy Dog Sports",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 42.8397,
-    "Longitude": -77.3397
+    "Latitude": 42.8585,
+    "Longitude": -77.33
   },
   {
     "Date": "2025-11-29",
@@ -3796,8 +3697,8 @@ const TRIALS_DATA =
     "Host": "Gretchen Hofheins-Wackerfuss",
     "TrialTypes": "ELT-S, ELT-P",
     "EventCount": 2,
-    "Latitude": 44.8745,
-    "Longitude": -92.9504
+    "Latitude": 44.8193,
+    "Longitude": -92.9832
   },
   {
     "Date": "2025-11-29",
@@ -3805,8 +3706,8 @@ const TRIALS_DATA =
     "Host": "Sirius K9 Solutions",
     "TrialTypes": "NW3, L3I, ELT-S",
     "EventCount": 3,
-    "Latitude": 40.6564,
-    "Longitude": -74.8403
+    "Latitude": 40.6121,
+    "Longitude": -74.8278
   },
   {
     "Date": "2025-12-05",
@@ -3814,8 +3715,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT, ELT-P, ELT-S",
     "EventCount": 3,
-    "Latitude": 38.9224,
-    "Longitude": -76.7566
+    "Latitude": 38.9858,
+    "Longitude": -76.7287
   },
   {
     "Date": "2025-12-06",
@@ -3823,8 +3724,8 @@ const TRIALS_DATA =
     "Host": "Chesapeake Search Dogs",
     "TrialTypes": "NW3, NW2, L2C",
     "EventCount": 3,
-    "Latitude": 38.9901,
-    "Longitude": -76.4578
+    "Latitude": 38.9932,
+    "Longitude": -76.4635
   },
   {
     "Date": "2025-12-06",
@@ -3832,8 +3733,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "L1C, L2C, NW3",
     "EventCount": 3,
-    "Latitude": 47.2654,
-    "Longitude": -122.2376
+    "Latitude": 47.3136,
+    "Longitude": -122.2139
   },
   {
     "Date": "2025-12-06",
@@ -3841,8 +3742,8 @@ const TRIALS_DATA =
     "Host": "About Face K9 Academy and Let's Talk Dogs",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 46.7074,
-    "Longitude": -122.9516
+    "Latitude": 46.6749,
+    "Longitude": -122.9645
   },
   {
     "Date": "2025-12-06",
@@ -3850,8 +3751,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 34.4408,
-    "Longitude": -118.932
+    "Latitude": 34.3999,
+    "Longitude": -118.9555
   },
   {
     "Date": "2025-12-06",
@@ -3859,8 +3760,8 @@ const TRIALS_DATA =
     "Host": "Southeast Scent Work Alliance, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 33.3669,
-    "Longitude": -86.8106
+    "Latitude": 33.3486,
+    "Longitude": -86.8046
   },
   {
     "Date": "2025-12-06",
@@ -3868,8 +3769,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "NW3, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 40.847,
-    "Longitude": -79.5044
+    "Latitude": 40.7928,
+    "Longitude": -79.4912
   },
   {
     "Date": "2025-12-06",
@@ -3877,8 +3778,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "L2I, L3V, NW3",
     "EventCount": 3,
-    "Latitude": 41.3288,
-    "Longitude": -75.2969
+    "Latitude": 41.266,
+    "Longitude": -75.2881
   },
   {
     "Date": "2025-12-07",
@@ -3886,8 +3787,8 @@ const TRIALS_DATA =
     "Host": "Your Dog Knows, LLC",
     "TrialTypes": "NW1",
     "EventCount": 1,
-    "Latitude": 26.5879,
-    "Longitude": -81.9367
+    "Latitude": 26.5208,
+    "Longitude": -81.9262
   },
   {
     "Date": "2025-12-12",
@@ -3895,8 +3796,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW3, ELT, ELT-P",
     "EventCount": 3,
-    "Latitude": 40.3044,
-    "Longitude": -75.6868
+    "Latitude": 40.2322,
+    "Longitude": -75.7003
   },
   {
     "Date": "2025-12-12",
@@ -3904,8 +3805,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot Of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT, ELT-S, NW1",
     "EventCount": 4,
-    "Latitude": 40.5707,
-    "Longitude": -74.9305
+    "Latitude": 40.585,
+    "Longitude": -74.9357
   },
   {
     "Date": "2025-12-13",
@@ -3913,8 +3814,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "ELT-P, ELT-S, L2C",
     "EventCount": 3,
-    "Latitude": 29.0871,
-    "Longitude": -81.3657
+    "Latitude": 29.1064,
+    "Longitude": -81.3863
   },
   {
     "Date": "2025-12-13",
@@ -3922,8 +3823,8 @@ const TRIALS_DATA =
     "Host": "South Coast Scent Dogs",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.0229,
-    "Longitude": -71.1092
+    "Latitude": 42.0716,
+    "Longitude": -71.1784
   },
   {
     "Date": "2025-12-13",
@@ -3931,8 +3832,8 @@ const TRIALS_DATA =
     "Host": "Uber Dog and Rewarding Rover LLC",
     "TrialTypes": "NW2",
     "EventCount": 1,
-    "Latitude": 33.1341,
-    "Longitude": -117.0836
+    "Latitude": 33.0957,
+    "Longitude": -117.0794
   },
   {
     "Date": "2025-12-13",
@@ -3940,8 +3841,8 @@ const TRIALS_DATA =
     "Host": "Trained to Trust LLC",
     "TrialTypes": "ELT, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 34.9499,
-    "Longitude": -82.1829
+    "Latitude": 34.9728,
+    "Longitude": -82.1781
   },
   {
     "Date": "2025-12-13",
@@ -3949,8 +3850,8 @@ const TRIALS_DATA =
     "Host": "Doglandia, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.8862,
-    "Longitude": -123.2376
+    "Latitude": 44.8887,
+    "Longitude": -123.1553
   },
   {
     "Date": "2025-12-13",
@@ -3958,8 +3859,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.5494,
-    "Longitude": -77.0419
+    "Latitude": 39.5419,
+    "Longitude": -77.0026
   },
   {
     "Date": "2025-12-16",
@@ -3967,8 +3868,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training LLC",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 34.0306,
-    "Longitude": -84.1918
+    "Latitude": 34.0345,
+    "Longitude": -84.1333
   },
   {
     "Date": "2025-12-20",
@@ -3976,8 +3877,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework LLC",
     "TrialTypes": "SMT, ELT",
     "EventCount": 2,
-    "Latitude": 34.2469,
-    "Longitude": -84.0937
+    "Latitude": 34.2569,
+    "Longitude": -84.1035
   },
   {
     "Date": "2025-12-20",
@@ -3985,8 +3886,8 @@ const TRIALS_DATA =
     "Host": "Happy Dog Concepts, LLC",
     "TrialTypes": "ELT-P",
     "EventCount": 1,
-    "Latitude": 38.776,
-    "Longitude": -90.3405
+    "Latitude": 38.8016,
+    "Longitude": -90.3242
   },
   {
     "Date": "2025-12-20",
@@ -3994,8 +3895,8 @@ const TRIALS_DATA =
     "Host": "Helix Fairweather & Doglandia, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.9064,
-    "Longitude": -123.0458
+    "Latitude": 44.9083,
+    "Longitude": -122.9986
   },
   {
     "Date": "2025-12-20",
@@ -4003,8 +3904,8 @@ const TRIALS_DATA =
     "Host": "WestInn Kennels",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 39.1059,
-    "Longitude": -91.0958
+    "Latitude": 39.1157,
+    "Longitude": -91.0076
   },
   {
     "Date": "2025-12-20",
@@ -4012,8 +3913,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 37.9263,
-    "Longitude": -121.3157
+    "Latitude": 37.9568,
+    "Longitude": -121.2818
   },
   {
     "Date": "2025-12-27",
@@ -4021,8 +3922,8 @@ const TRIALS_DATA =
     "Host": "Daphne Melillo",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 32.6358,
-    "Longitude": -85.4917
+    "Latitude": 32.5823,
+    "Longitude": -85.4519
   },
   {
     "Date": "2025-12-27",
@@ -4030,8 +3931,8 @@ const TRIALS_DATA =
     "Host": "Paws 4 Thought Dog Training, LLC",
     "TrialTypes": "L1V, NW2, NW1, L1I",
     "EventCount": 4,
-    "Latitude": 40.2623,
-    "Longitude": -103.8446
+    "Latitude": 40.2216,
+    "Longitude": -103.8076
   },
   {
     "Date": "2025-12-27",
@@ -4039,8 +3940,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW3, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 40.9106,
-    "Longitude": -73.7652
+    "Latitude": 40.8631,
+    "Longitude": -73.7422
   },
   {
     "Date": "2025-12-27",
@@ -4048,8 +3949,8 @@ const TRIALS_DATA =
     "Host": "Saints2Source",
     "TrialTypes": "NW1, NW2, L2E, L2C",
     "EventCount": 4,
-    "Latitude": 40.9885,
-    "Longitude": -73.7386
+    "Latitude": 41.0194,
+    "Longitude": -73.7482
   },
   {
     "Date": "2025-12-28",
@@ -4057,8 +3958,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "ELT, ELT-P, NW3",
     "EventCount": 3,
-    "Latitude": 39.9984,
-    "Longitude": -75.5998
+    "Latitude": 40.0345,
+    "Longitude": -75.5807
   },
   {
     "Date": "2025-12-28",
@@ -4066,8 +3967,8 @@ const TRIALS_DATA =
     "Host": "Think Pawsitive Dog Training",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 43.0857,
-    "Longitude": -88.3356
+    "Latitude": 43.0757,
+    "Longitude": -88.342
   },
   {
     "Date": "2025-12-29",
@@ -4075,8 +3976,8 @@ const TRIALS_DATA =
     "Host": "Bay State Sniffers",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 41.7389,
-    "Longitude": -71.2765
+    "Latitude": 41.7526,
+    "Longitude": -71.2648
   },
   {
     "Date": "2026-01-02",
@@ -4084,8 +3985,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW3, ELT, ELT-S",
     "EventCount": 3,
-    "Latitude": 39.6728,
-    "Longitude": -77.3304
+    "Latitude": 39.6857,
+    "Longitude": -77.3317
   },
   {
     "Date": "2026-01-03",
@@ -4093,8 +3994,8 @@ const TRIALS_DATA =
     "Host": "Linda Buchanan",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 33.2444,
-    "Longitude": -117.1648
+    "Latitude": 33.2862,
+    "Longitude": -117.2169
   },
   {
     "Date": "2026-01-03",
@@ -4102,8 +4003,8 @@ const TRIALS_DATA =
     "Host": "Hoppin' in the Hills",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.9564,
-    "Longitude": -81.6655
+    "Latitude": 29.9478,
+    "Longitude": -81.637
   },
   {
     "Date": "2026-01-03",
@@ -4111,8 +4012,8 @@ const TRIALS_DATA =
     "Host": "Rachel Hawkins",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 35.8004,
-    "Longitude": -83.9812
+    "Latitude": 35.7304,
+    "Longitude": -83.9536
   },
   {
     "Date": "2026-01-03",
@@ -4120,8 +4021,8 @@ const TRIALS_DATA =
     "Host": "Southeast Scent Work Alliance, LLC",
     "TrialTypes": "NW1",
     "EventCount": 1,
-    "Latitude": 33.1051,
-    "Longitude": -86.8745
+    "Latitude": 33.1281,
+    "Longitude": -86.8155
   },
   {
     "Date": "2026-01-09",
@@ -4129,8 +4030,8 @@ const TRIALS_DATA =
     "Host": "Paws Plus Training, LLC",
     "TrialTypes": "NW3, NW1, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 37.5721,
-    "Longitude": -76.4589
+    "Latitude": 37.5291,
+    "Longitude": -76.4471
   },
   {
     "Date": "2026-01-09",
@@ -4138,8 +4039,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW3, NW2, NW1, L2I",
     "EventCount": 4,
-    "Latitude": 40.1292,
-    "Longitude": -75.5312
+    "Latitude": 40.1602,
+    "Longitude": -75.5366
   },
   {
     "Date": "2026-01-10",
@@ -4147,8 +4048,8 @@ const TRIALS_DATA =
     "Host": "Run Spot Jump Dog Training",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 34.2713,
-    "Longitude": -84.4907
+    "Latitude": 34.2152,
+    "Longitude": -84.489
   },
   {
     "Date": "2026-01-10",
@@ -4156,8 +4057,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "ELT-S, L2C, NW3",
     "EventCount": 3,
-    "Latitude": 30.4223,
-    "Longitude": -97.6213
+    "Latitude": 30.4693,
+    "Longitude": -97.6042
   },
   {
     "Date": "2026-01-10",
@@ -4165,8 +4066,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 34.4529,
-    "Longitude": -118.5775
+    "Latitude": 34.4567,
+    "Longitude": -118.5457
   },
   {
     "Date": "2026-01-17",
@@ -4174,8 +4075,8 @@ const TRIALS_DATA =
     "Host": "By A Nose Nosework",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 32.8586,
-    "Longitude": -86.6236
+    "Latitude": 32.8044,
+    "Longitude": -86.6302
   },
   {
     "Date": "2026-01-17",
@@ -4183,8 +4084,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "NW1, NW2, L1V, L1E",
     "EventCount": 4,
-    "Latitude": 29.6892,
-    "Longitude": -82.0251
+    "Latitude": 29.7222,
+    "Longitude": -82.0083
   },
   {
     "Date": "2026-01-17",
@@ -4192,8 +4093,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.8624,
-    "Longitude": -73.8233
+    "Latitude": 40.8677,
+    "Longitude": -73.8211
   },
   {
     "Date": "2026-01-17",
@@ -4201,8 +4102,8 @@ const TRIALS_DATA =
     "Host": "Rewarding Rover LLC and Uberdog",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 33.1124,
-    "Longitude": -117.1273
+    "Latitude": 33.1598,
+    "Longitude": -117.1533
   },
   {
     "Date": "2026-01-17",
@@ -4210,8 +4111,8 @@ const TRIALS_DATA =
     "Host": "The Doggie Spot, LLC",
     "TrialTypes": "ELT, NW3, NW2",
     "EventCount": 3,
-    "Latitude": 35.2387,
-    "Longitude": -96.8886
+    "Latitude": 35.2211,
+    "Longitude": -96.9381
   },
   {
     "Date": "2026-01-19",
@@ -4219,8 +4120,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 34.0201,
-    "Longitude": -117.2283
+    "Latitude": 34.0621,
+    "Longitude": -117.1575
   },
   {
     "Date": "2026-01-20",
@@ -4228,8 +4129,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses, LLC",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 35.8617,
-    "Longitude": -86.428
+    "Latitude": 35.8151,
+    "Longitude": -86.3772
   },
   {
     "Date": "2026-01-23",
@@ -4237,8 +4138,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.2338,
-    "Longitude": -85.1222
+    "Latitude": 34.2582,
+    "Longitude": -85.1299
   },
   {
     "Date": "2026-01-30",
@@ -4246,8 +4147,8 @@ const TRIALS_DATA =
     "Host": "Beyond Elevation K9 Training",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 40.4029,
-    "Longitude": -104.729
+    "Latitude": 40.4405,
+    "Longitude": -104.7368
   },
   {
     "Date": "2026-01-31",
@@ -4255,8 +4156,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Labradors",
     "TrialTypes": "ELT-S, L2C, NW1, L1E",
     "EventCount": 4,
-    "Latitude": 38.8554,
-    "Longitude": -75.7991
+    "Latitude": 38.8731,
+    "Longitude": -75.8266
   },
   {
     "Date": "2026-01-31",
@@ -4264,8 +4165,8 @@ const TRIALS_DATA =
     "Host": "Patience Unlimited Professional Dog Training",
     "TrialTypes": "NW3, ELT-S, L1V",
     "EventCount": 3,
-    "Latitude": 32.2595,
-    "Longitude": -110.947
+    "Latitude": 32.178,
+    "Longitude": -110.9313
   },
   {
     "Date": "2026-02-07",
@@ -4273,8 +4174,8 @@ const TRIALS_DATA =
     "Host": "Rotts n Notts Nosework",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.1394,
-    "Longitude": -74.2001
+    "Latitude": 40.1068,
+    "Longitude": -74.1945
   },
   {
     "Date": "2026-02-07",
@@ -4282,8 +4183,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses, LLC",
     "TrialTypes": "ELT, NW1",
     "EventCount": 2,
-    "Latitude": 35.8142,
-    "Longitude": -86.372
+    "Latitude": 35.8102,
+    "Longitude": -86.3992
   },
   {
     "Date": "2026-02-13",
@@ -4291,8 +4192,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT-P, NW3, L3I, NW2",
     "EventCount": 4,
-    "Latitude": 39.5196,
-    "Longitude": -76.0857
+    "Latitude": 39.5885,
+    "Longitude": -76.0431
   },
   {
     "Date": "2026-02-13",
@@ -4300,8 +4201,8 @@ const TRIALS_DATA =
     "Host": "Rewarding Rover LLC and Uberdog",
     "TrialTypes": "ELT, L1C, L2C",
     "EventCount": 3,
-    "Latitude": 33.1547,
-    "Longitude": -117.2732
+    "Latitude": 33.2318,
+    "Longitude": -117.2846
   },
   {
     "Date": "2026-02-14",
@@ -4309,8 +4210,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training, LLC",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.6479,
-    "Longitude": -83.5423
+    "Latitude": 34.6317,
+    "Longitude": -83.4811
   },
   {
     "Date": "2026-02-14",
@@ -4318,8 +4219,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "L1C, NW1, ELT-S, ELT",
     "EventCount": 4,
-    "Latitude": 39.0577,
-    "Longitude": -77.0024
+    "Latitude": 39.1164,
+    "Longitude": -77.0077
   },
   {
     "Date": "2026-02-14",
@@ -4327,8 +4228,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot Of Gold K9 Scenter",
     "TrialTypes": "ELT, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 40.4739,
-    "Longitude": -74.8692
+    "Latitude": 40.497,
+    "Longitude": -74.8277
   },
   {
     "Date": "2026-02-14",
@@ -4336,8 +4237,8 @@ const TRIALS_DATA =
     "Host": "SCENTwork.org",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 34.2096,
-    "Longitude": -118.5658
+    "Latitude": 34.2505,
+    "Longitude": -118.5216
   },
   {
     "Date": "2026-02-14",
@@ -4345,8 +4246,8 @@ const TRIALS_DATA =
     "Host": "All About The Nose",
     "TrialTypes": "NW3, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 33.804,
-    "Longitude": -96.6568
+    "Latitude": 33.7299,
+    "Longitude": -96.6566
   },
   {
     "Date": "2026-02-14",
@@ -4354,8 +4255,8 @@ const TRIALS_DATA =
     "Host": "The Sniffing Hound",
     "TrialTypes": "NW3, ELT, ELT-P",
     "EventCount": 3,
-    "Latitude": 40.0426,
-    "Longitude": -75.4383
+    "Latitude": 40.0887,
+    "Longitude": -75.4363
   },
   {
     "Date": "2026-02-15",
@@ -4363,8 +4264,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.0077,
-    "Longitude": -117.6599
+    "Latitude": 34.0352,
+    "Longitude": -117.7113
   },
   {
     "Date": "2026-02-15",
@@ -4372,8 +4273,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "ELT-P, NW3, ELT",
     "EventCount": 3,
-    "Latitude": 40.8769,
-    "Longitude": -73.7413
+    "Latitude": 40.9096,
+    "Longitude": -73.735
   },
   {
     "Date": "2026-02-20",
@@ -4381,8 +4282,8 @@ const TRIALS_DATA =
     "Host": "Marin Humane",
     "TrialTypes": "L2C, L1I, NW3",
     "EventCount": 3,
-    "Latitude": 38.0616,
-    "Longitude": -122.3337
+    "Latitude": 38.0059,
+    "Longitude": -122.3367
   },
   {
     "Date": "2026-02-21",
@@ -4390,8 +4291,8 @@ const TRIALS_DATA =
     "Host": "Hoppin' in the Hills",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 27.9929,
-    "Longitude": -82.7929
+    "Latitude": 27.9877,
+    "Longitude": -82.8112
   },
   {
     "Date": "2026-02-21",
@@ -4399,8 +4300,8 @@ const TRIALS_DATA =
     "Host": "Wells Creek Dog Training",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 44.0695,
-    "Longitude": -123.3268
+    "Latitude": 44.0728,
+    "Longitude": -123.3995
   },
   {
     "Date": "2026-02-22",
@@ -4408,8 +4309,8 @@ const TRIALS_DATA =
     "Host": "Patience Unlimited Professional Dog Training",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 31.9946,
-    "Longitude": -110.2728
+    "Latitude": 31.9597,
+    "Longitude": -110.317
   },
   {
     "Date": "2026-02-24",
@@ -4417,8 +4318,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "ELT-S, L3I",
     "EventCount": 2,
-    "Latitude": 35.6391,
-    "Longitude": -120.7235
+    "Latitude": 35.5968,
+    "Longitude": -120.7306
   },
   {
     "Date": "2026-02-28",
@@ -4426,8 +4327,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training, LLC",
     "TrialTypes": "NW1, L2I, NW2",
     "EventCount": 3,
-    "Latitude": 34.079,
-    "Longitude": -83.231
+    "Latitude": 34.1683,
+    "Longitude": -83.2153
   },
   {
     "Date": "2026-02-28",
@@ -4435,8 +4336,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 29.8334,
-    "Longitude": -82.0271
+    "Latitude": 29.7727,
+    "Longitude": -82.0235
   },
   {
     "Date": "2026-02-28",
@@ -4444,8 +4345,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "L3C, L1I, NW2",
     "EventCount": 3,
-    "Latitude": 39.4668,
-    "Longitude": -76.6416
+    "Latitude": 39.4705,
+    "Longitude": -76.5911
   },
   {
     "Date": "2026-02-28",
@@ -4453,8 +4354,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Detectives, LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 45.2578,
-    "Longitude": -121.2199
+    "Latitude": 45.272,
+    "Longitude": -121.1753
   },
   {
     "Date": "2026-02-28",
@@ -4462,8 +4363,8 @@ const TRIALS_DATA =
     "Host": "Whole Dog Institute, LLC",
     "TrialTypes": "ELT, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 35.7341,
-    "Longitude": -77.9588
+    "Latitude": 35.7293,
+    "Longitude": -77.9466
   },
   {
     "Date": "2026-03-06",
@@ -4471,8 +4372,8 @@ const TRIALS_DATA =
     "Host": "Paws Plus Training, LLC",
     "TrialTypes": "NW3, NW1, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 37.4345,
-    "Longitude": -77.5616
+    "Latitude": 37.4112,
+    "Longitude": -77.5525
   },
   {
     "Date": "2026-03-06",
@@ -4480,8 +4381,8 @@ const TRIALS_DATA =
     "Host": "For Your K9, Inc",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 42.06,
-    "Longitude": -88.2985
+    "Latitude": 42.0194,
+    "Longitude": -88.2587
   },
   {
     "Date": "2026-03-06",
@@ -4489,8 +4390,8 @@ const TRIALS_DATA =
     "Host": "JavaK9s, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.0968,
-    "Longitude": -118.806
+    "Latitude": 34.188,
+    "Longitude": -118.8026
   },
   {
     "Date": "2026-03-07",
@@ -4498,8 +4399,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework LLC",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.2462,
-    "Longitude": -84.1524
+    "Latitude": 34.2483,
+    "Longitude": -84.0968
   },
   {
     "Date": "2026-03-07",
@@ -4507,8 +4408,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "L3C, ELT, ELT-S, L3I",
     "EventCount": 4,
-    "Latitude": 41.5493,
-    "Longitude": -75.2778
+    "Latitude": 41.5529,
+    "Longitude": -75.2259
   },
   {
     "Date": "2026-03-07",
@@ -4516,8 +4417,8 @@ const TRIALS_DATA =
     "Host": "New Mexico Canine Scent Work, LLC",
     "TrialTypes": "NW3, L1I, NW1",
     "EventCount": 3,
-    "Latitude": 35.0174,
-    "Longitude": -106.0264
+    "Latitude": 35.0175,
+    "Longitude": -106.0563
   },
   {
     "Date": "2026-03-07",
@@ -4525,8 +4426,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 39.9369,
-    "Longitude": -89.0821
+    "Latitude": 39.9779,
+    "Longitude": -89.0181
   },
   {
     "Date": "2026-03-13",
@@ -4534,8 +4435,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Point Labradors",
     "TrialTypes": "SMT, L2C, L3C",
     "EventCount": 3,
-    "Latitude": 39.0799,
-    "Longitude": -76.1048
+    "Latitude": 39.0756,
+    "Longitude": -76.0358
   },
   {
     "Date": "2026-03-13",
@@ -4543,8 +4444,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW3, SMT",
     "EventCount": 2,
-    "Latitude": 41.9862,
-    "Longitude": -73.0488
+    "Latitude": 41.9548,
+    "Longitude": -73.0617
   },
   {
     "Date": "2026-03-13",
@@ -4552,8 +4453,8 @@ const TRIALS_DATA =
     "Host": "K9 Nose Adventures, LLC",
     "TrialTypes": "ELT, NW3, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 36.2398,
-    "Longitude": -79.9994
+    "Latitude": 36.1979,
+    "Longitude": -80.0264
   },
   {
     "Date": "2026-03-14",
@@ -4561,8 +4462,8 @@ const TRIALS_DATA =
     "Host": "4G & TB",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 41.4321,
-    "Longitude": -88.254
+    "Latitude": 41.3871,
+    "Longitude": -88.2301
   },
   {
     "Date": "2026-03-14",
@@ -4570,8 +4471,8 @@ const TRIALS_DATA =
     "Host": "Dog Gone Right",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 30.5018,
-    "Longitude": -90.4669
+    "Latitude": 30.4885,
+    "Longitude": -90.4188
   },
   {
     "Date": "2026-03-14",
@@ -4579,8 +4480,8 @@ const TRIALS_DATA =
     "Host": "K9 Sniffers",
     "TrialTypes": "ELT, L1V, L1E",
     "EventCount": 3,
-    "Latitude": 47.3912,
-    "Longitude": -122.2464
+    "Latitude": 47.3355,
+    "Longitude": -122.2089
   },
   {
     "Date": "2026-03-14",
@@ -4588,8 +4489,8 @@ const TRIALS_DATA =
     "Host": "Release Canine, LLC",
     "TrialTypes": "ELT, NW1",
     "EventCount": 2,
-    "Latitude": 33.4837,
-    "Longitude": -112.0469
+    "Latitude": 33.4736,
+    "Longitude": -112.1014
   },
   {
     "Date": "2026-03-14",
@@ -4597,8 +4498,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW3, NW1, ELT-S",
     "EventCount": 3,
-    "Latitude": 34.3143,
-    "Longitude": -119.0297
+    "Latitude": 34.3628,
+    "Longitude": -119.1018
   },
   {
     "Date": "2026-03-16",
@@ -4606,8 +4507,8 @@ const TRIALS_DATA =
     "Host": "Central Coast Nosework Club",
     "TrialTypes": "NW3, ELT-S, L3V",
     "EventCount": 3,
-    "Latitude": 35.5898,
-    "Longitude": -120.6891
+    "Latitude": 35.662,
+    "Longitude": -120.6815
   },
   {
     "Date": "2026-03-20",
@@ -4615,8 +4516,8 @@ const TRIALS_DATA =
     "Host": "Hoppin' in the Hills",
     "TrialTypes": "L1C, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 28.3441,
-    "Longitude": -82.5599
+    "Latitude": 28.374,
+    "Longitude": -82.5845
   },
   {
     "Date": "2026-03-20",
@@ -4624,8 +4525,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT-P, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 39.6899,
-    "Longitude": -76.4175
+    "Latitude": 39.7132,
+    "Longitude": -76.351
   },
   {
     "Date": "2026-03-21",
@@ -4633,8 +4534,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot Of Gold K9 Scenter",
     "TrialTypes": "NW2, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 40.7692,
-    "Longitude": -74.7864
+    "Latitude": 40.7214,
+    "Longitude": -74.7943
   },
   {
     "Date": "2026-03-21",
@@ -4642,8 +4543,8 @@ const TRIALS_DATA =
     "Host": "Happy Dog Concepts LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 38.3161,
-    "Longitude": -90.7204
+    "Latitude": 38.3089,
+    "Longitude": -90.6944
   },
   {
     "Date": "2026-03-21",
@@ -4651,8 +4552,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "ELT, L2C, NW2",
     "EventCount": 3,
-    "Latitude": 41.9279,
-    "Longitude": -72.5752
+    "Latitude": 41.9367,
+    "Longitude": -72.5816
   },
   {
     "Date": "2026-03-21",
@@ -4660,8 +4561,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 39.188,
-    "Longitude": -76.7802
+    "Latitude": 39.2312,
+    "Longitude": -76.7721
   },
   {
     "Date": "2026-03-21",
@@ -4669,8 +4570,8 @@ const TRIALS_DATA =
     "Host": "Bay State Sniffers",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.1202,
-    "Longitude": -71.2325
+    "Latitude": 42.0837,
+    "Longitude": -71.2193
   },
   {
     "Date": "2026-03-21",
@@ -4678,8 +4579,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training LLC",
     "TrialTypes": "ELT-P, ELT",
     "EventCount": 2,
-    "Latitude": 33.9725,
-    "Longitude": -83.9491
+    "Latitude": 33.9326,
+    "Longitude": -83.9392
   },
   {
     "Date": "2026-03-21",
@@ -4687,8 +4588,8 @@ const TRIALS_DATA =
     "Host": "About Face K9 Academy & Let's Talk Dogs, LLC",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 46.8732,
-    "Longitude": -123.2046
+    "Latitude": 46.8655,
+    "Longitude": -123.28
   },
   {
     "Date": "2026-03-21",
@@ -4696,8 +4597,8 @@ const TRIALS_DATA =
     "Host": "B.L. McMutts LLC",
     "TrialTypes": "ELT-S, L1I, L3C",
     "EventCount": 3,
-    "Latitude": 37.5293,
-    "Longitude": -122.2159
+    "Latitude": 37.4707,
+    "Longitude": -122.2379
   },
   {
     "Date": "2026-03-21",
@@ -4705,8 +4606,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "NW2, L2I, ELT-S",
     "EventCount": 3,
-    "Latitude": 42.4818,
-    "Longitude": -88.1226
+    "Latitude": 42.5014,
+    "Longitude": -88.0801
   },
   {
     "Date": "2026-03-21",
@@ -4714,8 +4615,8 @@ const TRIALS_DATA =
     "Host": "KBP Dog Training",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 41.3535,
-    "Longitude": -94.0103
+    "Latitude": 41.2882,
+    "Longitude": -94.0075
   },
   {
     "Date": "2026-03-23",
@@ -4723,8 +4624,8 @@ const TRIALS_DATA =
     "Host": "Linda Buchanan",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 33.9907,
-    "Longitude": -117.3635
+    "Latitude": 34.0137,
+    "Longitude": -117.3706
   },
   {
     "Date": "2026-03-27",
@@ -4732,8 +4633,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "ELT-P, ELT-S, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 39.0859,
-    "Longitude": -108.5892
+    "Latitude": 39.0832,
+    "Longitude": -108.5234
   },
   {
     "Date": "2026-03-27",
@@ -4741,8 +4642,8 @@ const TRIALS_DATA =
     "Host": "The Sniffing Hound",
     "TrialTypes": "NW3, ELT, ELT-S, L3I",
     "EventCount": 4,
-    "Latitude": 39.8795,
-    "Longitude": -75.7393
+    "Latitude": 39.8385,
+    "Longitude": -75.6855
   },
   {
     "Date": "2026-03-27",
@@ -4750,8 +4651,8 @@ const TRIALS_DATA =
     "Host": "Just Nose Work & Doglandia LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 44.8916,
-    "Longitude": -123.0685
+    "Latitude": 44.9677,
+    "Longitude": -123.0355
   },
   {
     "Date": "2026-03-27",
@@ -4759,8 +4660,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses, LLC",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 36.1453,
-    "Longitude": -86.0902
+    "Latitude": 36.1284,
+    "Longitude": -86.1368
   },
   {
     "Date": "2026-03-28",
@@ -4768,8 +4669,8 @@ const TRIALS_DATA =
     "Host": "Clermont County Dog Training Club",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 39.0284,
-    "Longitude": -84.1877
+    "Latitude": 39.0455,
+    "Longitude": -84.1507
   },
   {
     "Date": "2026-03-28",
@@ -4777,8 +4678,8 @@ const TRIALS_DATA =
     "Host": "Beyond Elevation K9",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 38.8577,
-    "Longitude": -104.7801
+    "Latitude": 38.818,
+    "Longitude": -104.8551
   },
   {
     "Date": "2026-03-28",
@@ -4786,8 +4687,8 @@ const TRIALS_DATA =
     "Host": "Sea Change Canine LLC",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 47.9777,
-    "Longitude": -124.3914
+    "Latitude": 47.9266,
+    "Longitude": -124.4028
   },
   {
     "Date": "2026-03-29",
@@ -4795,8 +4696,8 @@ const TRIALS_DATA =
     "Host": "Run Spot Jump Dog Training",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.2185,
-    "Longitude": -84.4745
+    "Latitude": 34.2105,
+    "Longitude": -84.4783
   },
   {
     "Date": "2026-03-30",
@@ -4804,8 +4705,8 @@ const TRIALS_DATA =
     "Host": "CalCoastal Dog Owners Group",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 36.897,
-    "Longitude": -121.7431
+    "Latitude": 36.9245,
+    "Longitude": -121.7836
   },
   {
     "Date": "2026-04-03",
@@ -4813,8 +4714,8 @@ const TRIALS_DATA =
     "Host": "St. Paul Dog Training Center",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 44.777,
-    "Longitude": -93.1387
+    "Latitude": 44.8029,
+    "Longitude": -93.1783
   },
   {
     "Date": "2026-04-03",
@@ -4822,8 +4723,8 @@ const TRIALS_DATA =
     "Host": "2 Psyched 4 dogs",
     "TrialTypes": "NW3, L1I, L1C",
     "EventCount": 3,
-    "Latitude": 43.1296,
-    "Longitude": -77.6368
+    "Latitude": 43.1627,
+    "Longitude": -77.5732
   },
   {
     "Date": "2026-04-03",
@@ -4831,8 +4732,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "ELT, NW3, NW1",
     "EventCount": 3,
-    "Latitude": 41.2988,
-    "Longitude": -74.3113
+    "Latitude": 41.2812,
+    "Longitude": -74.3342
   },
   {
     "Date": "2026-04-04",
@@ -4840,8 +4741,8 @@ const TRIALS_DATA =
     "Host": "The Nosework Magic",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 48.9945,
-    "Longitude": -122.7773
+    "Latitude": 48.9552,
+    "Longitude": -122.7876
   },
   {
     "Date": "2026-04-04",
@@ -4849,8 +4750,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "L1C, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 30.7768,
-    "Longitude": -98.1455
+    "Latitude": 30.755,
+    "Longitude": -98.1371
   },
   {
     "Date": "2026-04-04",
@@ -4858,8 +4759,8 @@ const TRIALS_DATA =
     "Host": "Canine Discovery Corps",
     "TrialTypes": "L2E, L1V, L1E, L2C",
     "EventCount": 4,
-    "Latitude": 44.7569,
-    "Longitude": -122.8062
+    "Latitude": 44.7995,
+    "Longitude": -122.791
   },
   {
     "Date": "2026-04-06",
@@ -4867,8 +4768,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 38.5652,
-    "Longitude": -121.489
+    "Latitude": 38.5776,
+    "Longitude": -121.5089
   },
   {
     "Date": "2026-04-08",
@@ -4876,8 +4777,8 @@ const TRIALS_DATA =
     "Host": "Rachelle Bailey-Austin & Dorothy Turley",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 47.0484,
-    "Longitude": -122.8461
+    "Latitude": 47.0108,
+    "Longitude": -122.8728
   },
   {
     "Date": "2026-04-10",
@@ -4885,8 +4786,8 @@ const TRIALS_DATA =
     "Host": "Two Paws Up Dog Training, LLC",
     "TrialTypes": "ELT, NW3, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 44.115,
-    "Longitude": -103.2453
+    "Latitude": 44.0788,
+    "Longitude": -103.2313
   },
   {
     "Date": "2026-04-10",
@@ -4894,8 +4795,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW3, ELT-P, L2C, L2I",
     "EventCount": 4,
-    "Latitude": 34.2984,
-    "Longitude": -118.9912
+    "Latitude": 34.2966,
+    "Longitude": -118.9581
   },
   {
     "Date": "2026-04-11",
@@ -4903,8 +4804,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT-P, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 39.5037,
-    "Longitude": -76.3903
+    "Latitude": 39.5699,
+    "Longitude": -76.378
   },
   {
     "Date": "2026-04-11",
@@ -4912,8 +4813,8 @@ const TRIALS_DATA =
     "Host": "Canny K9 Companions, LLC",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 37.386,
-    "Longitude": -79.7911
+    "Latitude": 37.3711,
+    "Longitude": -79.7855
   },
   {
     "Date": "2026-04-11",
@@ -4921,8 +4822,8 @@ const TRIALS_DATA =
     "Host": "George Carpenter",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.5708,
-    "Longitude": -88.8916
+    "Latitude": 42.5609,
+    "Longitude": -88.8373
   },
   {
     "Date": "2026-04-11",
@@ -4930,8 +4831,8 @@ const TRIALS_DATA =
     "Host": "Dog Fun Forever, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 35.9706,
-    "Longitude": -78.8797
+    "Latitude": 36.0456,
+    "Longitude": -78.9423
   },
   {
     "Date": "2026-04-11",
@@ -4939,8 +4840,8 @@ const TRIALS_DATA =
     "Host": "Common Scents K9",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 42.0917,
-    "Longitude": -88.7087
+    "Latitude": 42.0959,
+    "Longitude": -88.7266
   },
   {
     "Date": "2026-04-11",
@@ -4948,8 +4849,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 40.2487,
-    "Longitude": -75.5402
+    "Latitude": 40.2177,
+    "Longitude": -75.5205
   },
   {
     "Date": "2026-04-11",
@@ -4957,8 +4858,8 @@ const TRIALS_DATA =
     "Host": "Sierra Sniffing Canines",
     "TrialTypes": "NW2, L1E, L2E",
     "EventCount": 3,
-    "Latitude": 38.8012,
-    "Longitude": -121.2543
+    "Latitude": 38.8236,
+    "Longitude": -121.25
   },
   {
     "Date": "2026-04-13",
@@ -4966,8 +4867,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.2358,
-    "Longitude": -76.8558
+    "Latitude": 39.2852,
+    "Longitude": -76.8657
   },
   {
     "Date": "2026-04-17",
@@ -4975,8 +4876,8 @@ const TRIALS_DATA =
     "Host": "Doglandia, LLC",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 45.1415,
-    "Longitude": -123.1656
+    "Latitude": 45.1536,
+    "Longitude": -123.2296
   },
   {
     "Date": "2026-04-17",
@@ -4984,8 +4885,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.406,
-    "Longitude": -73.9065
+    "Latitude": 41.3705,
+    "Longitude": -73.9264
   },
   {
     "Date": "2026-04-17",
@@ -4993,8 +4894,8 @@ const TRIALS_DATA =
     "Host": "Agile Paws Dog Sports",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 34.1422,
-    "Longitude": -117.692
+    "Latitude": 34.0547,
+    "Longitude": -117.6784
   },
   {
     "Date": "2026-04-18",
@@ -5002,8 +4903,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "L1V, NW1, L1I, NW2",
     "EventCount": 4,
-    "Latitude": 47.3524,
-    "Longitude": -122.1858
+    "Latitude": 47.3301,
+    "Longitude": -122.28
   },
   {
     "Date": "2026-04-18",
@@ -5011,8 +4912,8 @@ const TRIALS_DATA =
     "Host": "River Poodles Training, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.7463,
-    "Longitude": -82.0102
+    "Latitude": 29.8036,
+    "Longitude": -82.0063
   },
   {
     "Date": "2026-04-18",
@@ -5020,8 +4921,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "SMT, ELT",
     "EventCount": 2,
-    "Latitude": 41.3051,
-    "Longitude": -105.6308
+    "Latitude": 41.2783,
+    "Longitude": -105.5788
   },
   {
     "Date": "2026-04-18",
@@ -5029,8 +4930,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 38.5649,
-    "Longitude": -77.0181
+    "Latitude": 38.5525,
+    "Longitude": -76.9863
   },
   {
     "Date": "2026-04-18",
@@ -5038,8 +4939,8 @@ const TRIALS_DATA =
     "Host": "Robin Ford Dog Training LLC",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 41.6484,
-    "Longitude": -83.4926
+    "Latitude": 41.6263,
+    "Longitude": -83.5435
   },
   {
     "Date": "2026-04-18",
@@ -5047,8 +4948,8 @@ const TRIALS_DATA =
     "Host": "KBP Dog Training",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 41.3192,
-    "Longitude": -93.9796
+    "Latitude": 41.3519,
+    "Longitude": -94.0357
   },
   {
     "Date": "2026-04-18",
@@ -5056,8 +4957,8 @@ const TRIALS_DATA =
     "Host": "Northwest Obedience Club Inc",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 42.289,
-    "Longitude": -88.493
+    "Latitude": 42.2764,
+    "Longitude": -88.4901
   },
   {
     "Date": "2026-04-19",
@@ -5065,8 +4966,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "L2I, L1E, L2C, ELT-S",
     "EventCount": 4,
-    "Latitude": 42.5799,
-    "Longitude": -78.6912
+    "Latitude": 42.6683,
+    "Longitude": -78.6926
   },
   {
     "Date": "2026-04-20",
@@ -5074,8 +4975,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.8847,
-    "Longitude": -71.6007
+    "Latitude": 42.8535,
+    "Longitude": -71.6659
   },
   {
     "Date": "2026-04-21",
@@ -5083,8 +4984,8 @@ const TRIALS_DATA =
     "Host": "Saints2Source, LLC",
     "TrialTypes": "NW3, ELT, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 41.203,
-    "Longitude": -73.9805
+    "Latitude": 41.1997,
+    "Longitude": -73.9984
   },
   {
     "Date": "2026-04-24",
@@ -5092,8 +4993,8 @@ const TRIALS_DATA =
     "Host": "K9 Nose Adventures, LLC",
     "TrialTypes": "ELT, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 35.7492,
-    "Longitude": -79.8399
+    "Latitude": 35.6926,
+    "Longitude": -79.8625
   },
   {
     "Date": "2026-04-24",
@@ -5101,8 +5002,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "L3C, NW2, L3V, NW1",
     "EventCount": 4,
-    "Latitude": 38.7565,
-    "Longitude": -76.0748
+    "Latitude": 38.7622,
+    "Longitude": -76.0659
   },
   {
     "Date": "2026-04-25",
@@ -5110,8 +5011,8 @@ const TRIALS_DATA =
     "Host": "Nosework Addicts, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.9924,
-    "Longitude": -80.7166
+    "Latitude": 41.0082,
+    "Longitude": -80.7421
   },
   {
     "Date": "2026-04-25",
@@ -5119,8 +5020,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 45.6695,
-    "Longitude": -109.2039
+    "Latitude": 45.5967,
+    "Longitude": -109.2943
   },
   {
     "Date": "2026-04-25",
@@ -5128,8 +5029,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "ELT, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 42.2657,
-    "Longitude": -78.6765
+    "Latitude": 42.249,
+    "Longitude": -78.6432
   },
   {
     "Date": "2026-04-25",
@@ -5137,8 +5038,8 @@ const TRIALS_DATA =
     "Host": "Chesapeake Search Dogs",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 39.5027,
-    "Longitude": -76.0945
+    "Latitude": 39.5649,
+    "Longitude": -76.0749
   },
   {
     "Date": "2026-04-25",
@@ -5146,8 +5047,8 @@ const TRIALS_DATA =
     "Host": "Trust Your Dog K9 Events",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 45.5672,
-    "Longitude": -122.7133
+    "Latitude": 45.4975,
+    "Longitude": -122.6778
   },
   {
     "Date": "2026-04-25",
@@ -5155,8 +5056,8 @@ const TRIALS_DATA =
     "Host": "Bay State Sniffers",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 42.16,
-    "Longitude": -71.1533
+    "Latitude": 42.099,
+    "Longitude": -71.1391
   },
   {
     "Date": "2026-04-25",
@@ -5164,8 +5065,8 @@ const TRIALS_DATA =
     "Host": "Clever Sniffers, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 45.0222,
-    "Longitude": -88.3845
+    "Latitude": 45.0189,
+    "Longitude": -88.3292
   },
   {
     "Date": "2026-04-25",
@@ -5173,8 +5074,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.7997,
-    "Longitude": -85.5699
+    "Latitude": 44.7374,
+    "Longitude": -85.5836
   },
   {
     "Date": "2026-05-01",
@@ -5182,8 +5083,8 @@ const TRIALS_DATA =
     "Host": "St. Paul Dog Training Club",
     "TrialTypes": "NW3, NW1, L2E, L3C",
     "EventCount": 4,
-    "Latitude": 43.6502,
-    "Longitude": -93.9225
+    "Latitude": 43.6847,
+    "Longitude": -93.9942
   },
   {
     "Date": "2026-05-01",
@@ -5191,8 +5092,8 @@ const TRIALS_DATA =
     "Host": "Waggin' Work",
     "TrialTypes": "NW2, NW1, ELT-P, ELT-S",
     "EventCount": 4,
-    "Latitude": 41.0974,
-    "Longitude": -73.9483
+    "Latitude": 41.1186,
+    "Longitude": -73.9435
   },
   {
     "Date": "2026-05-01",
@@ -5200,8 +5101,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "L1I, L2I, ELT-S, L3I",
     "EventCount": 4,
-    "Latitude": 37.4884,
-    "Longitude": -120.8879
+    "Latitude": 37.5425,
+    "Longitude": -120.8833
   },
   {
     "Date": "2026-05-02",
@@ -5209,8 +5110,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines, LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 41.0854,
-    "Longitude": -90.5666
+    "Latitude": 41.0493,
+    "Longitude": -90.5628
   },
   {
     "Date": "2026-05-02",
@@ -5218,8 +5119,8 @@ const TRIALS_DATA =
     "Host": "Dogs! Carolyn Barney",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 42.6767,
-    "Longitude": -71.793
+    "Latitude": 42.7038,
+    "Longitude": -71.8322
   },
   {
     "Date": "2026-05-02",
@@ -5227,8 +5128,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "ELT-P, ELT",
     "EventCount": 2,
-    "Latitude": 42.2109,
-    "Longitude": -73.5585
+    "Latitude": 42.1744,
+    "Longitude": -73.5317
   },
   {
     "Date": "2026-05-02",
@@ -5236,8 +5137,8 @@ const TRIALS_DATA =
     "Host": "Pink Biscuit K9s",
     "TrialTypes": "NW3, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 34.4018,
-    "Longitude": -119.0516
+    "Latitude": 34.39,
+    "Longitude": -119.0162
   },
   {
     "Date": "2026-05-02",
@@ -5245,8 +5146,8 @@ const TRIALS_DATA =
     "Host": "Successful Sniffer",
     "TrialTypes": "L1I, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 34.8296,
-    "Longitude": -111.7804
+    "Latitude": 34.9188,
+    "Longitude": -111.7871
   },
   {
     "Date": "2026-05-02",
@@ -5254,8 +5155,8 @@ const TRIALS_DATA =
     "Host": "Sniffketeers",
     "TrialTypes": "ELT-S",
     "EventCount": 1,
-    "Latitude": 45.6171,
-    "Longitude": -122.6991
+    "Latitude": 45.5925,
+    "Longitude": -122.644
   },
   {
     "Date": "2026-05-07",
@@ -5263,8 +5164,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies Nose Work, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 40.0181,
-    "Longitude": -76.2799
+    "Latitude": 40.0531,
+    "Longitude": -76.3386
   },
   {
     "Date": "2026-05-08",
@@ -5272,8 +5173,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "SMT, ELT",
     "EventCount": 2,
-    "Latitude": 43.0016,
-    "Longitude": -78.966
+    "Latitude": 43.0037,
+    "Longitude": -78.9932
   },
   {
     "Date": "2026-05-08",
@@ -5281,8 +5182,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT, NW3, ELT-S, L2I",
     "EventCount": 4,
-    "Latitude": 39.5584,
-    "Longitude": -76.5094
+    "Latitude": 39.5776,
+    "Longitude": -76.4733
   },
   {
     "Date": "2026-05-08",
@@ -5290,8 +5191,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.2869,
-    "Longitude": -74.4079
+    "Latitude": 41.3014,
+    "Longitude": -74.4016
   },
   {
     "Date": "2026-05-08",
@@ -5299,8 +5200,8 @@ const TRIALS_DATA =
     "Host": "JavaK9s, LLC",
     "TrialTypes": "NW3, L1C, L1I",
     "EventCount": 3,
-    "Latitude": 34.3169,
-    "Longitude": -117.6774
+    "Latitude": 34.3266,
+    "Longitude": -117.5822
   },
   {
     "Date": "2026-05-09",
@@ -5308,8 +5209,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.5038,
-    "Longitude": -83.7636
+    "Latitude": 42.4988,
+    "Longitude": -83.7367
   },
   {
     "Date": "2026-05-09",
@@ -5317,8 +5218,8 @@ const TRIALS_DATA =
     "Host": "HeavenScent Sniffers",
     "TrialTypes": "ELT-P, L2C, NW1",
     "EventCount": 3,
-    "Latitude": 42.1259,
-    "Longitude": -71.9995
+    "Latitude": 42.0883,
+    "Longitude": -72.0118
   },
   {
     "Date": "2026-05-09",
@@ -5326,8 +5227,8 @@ const TRIALS_DATA =
     "Host": "Rotts-n-Notts Nosework LLC",
     "TrialTypes": "L3I, NW1, NW3",
     "EventCount": 3,
-    "Latitude": 39.5394,
-    "Longitude": -74.649
+    "Latitude": 39.5019,
+    "Longitude": -74.6702
   },
   {
     "Date": "2026-05-09",
@@ -5335,8 +5236,8 @@ const TRIALS_DATA =
     "Host": "Trails and Tails Dog School",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 45.6584,
-    "Longitude": -110.5853
+    "Latitude": 45.6498,
+    "Longitude": -110.5285
   },
   {
     "Date": "2026-05-09",
@@ -5344,8 +5245,8 @@ const TRIALS_DATA =
     "Host": "Two Tails Unlimited",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 40.986,
-    "Longitude": -95.5881
+    "Latitude": 40.9607,
+    "Longitude": -95.6292
   },
   {
     "Date": "2026-05-09",
@@ -5353,8 +5254,8 @@ const TRIALS_DATA =
     "Host": "Bare Bones Nosework, LLC",
     "TrialTypes": "L1I, L2I",
     "EventCount": 2,
-    "Latitude": 43.9996,
-    "Longitude": -70.3959
+    "Latitude": 44.0129,
+    "Longitude": -70.3144
   },
   {
     "Date": "2026-05-09",
@@ -5362,8 +5263,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws, LLC",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 42.6627,
-    "Longitude": -88.0154
+    "Latitude": 42.7087,
+    "Longitude": -88.016
   },
   {
     "Date": "2026-05-14",
@@ -5371,8 +5272,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT-P, ELT-S, L2I, L2E, L1E",
     "EventCount": 5,
-    "Latitude": 39.4438,
-    "Longitude": -77.4465
+    "Latitude": 39.4548,
+    "Longitude": -77.461
   },
   {
     "Date": "2026-05-15",
@@ -5380,8 +5281,8 @@ const TRIALS_DATA =
     "Host": "Saint Paul Dog Training Club",
     "TrialTypes": "ELT, ELT-S, L3E, L1I, L1E",
     "EventCount": 5,
-    "Latitude": 44.5116,
-    "Longitude": -92.9426
+    "Latitude": 44.5336,
+    "Longitude": -92.913
   },
   {
     "Date": "2026-05-15",
@@ -5389,8 +5290,8 @@ const TRIALS_DATA =
     "Host": "Oriole Dog Training Club",
     "TrialTypes": "NW3, L1I, NW1",
     "EventCount": 3,
-    "Latitude": 39.5028,
-    "Longitude": -76.6646
+    "Latitude": 39.5277,
+    "Longitude": -76.5913
   },
   {
     "Date": "2026-05-15",
@@ -5398,8 +5299,8 @@ const TRIALS_DATA =
     "Host": "CalCoastal Dog Owners Group",
     "TrialTypes": "ELT-S, L3C, L1C",
     "EventCount": 3,
-    "Latitude": 36.9457,
-    "Longitude": -121.7851
+    "Latitude": 36.8845,
+    "Longitude": -121.8034
   },
   {
     "Date": "2026-05-16",
@@ -5407,8 +5308,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "L1V, L2V, L3C, L3I",
     "EventCount": 4,
-    "Latitude": 42.8823,
-    "Longitude": -78.294
+    "Latitude": 42.8931,
+    "Longitude": -78.2806
   },
   {
     "Date": "2026-05-16",
@@ -5416,8 +5317,8 @@ const TRIALS_DATA =
     "Host": "The Nosework Magic",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 48.7484,
-    "Longitude": -122.448
+    "Latitude": 48.8009,
+    "Longitude": -122.5091
   },
   {
     "Date": "2026-05-16",
@@ -5425,8 +5326,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "NW3, L2V, L2I",
     "EventCount": 3,
-    "Latitude": 47.4775,
-    "Longitude": -122.3456
+    "Latitude": 47.4882,
+    "Longitude": -122.3706
   },
   {
     "Date": "2026-05-16",
@@ -5434,8 +5335,8 @@ const TRIALS_DATA =
     "Host": "Whole Dog Institute, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 36.0201,
-    "Longitude": -78.9474
+    "Latitude": 35.9503,
+    "Longitude": -78.8714
   },
   {
     "Date": "2026-05-16",
@@ -5443,8 +5344,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.8509,
-    "Longitude": -79.5601
+    "Latitude": 40.8197,
+    "Longitude": -79.5568
   },
   {
     "Date": "2026-05-16",
@@ -5452,8 +5353,8 @@ const TRIALS_DATA =
     "Host": "Saints2Source, LLC",
     "TrialTypes": "NW3, ELT, ELT-S",
     "EventCount": 3,
-    "Latitude": 41.6493,
-    "Longitude": -74.6501
+    "Latitude": 41.6159,
+    "Longitude": -74.7233
   },
   {
     "Date": "2026-05-16",
@@ -5461,8 +5362,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 42.4744,
-    "Longitude": -73.0313
+    "Latitude": 42.4464,
+    "Longitude": -73.0293
   },
   {
     "Date": "2026-05-16",
@@ -5470,8 +5371,8 @@ const TRIALS_DATA =
     "Host": "For Your K9, Inc.",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 41.6548,
-    "Longitude": -88.596
+    "Latitude": 41.5998,
+    "Longitude": -88.6586
   },
   {
     "Date": "2026-05-22",
@@ -5479,8 +5380,8 @@ const TRIALS_DATA =
     "Host": "Alaska Dog Sports",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 61.2282,
-    "Longitude": -149.9439
+    "Latitude": 61.2472,
+    "Longitude": -149.8927
   },
   {
     "Date": "2026-05-22",
@@ -5488,8 +5389,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, NW3, NW2, NW1",
     "EventCount": 4,
-    "Latitude": 38.4989,
-    "Longitude": -107.8567
+    "Latitude": 38.4626,
+    "Longitude": -107.8274
   },
   {
     "Date": "2026-05-22",
@@ -5497,8 +5398,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "NW1, L1I, NW2",
     "EventCount": 3,
-    "Latitude": 35.3313,
-    "Longitude": -120.3606
+    "Latitude": 35.3931,
+    "Longitude": -120.4108
   },
   {
     "Date": "2026-05-23",
@@ -5506,8 +5407,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework, LLC",
     "TrialTypes": "NW3, ELT-S, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 34.0878,
-    "Longitude": -84.3405
+    "Latitude": 34.0433,
+    "Longitude": -84.3247
   },
   {
     "Date": "2026-05-23",
@@ -5515,8 +5416,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "L1I, L2I, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 45.6648,
-    "Longitude": -109.2285
+    "Latitude": 45.6425,
+    "Longitude": -109.2476
   },
   {
     "Date": "2026-05-23",
@@ -5524,8 +5425,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 39.7486,
-    "Longitude": -77.2898
+    "Latitude": 39.7341,
+    "Longitude": -77.3545
   },
   {
     "Date": "2026-05-23",
@@ -5533,8 +5434,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "ELT, ELT-P, NW3",
     "EventCount": 3,
-    "Latitude": 40.0639,
-    "Longitude": -76.3047
+    "Latitude": 40.0734,
+    "Longitude": -76.3117
   },
   {
     "Date": "2026-05-23",
@@ -5542,8 +5443,8 @@ const TRIALS_DATA =
     "Host": "Dogs Have Amazing Noses, LLC",
     "TrialTypes": "ELT, NW1",
     "EventCount": 2,
-    "Latitude": 35.8452,
-    "Longitude": -86.3976
+    "Latitude": 35.8482,
+    "Longitude": -86.4318
   },
   {
     "Date": "2026-05-23",
@@ -5551,8 +5452,8 @@ const TRIALS_DATA =
     "Host": "2 Nose You Is 2 Loves You",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.989,
-    "Longitude": -85.7291
+    "Latitude": 41.0374,
+    "Longitude": -85.8178
   },
   {
     "Date": "2026-05-23",
@@ -5560,8 +5461,8 @@ const TRIALS_DATA =
     "Host": "Let's Talk Dogs, LLC & About Face K9 Academy",
     "TrialTypes": "ELT-S, L1C, NW2",
     "EventCount": 3,
-    "Latitude": 46.8725,
-    "Longitude": -122.7211
+    "Latitude": 46.8536,
+    "Longitude": -122.653
   },
   {
     "Date": "2026-05-23",
@@ -5569,8 +5470,8 @@ const TRIALS_DATA =
     "Host": "Beyond Elevation K9 Training LLC",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 40.8156,
-    "Longitude": -105.5526
+    "Latitude": 40.8242,
+    "Longitude": -105.6188
   },
   {
     "Date": "2026-05-23",
@@ -5578,8 +5479,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot Of Gold K9 Scenter",
     "TrialTypes": "NW3, L3E, NW2, ELT-S",
     "EventCount": 4,
-    "Latitude": 40.8722,
-    "Longitude": -74.5491
+    "Latitude": 40.9432,
+    "Longitude": -74.4971
   },
   {
     "Date": "2026-05-23",
@@ -5587,8 +5488,8 @@ const TRIALS_DATA =
     "Host": "Trust Your Dog K9 Events",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 45.3664,
-    "Longitude": -122.2329
+    "Latitude": 45.3905,
+    "Longitude": -122.2344
   },
   {
     "Date": "2026-05-25",
@@ -5596,8 +5497,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY, LLC",
     "TrialTypes": "NW2, ELT-P, ELT",
     "EventCount": 3,
-    "Latitude": 43.0338,
-    "Longitude": -71.4496
+    "Latitude": 42.9879,
+    "Longitude": -71.4258
   },
   {
     "Date": "2026-05-28",
@@ -5605,8 +5506,8 @@ const TRIALS_DATA =
     "Host": "The Bay Team",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 37.936,
-    "Longitude": -121.9891
+    "Latitude": 37.9467,
+    "Longitude": -122.0445
   },
   {
     "Date": "2026-05-29",
@@ -5614,8 +5515,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "NW3, L1V, L1E",
     "EventCount": 3,
-    "Latitude": 39.0584,
-    "Longitude": -108.6032
+    "Latitude": 39.0326,
+    "Longitude": -108.5391
   },
   {
     "Date": "2026-05-30",
@@ -5623,8 +5524,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.96,
-    "Longitude": -78.7563
+    "Latitude": 42.9513,
+    "Longitude": -78.7961
   },
   {
     "Date": "2026-05-30",
@@ -5632,8 +5533,8 @@ const TRIALS_DATA =
     "Host": "The K9 Nose",
     "TrialTypes": "NW2",
     "EventCount": 1,
-    "Latitude": 44.8084,
-    "Longitude": -93.4607
+    "Latitude": 44.8734,
+    "Longitude": -93.5056
   },
   {
     "Date": "2026-05-30",
@@ -5641,8 +5542,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "ELT, L1E, L2C",
     "EventCount": 3,
-    "Latitude": 42.2123,
-    "Longitude": -71.9682
+    "Latitude": 42.2527,
+    "Longitude": -72.0189
   },
   {
     "Date": "2026-06-06",
@@ -5650,8 +5551,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "ELT, ELT-S, L1C",
     "EventCount": 3,
-    "Latitude": 41.4546,
-    "Longitude": -75.6016
+    "Latitude": 41.423,
+    "Longitude": -75.6022
   },
   {
     "Date": "2026-06-06",
@@ -5659,8 +5560,8 @@ const TRIALS_DATA =
     "Host": "Country K9 Nosework, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 45.4557,
-    "Longitude": -117.2767
+    "Latitude": 45.443,
+    "Longitude": -117.2999
   },
   {
     "Date": "2026-06-06",
@@ -5668,8 +5569,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 40.1697,
-    "Longitude": -76.4143
+    "Latitude": 40.1882,
+    "Longitude": -76.3806
   },
   {
     "Date": "2026-06-06",
@@ -5677,8 +5578,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW3, NW1, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 40.1439,
-    "Longitude": -75.0487
+    "Latitude": 40.0704,
+    "Longitude": -75.0896
   },
   {
     "Date": "2026-06-06",
@@ -5686,8 +5587,8 @@ const TRIALS_DATA =
     "Host": "Pawsitive Image",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 43.2866,
-    "Longitude": -70.9471
+    "Latitude": 43.2652,
+    "Longitude": -71.0201
   },
   {
     "Date": "2026-06-06",
@@ -5695,8 +5596,8 @@ const TRIALS_DATA =
     "Host": "The Doggie Spot, LLC",
     "TrialTypes": "NW3, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 35.3317,
-    "Longitude": -96.9218
+    "Latitude": 35.2949,
+    "Longitude": -96.9263
   },
   {
     "Date": "2026-06-06",
@@ -5704,8 +5605,8 @@ const TRIALS_DATA =
     "Host": "Nosework Addicts, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.1114,
-    "Longitude": -80.0729
+    "Latitude": 41.0584,
+    "Longitude": -80.0363
   },
   {
     "Date": "2026-06-06",
@@ -5713,8 +5614,8 @@ const TRIALS_DATA =
     "Host": "Chesapeake Search Dogs",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 39.5374,
-    "Longitude": -76.6878
+    "Latitude": 39.4909,
+    "Longitude": -76.6692
   },
   {
     "Date": "2026-06-06",
@@ -5722,8 +5623,8 @@ const TRIALS_DATA =
     "Host": "NEWk9Scent Work LLC",
     "TrialTypes": "NW3, NW1, L1I",
     "EventCount": 3,
-    "Latitude": 44.3627,
-    "Longitude": -88.1142
+    "Latitude": 44.2956,
+    "Longitude": -88.1757
   },
   {
     "Date": "2026-06-12",
@@ -5731,8 +5632,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, ELT-S, ELT-P",
     "EventCount": 3,
-    "Latitude": 38.6478,
-    "Longitude": -107.0174
+    "Latitude": 38.5981,
+    "Longitude": -107.09
   },
   {
     "Date": "2026-06-12",
@@ -5740,8 +5641,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "ELT, ELT-P, ELT-S, L3E",
     "EventCount": 4,
-    "Latitude": 40.3786,
-    "Longitude": -74.9229
+    "Latitude": 40.3496,
+    "Longitude": -74.9386
   },
   {
     "Date": "2026-06-13",
@@ -5749,8 +5650,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Breakfast Club",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 46.6277,
-    "Longitude": -111.8802
+    "Latitude": 46.5811,
+    "Longitude": -111.9183
   },
   {
     "Date": "2026-06-13",
@@ -5758,8 +5659,8 @@ const TRIALS_DATA =
     "Host": "The Brainy Canine",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 42.4521,
-    "Longitude": -76.5629
+    "Latitude": 42.4338,
+    "Longitude": -76.5672
   },
   {
     "Date": "2026-06-13",
@@ -5767,8 +5668,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "ELT-S, L1I, NW1",
     "EventCount": 3,
-    "Latitude": 42.5456,
-    "Longitude": -87.7986
+    "Latitude": 42.544,
+    "Longitude": -87.8223
   },
   {
     "Date": "2026-06-13",
@@ -5776,8 +5677,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 42.8166,
-    "Longitude": -83.7625
+    "Latitude": 42.8056,
+    "Longitude": -83.7913
   },
   {
     "Date": "2026-06-13",
@@ -5785,8 +5686,8 @@ const TRIALS_DATA =
     "Host": "Paws n' Sniff",
     "TrialTypes": "NW2, ELT, NW1, ELT-S, NW3",
     "EventCount": 5,
-    "Latitude": 40.7761,
-    "Longitude": -75.2651
+    "Latitude": 40.766,
+    "Longitude": -75.2896
   },
   {
     "Date": "2026-06-13",
@@ -5794,8 +5695,8 @@ const TRIALS_DATA =
     "Host": "Your Dog Knows LLC",
     "TrialTypes": "L1I, L2I, L1C, L2C",
     "EventCount": 4,
-    "Latitude": 37.8378,
-    "Longitude": -78.2614
+    "Latitude": 37.8334,
+    "Longitude": -78.309
   },
   {
     "Date": "2026-06-18",
@@ -5803,8 +5704,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 39.5735,
-    "Longitude": -76.9938
+    "Latitude": 39.5508,
+    "Longitude": -77.0068
   },
   {
     "Date": "2026-06-19",
@@ -5812,8 +5713,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 37.1797,
-    "Longitude": -107.5836
+    "Latitude": 37.2024,
+    "Longitude": -107.5897
   },
   {
     "Date": "2026-06-19",
@@ -5821,8 +5722,8 @@ const TRIALS_DATA =
     "Host": "St. Paul Dog Training Club",
     "TrialTypes": "ELT, ELT-P, L1V, L2V",
     "EventCount": 4,
-    "Latitude": 44.6257,
-    "Longitude": -93.5806
+    "Latitude": 44.6587,
+    "Longitude": -93.6166
   },
   {
     "Date": "2026-06-19",
@@ -5830,8 +5731,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY, LLC",
     "TrialTypes": "ELT, NW3, ELT-P",
     "EventCount": 3,
-    "Latitude": 40.9123,
-    "Longitude": -73.7856
+    "Latitude": 40.9502,
+    "Longitude": -73.7906
   },
   {
     "Date": "2026-06-20",
@@ -5839,8 +5740,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework, LLC",
     "TrialTypes": "L2I, L2C, L3C, L1I",
     "EventCount": 4,
-    "Latitude": 34.2509,
-    "Longitude": -84.1742
+    "Latitude": 34.1955,
+    "Longitude": -84.1513
   },
   {
     "Date": "2026-06-20",
@@ -5848,8 +5749,8 @@ const TRIALS_DATA =
     "Host": "Everydog, LLC",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 42.5698,
-    "Longitude": -70.9416
+    "Latitude": 42.5877,
+    "Longitude": -70.9646
   },
   {
     "Date": "2026-06-20",
@@ -5857,8 +5758,8 @@ const TRIALS_DATA =
     "Host": "Happy Dog Concepts",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 38.8341,
-    "Longitude": -90.3683
+    "Latitude": 38.784,
+    "Longitude": -90.2781
   },
   {
     "Date": "2026-06-20",
@@ -5866,8 +5767,8 @@ const TRIALS_DATA =
     "Host": "Nosework Addicts, LLC",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 40.4861,
-    "Longitude": -79.9673
+    "Latitude": 40.4875,
+    "Longitude": -80.011
   },
   {
     "Date": "2026-06-20",
@@ -5875,8 +5776,8 @@ const TRIALS_DATA =
     "Host": "Willoughby Training",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 41.6848,
-    "Longitude": -73.0238
+    "Latitude": 41.6378,
+    "Longitude": -73.0287
   },
   {
     "Date": "2026-06-20",
@@ -5884,8 +5785,8 @@ const TRIALS_DATA =
     "Host": "Sharon Smith",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 45.7585,
-    "Longitude": -121.4386
+    "Latitude": 45.7541,
+    "Longitude": -121.5143
   },
   {
     "Date": "2026-06-26",
@@ -5893,8 +5794,8 @@ const TRIALS_DATA =
     "Host": "K9 InScentives",
     "TrialTypes": "NW1, ELT",
     "EventCount": 2,
-    "Latitude": 39.9686,
-    "Longitude": -74.9168
+    "Latitude": 40.0444,
+    "Longitude": -74.9972
   },
   {
     "Date": "2026-06-26",
@@ -5902,8 +5803,8 @@ const TRIALS_DATA =
     "Host": "NoCo Unleashed LLC",
     "TrialTypes": "ELT-S, L2C, L2I, L1C",
     "EventCount": 4,
-    "Latitude": 40.4349,
-    "Longitude": -105.0827
+    "Latitude": 40.358,
+    "Longitude": -105.0459
   },
   {
     "Date": "2026-06-26",
@@ -5911,8 +5812,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "ELT, NW3, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 45.1958,
-    "Longitude": -109.2639
+    "Latitude": 45.1907,
+    "Longitude": -109.1982
   },
   {
     "Date": "2026-06-27",
@@ -5920,8 +5821,8 @@ const TRIALS_DATA =
     "Host": "Loving Paws Dog Training LLC",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 42.6389,
-    "Longitude": -88.2679
+    "Latitude": 42.6728,
+    "Longitude": -88.3009
   },
   {
     "Date": "2026-06-27",
@@ -5929,8 +5830,8 @@ const TRIALS_DATA =
     "Host": "NEWk9Scent Work LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 44.4701,
-    "Longitude": -88.01
+    "Latitude": 44.4793,
+    "Longitude": -88.0469
   },
   {
     "Date": "2026-06-27",
@@ -5938,8 +5839,8 @@ const TRIALS_DATA =
     "Host": "The Nosework Magic",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 48.8096,
-    "Longitude": -122.2569
+    "Latitude": 48.804,
+    "Longitude": -122.2185
   },
   {
     "Date": "2026-06-27",
@@ -5947,8 +5848,8 @@ const TRIALS_DATA =
     "Host": "Outside the Box Dog Training, LLC",
     "TrialTypes": "NW3, L2C, L2I",
     "EventCount": 3,
-    "Latitude": 44.8604,
-    "Longitude": -93.0736
+    "Latitude": 44.8794,
+    "Longitude": -93.0645
   },
   {
     "Date": "2026-06-27",
@@ -5956,8 +5857,8 @@ const TRIALS_DATA =
     "Host": "4G & TB",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 41.6202,
-    "Longitude": -88.106
+    "Latitude": 41.6126,
+    "Longitude": -88.1066
   },
   {
     "Date": "2026-06-27",
@@ -5965,8 +5866,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 41.0921,
-    "Longitude": -80.3074
+    "Latitude": 41.0938,
+    "Longitude": -80.296
   },
   {
     "Date": "2026-06-27",
@@ -5974,8 +5875,8 @@ const TRIALS_DATA =
     "Host": "Doglandia, LLC",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 44.92,
-    "Longitude": -123.004
+    "Latitude": 44.9209,
+    "Longitude": -123.0741
   },
   {
     "Date": "2026-06-27",
@@ -5983,8 +5884,8 @@ const TRIALS_DATA =
     "Host": "HeavenScent Sniffers",
     "TrialTypes": "NW2, L3C, ELT-S",
     "EventCount": 3,
-    "Latitude": 42.0114,
-    "Longitude": -72.434
+    "Latitude": 42.0261,
+    "Longitude": -72.4201
   },
   {
     "Date": "2026-06-30",
@@ -5992,8 +5893,8 @@ const TRIALS_DATA =
     "Host": "Ev-ry Earthdog, LLC",
     "TrialTypes": "NW3, NW1, NW2, ELT-P",
     "EventCount": 4,
-    "Latitude": 39.9919,
-    "Longitude": -74.9629
+    "Latitude": 39.988,
+    "Longitude": -74.9098
   },
   {
     "Date": "2026-07-03",
@@ -6001,8 +5902,8 @@ const TRIALS_DATA =
     "Host": "Shamrock Pot Of Gold K9 Scenter",
     "TrialTypes": "NW3, ELT, ELT-S, L2I",
     "EventCount": 4,
-    "Latitude": 42.192,
-    "Longitude": -72.9146
+    "Latitude": 42.2796,
+    "Longitude": -72.894
   },
   {
     "Date": "2026-07-06",
@@ -6010,8 +5911,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 42.9133,
-    "Longitude": -74.432
+    "Latitude": 42.9327,
+    "Longitude": -74.4468
   },
   {
     "Date": "2026-07-10",
@@ -6019,8 +5920,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "NW3, NW2, NW1, L2I, L2C",
     "EventCount": 5,
-    "Latitude": 39.2588,
-    "Longitude": -106.3168
+    "Latitude": 39.2364,
+    "Longitude": -106.3113
   },
   {
     "Date": "2026-07-10",
@@ -6028,8 +5929,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT-P, ELT-S, L3I, ELT",
     "EventCount": 4,
-    "Latitude": 39.5695,
-    "Longitude": -76.6774
+    "Latitude": 39.5447,
+    "Longitude": -76.6055
   },
   {
     "Date": "2026-07-11",
@@ -6037,8 +5938,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "ELT-P, NW1",
     "EventCount": 2,
-    "Latitude": 42.4118,
-    "Longitude": -83.3378
+    "Latitude": 42.3917,
+    "Longitude": -83.3603
   },
   {
     "Date": "2026-07-13",
@@ -6046,8 +5947,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 42.8964,
-    "Longitude": -71.3199
+    "Latitude": 42.883,
+    "Longitude": -71.3476
   },
   {
     "Date": "2026-07-13",
@@ -6055,8 +5956,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "L1C, L1I, ELT",
     "EventCount": 3,
-    "Latitude": 40.7872,
-    "Longitude": -74.4286
+    "Latitude": 40.7964,
+    "Longitude": -74.3649
   },
   {
     "Date": "2026-07-17",
@@ -6064,8 +5965,8 @@ const TRIALS_DATA =
     "Host": "Rewarding Rover LLC & UberDog/Jessica Koester",
     "TrialTypes": "NW2, NW1, ELT-S",
     "EventCount": 3,
-    "Latitude": 33.0016,
-    "Longitude": -117.2504
+    "Latitude": 32.9889,
+    "Longitude": -117.3094
   },
   {
     "Date": "2026-07-17",
@@ -6073,8 +5974,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 39.2152,
-    "Longitude": -106.2957
+    "Latitude": 39.2501,
+    "Longitude": -106.3287
   },
   {
     "Date": "2026-07-18",
@@ -6082,8 +5983,8 @@ const TRIALS_DATA =
     "Host": "Central Coast Nosework Club",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 35.3411,
-    "Longitude": -120.8357
+    "Latitude": 35.2616,
+    "Longitude": -120.8552
   },
   {
     "Date": "2026-07-18",
@@ -6091,8 +5992,8 @@ const TRIALS_DATA =
     "Host": "Gretchen Hofheins-Wackerfuss",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.8952,
-    "Longitude": -92.9075
+    "Latitude": 44.8964,
+    "Longitude": -92.9535
   },
   {
     "Date": "2026-07-25",
@@ -6100,8 +6001,8 @@ const TRIALS_DATA =
     "Host": "Kiddy Christie",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.0656,
-    "Longitude": -123.3451
+    "Latitude": 44.1119,
+    "Longitude": -123.4044
   },
   {
     "Date": "2026-07-29",
@@ -6109,8 +6010,8 @@ const TRIALS_DATA =
     "Host": "Peninsula Dog Obedience Group LLC",
     "TrialTypes": "NW1, NW2, NW3, ELT",
     "EventCount": 4,
-    "Latitude": 60.4833,
-    "Longitude": -151.0657
+    "Latitude": 60.4848,
+    "Longitude": -151.1036
   },
   {
     "Date": "2026-08-01",
@@ -6118,8 +6019,8 @@ const TRIALS_DATA =
     "Host": "Fur Better Fur Worse Dog Training",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 41.5012,
-    "Longitude": -90.5363
+    "Latitude": 41.5491,
+    "Longitude": -90.5369
   },
   {
     "Date": "2026-08-01",
@@ -6127,8 +6028,8 @@ const TRIALS_DATA =
     "Host": "Columbia Canine Sports Center, LLC",
     "TrialTypes": "L1V, L1I, L1C, L2C",
     "EventCount": 4,
-    "Latitude": 38.9383,
-    "Longitude": -92.307
+    "Latitude": 38.9871,
+    "Longitude": -92.3516
   },
   {
     "Date": "2026-08-01",
@@ -6136,8 +6037,8 @@ const TRIALS_DATA =
     "Host": "The Nosework Magic",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 48.8482,
-    "Longitude": -122.2125
+    "Latitude": 48.8712,
+    "Longitude": -122.1955
   },
   {
     "Date": "2026-08-01",
@@ -6145,8 +6046,8 @@ const TRIALS_DATA =
     "Host": "K9 Ventures",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 42.9853,
-    "Longitude": -88.7384
+    "Latitude": 43.0429,
+    "Longitude": -88.7712
   },
   {
     "Date": "2026-08-01",
@@ -6154,8 +6055,8 @@ const TRIALS_DATA =
     "Host": "Nose 2 Tail Dog Training LLC",
     "TrialTypes": "NW1, NW2, ELT-P",
     "EventCount": 3,
-    "Latitude": 46.2956,
-    "Longitude": -94.5218
+    "Latitude": 46.2811,
+    "Longitude": -94.4661
   },
   {
     "Date": "2026-08-07",
@@ -6163,8 +6064,8 @@ const TRIALS_DATA =
     "Host": "JavaK9s, LLC",
     "TrialTypes": "ELT, L2C, L2I",
     "EventCount": 3,
-    "Latitude": 33.6478,
-    "Longitude": -117.9835
+    "Latitude": 33.6737,
+    "Longitude": -117.9622
   },
   {
     "Date": "2026-08-08",
@@ -6172,8 +6073,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines, LLC",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 39.0971,
-    "Longitude": -88.7204
+    "Latitude": 39.0433,
+    "Longitude": -88.7814
   },
   {
     "Date": "2026-08-14",
@@ -6181,8 +6082,8 @@ const TRIALS_DATA =
     "Host": "Rewarding Rover LLC & UberDog/Jessica Koester",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 32.8037,
-    "Longitude": -117.2896
+    "Latitude": 32.834,
+    "Longitude": -117.2344
   },
   {
     "Date": "2026-08-15",
@@ -6190,8 +6091,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 40.9973,
-    "Longitude": -73.6716
+    "Latitude": 40.9951,
+    "Longitude": -73.6399
   },
   {
     "Date": "2026-08-15",
@@ -6199,8 +6100,8 @@ const TRIALS_DATA =
     "Host": "Doglandia, LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 44.8298,
-    "Longitude": -123.2356
+    "Latitude": 44.8203,
+    "Longitude": -123.2564
   },
   {
     "Date": "2026-08-21",
@@ -6208,8 +6109,8 @@ const TRIALS_DATA =
     "Host": "Force Free Dale, LLC",
     "TrialTypes": "NW3, L1V, L1C, NW2",
     "EventCount": 4,
-    "Latitude": 42.3623,
-    "Longitude": -84.0447
+    "Latitude": 42.3279,
+    "Longitude": -84.0573
   },
   {
     "Date": "2026-08-22",
@@ -6217,8 +6118,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "NW3, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 42.5556,
-    "Longitude": -72.5872
+    "Latitude": 42.573,
+    "Longitude": -72.6102
   },
   {
     "Date": "2026-08-22",
@@ -6226,8 +6127,8 @@ const TRIALS_DATA =
     "Host": "My Dog Smells LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 42.9715,
-    "Longitude": -74.3614
+    "Latitude": 43.0487,
+    "Longitude": -74.3441
   },
   {
     "Date": "2026-08-22",
@@ -6235,8 +6136,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "ELT, L1C, L2I",
     "EventCount": 3,
-    "Latitude": 47.4512,
-    "Longitude": -121.7521
+    "Latitude": 47.4797,
+    "Longitude": -121.8124
   },
   {
     "Date": "2026-08-28",
@@ -6244,8 +6145,8 @@ const TRIALS_DATA =
     "Host": "Fair Play Labradors",
     "TrialTypes": "ELT-S, L2E, L2C, NW1, L1I",
     "EventCount": 5,
-    "Latitude": 39.435,
-    "Longitude": -76.6625
+    "Latitude": 39.4163,
+    "Longitude": -76.5817
   },
   {
     "Date": "2026-08-28",
@@ -6253,8 +6154,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "NW3, NW1, L2C, NW2",
     "EventCount": 4,
-    "Latitude": 40.0308,
-    "Longitude": -107.8866
+    "Latitude": 40.0842,
+    "Longitude": -107.8873
   },
   {
     "Date": "2026-08-29",
@@ -6262,8 +6163,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "NW1, NW2, ELT-S, L3E",
     "EventCount": 4,
-    "Latitude": 42.5013,
-    "Longitude": -79.3068
+    "Latitude": 42.4585,
+    "Longitude": -79.3679
   },
   {
     "Date": "2026-08-31",
@@ -6271,8 +6172,8 @@ const TRIALS_DATA =
     "Host": "Gentle Touch Pet Training",
     "TrialTypes": "ELT, L1E, L2E",
     "EventCount": 3,
-    "Latitude": 35.5192,
-    "Longitude": -121.0674
+    "Latitude": 35.5188,
+    "Longitude": -121.0565
   },
   {
     "Date": "2026-09-05",
@@ -6280,8 +6181,8 @@ const TRIALS_DATA =
     "Host": "Hold The Line K9 LLC",
     "TrialTypes": "L1I, L2I, NW3",
     "EventCount": 3,
-    "Latitude": 33.2142,
-    "Longitude": -84.7926
+    "Latitude": 33.2258,
+    "Longitude": -84.742
   },
   {
     "Date": "2026-09-11",
@@ -6289,8 +6190,8 @@ const TRIALS_DATA =
     "Host": "Paws Plus Training, LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 37.5201,
-    "Longitude": -77.4633
+    "Latitude": 37.5275,
+    "Longitude": -77.4502
   },
   {
     "Date": "2026-09-12",
@@ -6298,8 +6199,8 @@ const TRIALS_DATA =
     "Host": "Nosework Addicts, LLC",
     "TrialTypes": "NW1, ELT",
     "EventCount": 2,
-    "Latitude": 40.5465,
-    "Longitude": -80.3345
+    "Latitude": 40.4989,
+    "Longitude": -80.369
   },
   {
     "Date": "2026-09-12",
@@ -6307,8 +6208,8 @@ const TRIALS_DATA =
     "Host": "Sniff Sniff Hooray",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 40.103,
-    "Longitude": -75.2622
+    "Latitude": 40.1275,
+    "Longitude": -75.2147
   },
   {
     "Date": "2026-09-12",
@@ -6316,8 +6217,8 @@ const TRIALS_DATA =
     "Host": "The Bay Team",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 37.2951,
-    "Longitude": -122.2647
+    "Latitude": 37.2218,
+    "Longitude": -122.3161
   },
   {
     "Date": "2026-09-12",
@@ -6325,8 +6226,8 @@ const TRIALS_DATA =
     "Host": "Bay State Sniffers",
     "TrialTypes": "ELT, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 42.109,
-    "Longitude": -71.2103
+    "Latitude": 42.0755,
+    "Longitude": -71.1787
   },
   {
     "Date": "2026-09-13",
@@ -6334,8 +6235,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT-S, L3C, NW3",
     "EventCount": 3,
-    "Latitude": 39.0574,
-    "Longitude": -76.976
+    "Latitude": 39.1059,
+    "Longitude": -76.9874
   },
   {
     "Date": "2026-09-18",
@@ -6343,8 +6244,8 @@ const TRIALS_DATA =
     "Host": "Every Dog Nosework",
     "TrialTypes": "NW3, NW1, NW2, ELT-P",
     "EventCount": 4,
-    "Latitude": 43.039,
-    "Longitude": -83.6992
+    "Latitude": 43.0398,
+    "Longitude": -83.645
   },
   {
     "Date": "2026-09-18",
@@ -6352,8 +6253,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "ELT, ELT-S, L1V",
     "EventCount": 3,
-    "Latitude": 41.8481,
-    "Longitude": -75.7497
+    "Latitude": 41.8787,
+    "Longitude": -75.7146
   },
   {
     "Date": "2026-09-19",
@@ -6361,8 +6262,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "ELT, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 40.7357,
-    "Longitude": -79.5811
+    "Latitude": 40.8007,
+    "Longitude": -79.5329
   },
   {
     "Date": "2026-09-19",
@@ -6370,8 +6271,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 39.9218,
-    "Longitude": -75.4455
+    "Latitude": 39.9241,
+    "Longitude": -75.4618
   },
   {
     "Date": "2026-09-19",
@@ -6379,8 +6280,8 @@ const TRIALS_DATA =
     "Host": "HeavenScent Sniffers",
     "TrialTypes": "NW3, L2V, L1E",
     "EventCount": 3,
-    "Latitude": 42.1535,
-    "Longitude": -72.2984
+    "Latitude": 42.2059,
+    "Longitude": -72.3763
   },
   {
     "Date": "2026-09-19",
@@ -6388,8 +6289,8 @@ const TRIALS_DATA =
     "Host": "Sharon Smith",
     "TrialTypes": "NW1, NW2, L1V, L1C",
     "EventCount": 4,
-    "Latitude": 45.742,
-    "Longitude": -121.9124
+    "Latitude": 45.7047,
+    "Longitude": -121.8384
   },
   {
     "Date": "2026-09-25",
@@ -6397,8 +6298,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "L3E, ELT-S, ELT-P, ELT",
     "EventCount": 4,
-    "Latitude": 39.3866,
-    "Longitude": -77.3638
+    "Latitude": 39.3804,
+    "Longitude": -77.3853
   },
   {
     "Date": "2026-09-26",
@@ -6406,8 +6307,8 @@ const TRIALS_DATA =
     "Host": "Canine Connection",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 45.6683,
-    "Longitude": -109.2241
+    "Latitude": 45.6773,
+    "Longitude": -109.2904
   },
   {
     "Date": "2026-09-26",
@@ -6415,8 +6316,8 @@ const TRIALS_DATA =
     "Host": "Northwest Obedience Club Inc",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 42.0604,
-    "Longitude": -87.829
+    "Latitude": 42.0497,
+    "Longitude": -87.826
   },
   {
     "Date": "2026-09-26",
@@ -6424,8 +6325,8 @@ const TRIALS_DATA =
     "Host": "Paws n’ Sniff",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 40.5524,
-    "Longitude": -75.162
+    "Latitude": 40.5642,
+    "Longitude": -75.1464
   },
   {
     "Date": "2026-09-26",
@@ -6433,8 +6334,8 @@ const TRIALS_DATA =
     "Host": "Right Choice Dog Training, LLC",
     "TrialTypes": "L1E, NW2, ELT-S, L3I",
     "EventCount": 4,
-    "Latitude": 33.9641,
-    "Longitude": -84.0318
+    "Latitude": 33.9779,
+    "Longitude": -83.994
   },
   {
     "Date": "2026-09-26",
@@ -6442,8 +6343,8 @@ const TRIALS_DATA =
     "Host": "Saints2Source, LLC",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 41.1585,
-    "Longitude": -74.0065
+    "Latitude": 41.1986,
+    "Longitude": -74.0206
   },
   {
     "Date": "2026-09-26",
@@ -6451,8 +6352,8 @@ const TRIALS_DATA =
     "Host": "Dogs Make Scents",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 41.7936,
-    "Longitude": -71.2298
+    "Latitude": 41.804,
+    "Longitude": -71.2131
   },
   {
     "Date": "2026-09-27",
@@ -6460,8 +6361,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW3, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 39.1921,
-    "Longitude": -75.5372
+    "Latitude": 39.1852,
+    "Longitude": -75.5151
   },
   {
     "Date": "2026-09-28",
@@ -6469,8 +6370,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 43.184,
-    "Longitude": -71.5541
+    "Latitude": 43.1851,
+    "Longitude": -71.5818
   },
   {
     "Date": "2026-10-03",
@@ -6478,8 +6379,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT-S, NW3, ELT",
     "EventCount": 3,
-    "Latitude": 39.6822,
-    "Longitude": -77.7438
+    "Latitude": 39.6138,
+    "Longitude": -77.696
   },
   {
     "Date": "2026-10-03",
@@ -6487,8 +6388,8 @@ const TRIALS_DATA =
     "Host": "Dog Gone Right, LLC",
     "TrialTypes": "NW1, NW2, L1I, ELT-S",
     "EventCount": 4,
-    "Latitude": 30.4792,
-    "Longitude": -90.4499
+    "Latitude": 30.474,
+    "Longitude": -90.4169
   },
   {
     "Date": "2026-10-03",
@@ -6496,8 +6397,8 @@ const TRIALS_DATA =
     "Host": "Doglandia, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.6308,
-    "Longitude": -121.2186
+    "Latitude": 44.6534,
+    "Longitude": -121.2093
   },
   {
     "Date": "2026-10-03",
@@ -6505,8 +6406,8 @@ const TRIALS_DATA =
     "Host": "The Big Sniff, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.7613,
-    "Longitude": -71.4957
+    "Latitude": 42.7231,
+    "Longitude": -71.4476
   },
   {
     "Date": "2026-10-03",
@@ -6514,8 +6415,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "NW1, L2C, ELT",
     "EventCount": 3,
-    "Latitude": 41.7039,
-    "Longitude": -74.0527
+    "Latitude": 41.7149,
+    "Longitude": -74.1155
   },
   {
     "Date": "2026-10-03",
@@ -6523,8 +6424,8 @@ const TRIALS_DATA =
     "Host": "Lucky Dog Events",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 42.2972,
-    "Longitude": -72.5986
+    "Latitude": 42.2763,
+    "Longitude": -72.6709
   },
   {
     "Date": "2026-10-03",
@@ -6532,8 +6433,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 29.6057,
-    "Longitude": -97.9919
+    "Latitude": 29.6134,
+    "Longitude": -97.9204
   },
   {
     "Date": "2026-10-03",
@@ -6541,8 +6442,8 @@ const TRIALS_DATA =
     "Host": "Sunriver K9 Genie, LLC",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 44.2982,
-    "Longitude": -121.5811
+    "Latitude": 44.2581,
+    "Longitude": -121.5767
   },
   {
     "Date": "2026-10-03",
@@ -6550,8 +6451,8 @@ const TRIALS_DATA =
     "Host": "Nose-It-All, LLC",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 39.7773,
-    "Longitude": -77.5525
+    "Latitude": 39.7659,
+    "Longitude": -77.6259
   },
   {
     "Date": "2026-10-09",
@@ -6559,8 +6460,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "ELT, ELT-P, NW1",
     "EventCount": 3,
-    "Latitude": 41.5257,
-    "Longitude": -73.1578
+    "Latitude": 41.5122,
+    "Longitude": -73.1345
   },
   {
     "Date": "2026-10-09",
@@ -6568,8 +6469,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs, LLC",
     "TrialTypes": "SMT, ELT",
     "EventCount": 2,
-    "Latitude": 38.3051,
-    "Longitude": -104.5997
+    "Latitude": 38.2206,
+    "Longitude": -104.5754
   },
   {
     "Date": "2026-10-09",
@@ -6577,8 +6478,8 @@ const TRIALS_DATA =
     "Host": "Fur Better Fur Worse Dog Training",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 41.4569,
-    "Longitude": -90.62
+    "Latitude": 41.3947,
+    "Longitude": -90.5957
   },
   {
     "Date": "2026-10-10",
@@ -6586,8 +6487,8 @@ const TRIALS_DATA =
     "Host": "Northwest K9 Sniffers",
     "TrialTypes": "ELT-S, L2E, L3I",
     "EventCount": 3,
-    "Latitude": 47.2722,
-    "Longitude": -122.2493
+    "Latitude": 47.2929,
+    "Longitude": -122.1961
   },
   {
     "Date": "2026-10-10",
@@ -6595,8 +6496,8 @@ const TRIALS_DATA =
     "Host": "KBP Dog Training",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 41.7144,
-    "Longitude": -93.774
+    "Latitude": 41.7216,
+    "Longitude": -93.8536
   },
   {
     "Date": "2026-10-10",
@@ -6604,8 +6505,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 44.7937,
-    "Longitude": -93.1549
+    "Latitude": 44.8417,
+    "Longitude": -93.1601
   },
   {
     "Date": "2026-10-10",
@@ -6613,8 +6514,8 @@ const TRIALS_DATA =
     "Host": "Your Dog's Place, LLC",
     "TrialTypes": "L2C, NW2, ELT-S, L1C",
     "EventCount": 4,
-    "Latitude": 41.481,
-    "Longitude": -74.8401
+    "Latitude": 41.4962,
+    "Longitude": -74.8668
   },
   {
     "Date": "2026-10-10",
@@ -6622,8 +6523,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Breakfast Club",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 46.6035,
-    "Longitude": -112.0682
+    "Latitude": 46.6007,
+    "Longitude": -112.0467
   },
   {
     "Date": "2026-10-10",
@@ -6631,8 +6532,8 @@ const TRIALS_DATA =
     "Host": "Paws 4 Thought Dog Training, LLC",
     "TrialTypes": "NW2, NW1, L1E",
     "EventCount": 3,
-    "Latitude": 40.364,
-    "Longitude": -105.1023
+    "Latitude": 40.3569,
+    "Longitude": -105.0749
   },
   {
     "Date": "2026-10-10",
@@ -6640,8 +6541,8 @@ const TRIALS_DATA =
     "Host": "Successful Sniffer",
     "TrialTypes": "ELT, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 34.8598,
-    "Longitude": -111.7356
+    "Latitude": 34.9111,
+    "Longitude": -111.7777
   },
   {
     "Date": "2026-10-10",
@@ -6649,8 +6550,8 @@ const TRIALS_DATA =
     "Host": "Your Dogs Knows LLC",
     "TrialTypes": "NW1, ELT-S, L1V, L2V",
     "EventCount": 4,
-    "Latitude": 37.9261,
-    "Longitude": -78.2102
+    "Latitude": 37.9149,
+    "Longitude": -78.233
   },
   {
     "Date": "2026-10-10",
@@ -6658,8 +6559,8 @@ const TRIALS_DATA =
     "Host": "Steel City Nosework, LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.2435,
-    "Longitude": -79.6036
+    "Latitude": 40.2896,
+    "Longitude": -79.6063
   },
   {
     "Date": "2026-10-12",
@@ -6667,8 +6568,8 @@ const TRIALS_DATA =
     "Host": "Amy Conrad & Heaven Scent Sniffers",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.7182,
-    "Longitude": -71.2072
+    "Latitude": 41.7278,
+    "Longitude": -71.1679
   },
   {
     "Date": "2026-10-16",
@@ -6676,8 +6577,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, NW3, ELT-P",
     "EventCount": 3,
-    "Latitude": 39.0106,
-    "Longitude": -104.2932
+    "Latitude": 39.0011,
+    "Longitude": -104.3008
   },
   {
     "Date": "2026-10-16",
@@ -6685,8 +6586,8 @@ const TRIALS_DATA =
     "Host": "Camelot Shepherds, Inc.",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.9664,
-    "Longitude": -85.3292
+    "Latitude": 34.9646,
+    "Longitude": -85.273
   },
   {
     "Date": "2026-10-16",
@@ -6694,8 +6595,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW3, ELT, ELT-P",
     "EventCount": 3,
-    "Latitude": 39.7557,
-    "Longitude": -75.5634
+    "Latitude": 39.7685,
+    "Longitude": -75.5349
   },
   {
     "Date": "2026-10-17",
@@ -6703,8 +6604,8 @@ const TRIALS_DATA =
     "Host": "New Mexico Canine Scent Work, LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 35.0669,
-    "Longitude": -106.6247
+    "Latitude": 35.0616,
+    "Longitude": -106.6197
   },
   {
     "Date": "2026-10-17",
@@ -6712,8 +6613,8 @@ const TRIALS_DATA =
     "Host": "Let's Talk Dogs, LLC and About Face K9",
     "TrialTypes": "ELT-S, NW2, L3C",
     "EventCount": 3,
-    "Latitude": 46.7321,
-    "Longitude": -122.9205
+    "Latitude": 46.7284,
+    "Longitude": -122.9999
   },
   {
     "Date": "2026-10-17",
@@ -6721,8 +6622,8 @@ const TRIALS_DATA =
     "Host": "For the Love of Dogs NY LLC",
     "TrialTypes": "L1E, ELT-S, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 42.0249,
-    "Longitude": -73.0945
+    "Latitude": 41.9924,
+    "Longitude": -73.1103
   },
   {
     "Date": "2026-10-17",
@@ -6730,8 +6631,8 @@ const TRIALS_DATA =
     "Host": "Scent Work Across Texas",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 30.2723,
-    "Longitude": -95.4344
+    "Latitude": 30.2713,
+    "Longitude": -95.4922
   },
   {
     "Date": "2026-10-17",
@@ -6739,8 +6640,8 @@ const TRIALS_DATA =
     "Host": "Do Over Dog Training",
     "TrialTypes": "NW3, L1C, L3V",
     "EventCount": 3,
-    "Latitude": 42.4559,
-    "Longitude": -78.4663
+    "Latitude": 42.4437,
+    "Longitude": -78.4479
   },
   {
     "Date": "2026-10-17",
@@ -6748,8 +6649,8 @@ const TRIALS_DATA =
     "Host": "Kudos for Canines, LLC",
     "TrialTypes": "L2C, ELT-S, NW3",
     "EventCount": 3,
-    "Latitude": 39.8893,
-    "Longitude": -89.16
+    "Latitude": 39.8943,
+    "Longitude": -89.1949
   },
   {
     "Date": "2026-10-17",
@@ -6757,8 +6658,8 @@ const TRIALS_DATA =
     "Host": "Nose 2 Tail Dog Training LLC",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 46.3267,
-    "Longitude": -94.818
+    "Latitude": 46.356,
+    "Longitude": -94.7784
   },
   {
     "Date": "2026-10-17",
@@ -6766,8 +6667,8 @@ const TRIALS_DATA =
     "Host": "CalCoastal Dog Owners Group",
     "TrialTypes": "L3V, L2V, L1V",
     "EventCount": 3,
-    "Latitude": 36.9085,
-    "Longitude": -121.8033
+    "Latitude": 36.8936,
+    "Longitude": -121.7407
   },
   {
     "Date": "2026-10-24",
@@ -6775,8 +6676,8 @@ const TRIALS_DATA =
     "Host": "Georgia Nosework",
     "TrialTypes": "NW3, L1C, NW2",
     "EventCount": 3,
-    "Latitude": 34.2373,
-    "Longitude": -84.1189
+    "Latitude": 34.1812,
+    "Longitude": -84.1214
   },
   {
     "Date": "2026-10-24",
@@ -6784,8 +6685,8 @@ const TRIALS_DATA =
     "Host": "Top Notch Dogs, LLC",
     "TrialTypes": "ELT-P, ELT",
     "EventCount": 2,
-    "Latitude": 41.5325,
-    "Longitude": -73.9039
+    "Latitude": 41.5016,
+    "Longitude": -73.892
   },
   {
     "Date": "2026-10-24",
@@ -6793,8 +6694,8 @@ const TRIALS_DATA =
     "Host": "NEWk9Scent Work LLC",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 44.541,
-    "Longitude": -87.9826
+    "Latitude": 44.4644,
+    "Longitude": -88.0404
   },
   {
     "Date": "2026-10-24",
@@ -6802,8 +6703,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "NW1, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 37.6818,
-    "Longitude": -76.3817
+    "Latitude": 37.7079,
+    "Longitude": -76.3883
   },
   {
     "Date": "2026-10-24",
@@ -6811,8 +6712,8 @@ const TRIALS_DATA =
     "Host": "Dogs Make Scents",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 41.9978,
-    "Longitude": -71.1649
+    "Latitude": 41.9944,
+    "Longitude": -71.2201
   },
   {
     "Date": "2026-10-24",
@@ -6820,8 +6721,8 @@ const TRIALS_DATA =
     "Host": "2 Psyched 4 Dogs",
     "TrialTypes": "ELT, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 42.6533,
-    "Longitude": -77.0956
+    "Latitude": 42.6729,
+    "Longitude": -77.0453
   },
   {
     "Date": "2026-10-24",
@@ -6829,8 +6730,8 @@ const TRIALS_DATA =
     "Host": "Wells Creek Dog Training",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 43.6524,
-    "Longitude": -124.06
+    "Latitude": 43.7014,
+    "Longitude": -124.0593
   },
   {
     "Date": "2026-10-26",
@@ -6838,8 +6739,8 @@ const TRIALS_DATA =
     "Host": "Two Nosey Girls",
     "TrialTypes": "L3E, L2E",
     "EventCount": 2,
-    "Latitude": 37.9112,
-    "Longitude": -121.3163
+    "Latitude": 37.9682,
+    "Longitude": -121.2996
   },
   {
     "Date": "2026-10-28",
@@ -6847,8 +6748,8 @@ const TRIALS_DATA =
     "Host": "Red Huskies",
     "TrialTypes": "ELT, ELT-P, ELT-S, L2I",
     "EventCount": 4,
-    "Latitude": 39.4925,
-    "Longitude": -76.1703
+    "Latitude": 39.4945,
+    "Longitude": -76.1706
   },
   {
     "Date": "2026-10-30",
@@ -6856,18 +6757,17 @@ const TRIALS_DATA =
     "Host": "Sierra Sniffing Canines, Inc",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 38.6989,
+    "Latitude": 38.6351,
     "Longitude": -121.013
   },
   {
     "Date": "2026-10-30",
     "Location": "Harrington, DE",
     "Host": "Shamrock Pot Of Gold K9 Scenter",
-    "EventLink": "https://shamrockpotofgoldk9scenter.com/",
     "TrialTypes": "NW3, ELT, NW1, ELT-S, L2E",
     "EventCount": 5,
-    "Latitude": 38.9561,
-    "Longitude": -75.5956
+    "Latitude": 38.9595,
+    "Longitude": -75.5905
   },
   {
     "Date": "2026-10-30",
@@ -6875,8 +6775,8 @@ const TRIALS_DATA =
     "Host": "Patricia Grassey",
     "TrialTypes": "NW1, L1C, L2C, NW2, L3I, L3C",
     "EventCount": 6,
-    "Latitude": 40.1105,
-    "Longitude": -75.942
+    "Latitude": 40.0973,
+    "Longitude": -75.8937
   },
   {
     "Date": "2026-10-30",
@@ -6884,8 +6784,8 @@ const TRIALS_DATA =
     "Host": "St Paul Dog Training Club",
     "TrialTypes": "ELT-P, NW2, ELT-S, L1C",
     "EventCount": 4,
-    "Latitude": 44.6286,
-    "Longitude": -93.2471
+    "Latitude": 44.6583,
+    "Longitude": -93.2031
   },
   {
     "Date": "2026-10-30",
@@ -6893,8 +6793,8 @@ const TRIALS_DATA =
     "Host": "Chestnut Hill Canine Sports",
     "TrialTypes": "NW3, NW1, L2I",
     "EventCount": 3,
-    "Latitude": 34.0059,
-    "Longitude": -84.0293
+    "Latitude": 33.9335,
+    "Longitude": -83.9744
   },
   {
     "Date": "2026-10-30",
@@ -6902,8 +6802,8 @@ const TRIALS_DATA =
     "Host": "Mountain Dogs LLC",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 38.492,
-    "Longitude": -107.8594
+    "Latitude": 38.4417,
+    "Longitude": -107.9228
   },
   {
     "Date": "2026-10-30",
@@ -6911,8 +6811,8 @@ const TRIALS_DATA =
     "Host": "Firezone GS",
     "TrialTypes": "ELT, NW3, ELT-P",
     "EventCount": 3,
-    "Latitude": 40.0089,
-    "Longitude": -76.7737
+    "Latitude": 39.948,
+    "Longitude": -76.6805
   },
   {
     "Date": "2026-10-31",
@@ -6920,8 +6820,8 @@ const TRIALS_DATA =
     "Host": "George Carpenter",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.5578,
-    "Longitude": -89.0246
+    "Latitude": 42.4779,
+    "Longitude": -89.009
   },
   {
     "Date": "2026-10-31",
@@ -6929,8 +6829,8 @@ const TRIALS_DATA =
     "Host": "All About The Nose",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 33.5875,
-    "Longitude": -96.2027
+    "Latitude": 33.5751,
+    "Longitude": -96.2098
   },
   {
     "Date": "2026-10-31",
@@ -6938,8 +6838,8 @@ const TRIALS_DATA =
     "Host": "Hold The Line K9 LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 34.3321,
-    "Longitude": -83.1815
+    "Latitude": 34.3483,
+    "Longitude": -83.2037
   },
   {
     "Date": "2026-10-31",
@@ -6947,8 +6847,8 @@ const TRIALS_DATA =
     "Host": "Elizabeth Dutton",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 43.3705,
-    "Longitude": -70.4792
+    "Latitude": 43.3236,
+    "Longitude": -70.4647
   },
   {
     "Date": "2026-10-31",
@@ -6956,8 +6856,8 @@ const TRIALS_DATA =
     "Host": "Two Paws Up Dog Training, LLC",
     "TrialTypes": "L2V, L2E, L1V, L1E",
     "EventCount": 4,
-    "Latitude": 44.4142,
-    "Longitude": -103.516
+    "Latitude": 44.375,
+    "Longitude": -103.5331
   },
   {
     "Date": "2026-10-31",
@@ -6965,8 +6865,8 @@ const TRIALS_DATA =
     "Host": "Saints2Source, LLC",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 41.0388,
-    "Longitude": -73.8109
+    "Latitude": 41.0414,
+    "Longitude": -73.7452
   },
   {
     "Date": "2026-10-31",
@@ -6974,8 +6874,8 @@ const TRIALS_DATA =
     "Host": "Nose Work Detectives, LLC",
     "TrialTypes": "ELT-P",
     "EventCount": 1,
-    "Latitude": 45.1817,
-    "Longitude": -123.1809
+    "Latitude": 45.2652,
+    "Longitude": -123.2371
   },
   {
     "Date": "2026-11-01",
@@ -6983,118 +6883,107 @@ const TRIALS_DATA =
     "Host": "B.L. McMutts LLC",
     "TrialTypes": "L1V, L2V",
     "EventCount": 2,
-    "Latitude": 37.0437,
-    "Longitude": -121.6217
+    "Latitude": 37.1231,
+    "Longitude": -121.5558
   },
   {
     "Date": "2026-11-03",
     "Location": "Ventura, CA",
     "Host": "Pink Biscuit K9s",
-    "EventLink": "https://www.pinkbiscuitk9s.com/arnaz-25-premium.html",
     "TrialTypes": "NW1, NW2, ELT-P",
     "EventCount": 3,
-    "Latitude": 34.4737,
-    "Longitude": -119.0527
+    "Latitude": 34.4368,
+    "Longitude": -119.0784
   },
   {
     "Date": "2026-11-06",
     "Location": "Rome, GA",
     "Host": "Georgia Nosework, LLC",
-    "EventLink": "https://georgianosework.com/events/",
     "TrialTypes": "NW3, NW1, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 34.2978,
-    "Longitude": -85.1748
+    "Latitude": 34.3051,
+    "Longitude": -85.1226
   },
   {
     "Date": "2026-11-07",
     "Location": "Bonner Springs, KS",
     "Host": "Brookside Pet Concierge",
-    "EventLink": "https://bksdogtraining.com/",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 39.0818,
-    "Longitude": -94.9247
+    "Latitude": 39.0878,
+    "Longitude": -94.8353
   },
   {
     "Date": "2026-11-07",
     "Location": "Colorado Springs, CO",
     "Host": "Beyond Elevation K9",
-    "EventLink": "https://www.beyondelevationk9.com/",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 38.8483,
-    "Longitude": -104.8101
+    "Latitude": 38.8692,
+    "Longitude": -104.7832
   },
   {
     "Date": "2026-11-07",
     "Location": "Fishkill, NY",
     "Host": "Top Notch Dogs, LLC",
-    "EventLink": "https://www.topnotchdogtraining.com/",
     "TrialTypes": "L3C, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 41.4886,
-    "Longitude": -73.8573
+    "Latitude": 41.553,
+    "Longitude": -73.8606
   },
   {
     "Date": "2026-11-07",
     "Location": "Geneva, IL",
     "Host": "For Your K9, Inc",
-    "EventLink": "http://www.foryourk9.com/",
     "TrialTypes": "ELT, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 41.8767,
-    "Longitude": -88.2758
+    "Latitude": 41.8542,
+    "Longitude": -88.2862
   },
   {
     "Date": "2026-11-07",
     "Location": "Guerneville, CA",
     "Host": "Jen Huot",
-    "EventLink": "https://k9noseworkacademy.com/",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 38.4818,
-    "Longitude": -122.987
+    "Latitude": 38.4916,
+    "Longitude": -122.9504
   },
   {
     "Date": "2026-11-07",
     "Location": "Lancaster, PA",
     "Host": "Red Huskies Nose Work, LLC",
-    "EventLink": "https://nosework.redhuskies.com/index.php/events/lancaster_nov2026/",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 40.0422,
-    "Longitude": -76.3272
+    "Latitude": 40.0516,
+    "Longitude": -76.3405
   },
   {
     "Date": "2026-11-07",
     "Location": "Las Vegas, NV",
     "Host": "imPETus Animal Training",
-    "EventLink": "https://www.impetusanimaltraining.com/",
     "TrialTypes": "NW3, NW1, L1C",
     "EventCount": 3,
-    "Latitude": 36.1978,
-    "Longitude": -115.1551
+    "Latitude": 36.1398,
+    "Longitude": -115.1511
   },
   {
     "Date": "2026-11-07",
     "Location": "Mays Landing, NJ",
     "Host": "Rotts-n-Notts Nosework LLC",
-    "EventLink": "https://www.rottsnnottsnosework.com/",
     "TrialTypes": "L1C, NW2, L1E, NW1",
     "EventCount": 4,
-    "Latitude": 39.4518,
-    "Longitude": -74.6872
+    "Latitude": 39.4231,
+    "Longitude": -74.7122
   },
   {
     "Date": "2026-11-07",
     "Location": "Woodward, IA",
     "Host": "KBP Dog Training",
-    "EventLink": "https://kbpdogtraining.com/202611-nw3-elt/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.8187,
-    "Longitude": -93.9653
+    "Latitude": 41.8995,
+    "Longitude": -93.9024
   },
   {
     "Date": "2026-11-09",
@@ -7103,8 +6992,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.fortheloveofdogsny.com/trials-events",
     "TrialTypes": "L2E, L1V, NW3, ELT-P",
     "EventCount": 4,
-    "Latitude": 39.8314,
-    "Longitude": -74.9204
+    "Latitude": 39.7807,
+    "Longitude": -74.9717
   },
   {
     "Date": "2026-11-11",
@@ -7113,8 +7002,8 @@ const TRIALS_DATA =
     "EventLink": "https://marinhumane.org/oh-behave/nose-work-events/",
     "TrialTypes": "ELT-P, ELT",
     "EventCount": 2,
-    "Latitude": 38.2423,
-    "Longitude": -122.6003
+    "Latitude": 38.1963,
+    "Longitude": -122.6343
   },
   {
     "Date": "2026-11-13",
@@ -7123,8 +7012,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.rewardingrover.com/",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 32.5975,
-    "Longitude": -117.1277
+    "Latitude": 32.6461,
+    "Longitude": -117.0555
   },
   {
     "Date": "2026-11-13",
@@ -7133,8 +7022,8 @@ const TRIALS_DATA =
     "EventLink": "https://sniffsniffhooray.com/events",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 40.3532,
-    "Longitude": -75.6119
+    "Latitude": 40.3342,
+    "Longitude": -75.6503
   },
   {
     "Date": "2026-11-13",
@@ -7143,8 +7032,8 @@ const TRIALS_DATA =
     "EventLink": "https://everydognosework.com/trials",
     "TrialTypes": "ELT, ELT-S, L2C",
     "EventCount": 3,
-    "Latitude": 42.2691,
-    "Longitude": -83.5956
+    "Latitude": 42.2147,
+    "Longitude": -83.6514
   },
   {
     "Date": "2026-11-14",
@@ -7153,8 +7042,8 @@ const TRIALS_DATA =
     "EventLink": "https://wellscreekdogtraining.com/",
     "TrialTypes": "NW1, NW2, L2I, L3C",
     "EventCount": 4,
-    "Latitude": 44.1117,
-    "Longitude": -123.1013
+    "Latitude": 44.1007,
+    "Longitude": -123.0935
   },
   {
     "Date": "2026-11-14",
@@ -7163,8 +7052,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.k9trainedtotrust.com/events",
     "TrialTypes": "NW3, L2V, NW1",
     "EventCount": 3,
-    "Latitude": 34.9176,
-    "Longitude": -82.1832
+    "Latitude": 34.9823,
+    "Longitude": -82.2429
   },
   {
     "Date": "2026-11-14",
@@ -7173,8 +7062,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.byanosenosework.com/event-details/montgomery-al-elt-nw3",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 32.3782,
-    "Longitude": -86.2956
+    "Latitude": 32.3788,
+    "Longitude": -86.353
   },
   {
     "Date": "2026-11-14",
@@ -7183,8 +7072,8 @@ const TRIALS_DATA =
     "EventLink": "https://yourdogsplace.com/nacsw-trials/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.5716,
-    "Longitude": -75.3708
+    "Latitude": 41.585,
+    "Longitude": -75.4507
   },
   {
     "Date": "2026-11-16",
@@ -7193,8 +7082,8 @@ const TRIALS_DATA =
     "EventLink": "https://nosework.redhuskies.com/index.php/events/ellicottcity_nov2026/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.3118,
-    "Longitude": -76.8799
+    "Latitude": 39.3078,
+    "Longitude": -76.8085
   },
   {
     "Date": "2026-11-16",
@@ -7203,8 +7092,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.fortheloveofdogsny.com/trials-events",
     "TrialTypes": "L1I, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 41.74,
-    "Longitude": -72.6523
+    "Latitude": 41.7716,
+    "Longitude": -72.6837
   },
   {
     "Date": "2026-11-18",
@@ -7213,8 +7102,8 @@ const TRIALS_DATA =
     "EventLink": "https://firezonegiantschnauzers.com/nose-work-trials",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 39.6169,
-    "Longitude": -76.6323
+    "Latitude": 39.5509,
+    "Longitude": -76.6383
   },
   {
     "Date": "2026-11-20",
@@ -7223,8 +7112,8 @@ const TRIALS_DATA =
     "EventLink": "https://trustyourdogk9events.com/",
     "TrialTypes": "NW2, NW3, ELT",
     "EventCount": 3,
-    "Latitude": 45.4599,
-    "Longitude": -122.3232
+    "Latitude": 45.4294,
+    "Longitude": -122.3595
   },
   {
     "Date": "2026-11-20",
@@ -7233,8 +7122,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.fairplaylabradors.com/",
     "TrialTypes": "SMT, ELT-S, L1I",
     "EventCount": 3,
-    "Latitude": 39.0242,
-    "Longitude": -76.0832
+    "Latitude": 39.0297,
+    "Longitude": -76.0715
   },
   {
     "Date": "2026-11-20",
@@ -7243,8 +7132,8 @@ const TRIALS_DATA =
     "EventLink": "https://thesniffinghound.com/about",
     "TrialTypes": "ELT, ELT-P, ELT-S, L3V",
     "EventCount": 4,
-    "Latitude": 40.215,
-    "Longitude": -76.1405
+    "Latitude": 40.1925,
+    "Longitude": -76.1237
   },
   {
     "Date": "2026-11-20",
@@ -7253,8 +7142,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.pawsnsniff.com/",
     "TrialTypes": "NW1, L1C, L1E, L1I",
     "EventCount": 4,
-    "Latitude": 40.5258,
-    "Longitude": -75.1577
+    "Latitude": 40.5486,
+    "Longitude": -75.2191
   },
   {
     "Date": "2026-11-20",
@@ -7263,8 +7152,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.gentlepets.com/gtpt-events/nacsw%E2%84%A2-nw3",
     "TrialTypes": "NW3, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 34.6832,
-    "Longitude": -120.4932
+    "Latitude": 34.6229,
+    "Longitude": -120.4631
   },
   {
     "Date": "2026-11-20",
@@ -7273,8 +7162,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.doggoneright.net/",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 30.598,
-    "Longitude": -90.4369
+    "Latitude": 30.6189,
+    "Longitude": -90.3718
   },
   {
     "Date": "2026-11-21",
@@ -7283,8 +7172,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.aboutfacek9academy.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 46.7497,
-    "Longitude": -122.9935
+    "Latitude": 46.7437,
+    "Longitude": -122.9622
   },
   {
     "Date": "2026-11-21",
@@ -7293,8 +7182,8 @@ const TRIALS_DATA =
     "EventLink": "https://riverpoodlestraining.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.1595,
-    "Longitude": -81.3955
+    "Latitude": 29.1166,
+    "Longitude": -81.3945
   },
   {
     "Date": "2026-11-21",
@@ -7303,8 +7192,8 @@ const TRIALS_DATA =
     "EventLink": "https://mountaindogs.org/",
     "TrialTypes": "ELT, NW3, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 38.8765,
-    "Longitude": -107.8639
+    "Latitude": 38.7889,
+    "Longitude": -107.8434
   },
   {
     "Date": "2026-11-21",
@@ -7313,8 +7202,8 @@ const TRIALS_DATA =
     "EventLink": "https://yourdogknows.net/",
     "TrialTypes": "ELT, L2I, NW2",
     "EventCount": 3,
-    "Latitude": 37.7663,
-    "Longitude": -78.2425
+    "Latitude": 37.731,
+    "Longitude": -78.2971
   },
   {
     "Date": "2026-11-21",
@@ -7323,8 +7212,8 @@ const TRIALS_DATA =
     "EventLink": "https://scentworkacrosstexas.com/nacsw-nov-21-22",
     "TrialTypes": "ELT-S, L2I, NW3",
     "EventCount": 3,
-    "Latitude": 30.5614,
-    "Longitude": -98.2789
+    "Latitude": 30.5619,
+    "Longitude": -98.2739
   },
   {
     "Date": "2026-11-21",
@@ -7333,8 +7222,8 @@ const TRIALS_DATA =
     "EventLink": "https://agilepawsdogsports.com/",
     "TrialTypes": "NW1, L3I, L3C",
     "EventCount": 3,
-    "Latitude": 34.0637,
-    "Longitude": -117.691
+    "Latitude": 34.0272,
+    "Longitude": -117.6676
   },
   {
     "Date": "2026-11-21",
@@ -7343,8 +7232,8 @@ const TRIALS_DATA =
     "EventLink": "https://dogshaveamazingnoses.com/events/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 36.0026,
-    "Longitude": -86.5308
+    "Latitude": 35.972,
+    "Longitude": -86.5554
   },
   {
     "Date": "2026-11-22",
@@ -7353,8 +7242,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.heavenscentsniffers.com/",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 42.0947,
-    "Longitude": -72.4381
+    "Latitude": 42.1424,
+    "Longitude": -72.4723
   },
   {
     "Date": "2026-11-27",
@@ -7363,8 +7252,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.beyondelevationk9.com/",
     "TrialTypes": "NW2, NW3",
     "EventCount": 2,
-    "Latitude": 39.3586,
-    "Longitude": -104.6296
+    "Latitude": 39.3309,
+    "Longitude": -104.6035
   },
   {
     "Date": "2026-11-27",
@@ -7373,8 +7262,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.javak9s.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 33.7877,
-    "Longitude": -118.1496
+    "Latitude": 33.7455,
+    "Longitude": -118.2304
   },
   {
     "Date": "2026-11-27",
@@ -7383,8 +7272,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.bayteam.org/",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 37.2966,
-    "Longitude": -121.863
+    "Latitude": 37.3709,
+    "Longitude": -121.9036
   },
   {
     "Date": "2026-11-28",
@@ -7393,8 +7282,8 @@ const TRIALS_DATA =
     "EventLink": "https://nosework.redhuskies.com/",
     "TrialTypes": "ELT-P, L3I, ELT-S, ELT",
     "EventCount": 4,
-    "Latitude": 38.9161,
-    "Longitude": -76.6931
+    "Latitude": 38.9822,
+    "Longitude": -76.7735
   },
   {
     "Date": "2026-11-28",
@@ -7403,8 +7292,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.sniffingminpin.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 44.8397,
-    "Longitude": -92.9818
+    "Latitude": 44.8134,
+    "Longitude": -92.9299
   },
   {
     "Date": "2026-11-28",
@@ -7413,8 +7302,8 @@ const TRIALS_DATA =
     "EventLink": "https://georgianosework.com/events/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.2168,
-    "Longitude": -84.1808
+    "Latitude": 34.253,
+    "Longitude": -84.1467
   },
   {
     "Date": "2026-11-28",
@@ -7423,8 +7312,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.siriusk9solutions.net/NoseWork.html",
     "TrialTypes": "L2I, NW2, ELT-P",
     "EventCount": 3,
-    "Latitude": 40.6193,
-    "Longitude": -74.8857
+    "Latitude": 40.6633,
+    "Longitude": -74.8123
   },
   {
     "Date": "2026-11-28",
@@ -7433,8 +7322,8 @@ const TRIALS_DATA =
     "EventLink": "https://pawsitivelyobedient.net/special-events/",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 40.8908,
-    "Longitude": -77.0504
+    "Latitude": 40.8703,
+    "Longitude": -77.0199
   },
   {
     "Date": "2026-11-28",
@@ -7443,8 +7332,8 @@ const TRIALS_DATA =
     "EventLink": "https://westinnkennels.wixsite.com/silex",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 39.1705,
-    "Longitude": -91.0673
+    "Latitude": 39.0961,
+    "Longitude": -91.0918
   },
   {
     "Date": "2026-11-28",
@@ -7453,8 +7342,8 @@ const TRIALS_DATA =
     "EventLink": "https://noseworktrial.blogspot.com/",
     "TrialTypes": "NW1, L1E, L1I, L3V",
     "EventCount": 4,
-    "Latitude": 45.6587,
-    "Longitude": -122.661
+    "Latitude": 45.6066,
+    "Longitude": -122.6497
   },
   {
     "Date": "2026-11-29",
@@ -7463,8 +7352,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.firezonegiantschnauzers.com/wwiimuseum",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 39.8692,
-    "Longitude": -77.207
+    "Latitude": 39.8116,
+    "Longitude": -77.247
   },
   {
     "Date": "2026-12-05",
@@ -7473,8 +7362,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.dorothyturley.com/",
     "TrialTypes": "ELT, NW1, L2I",
     "EventCount": 3,
-    "Latitude": 46.6893,
-    "Longitude": -122.9839
+    "Latitude": 46.6737,
+    "Longitude": -122.986
   },
   {
     "Date": "2026-12-05",
@@ -7483,8 +7372,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.heavenscentsniffers.com/",
     "TrialTypes": "NW2, NW1",
     "EventCount": 2,
-    "Latitude": 42.162,
-    "Longitude": -72.0008
+    "Latitude": 42.1795,
+    "Longitude": -72.01
   },
   {
     "Date": "2026-12-05",
@@ -7493,8 +7382,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.pinkbiscuitk9s.com/",
     "TrialTypes": "NW3, ELT-S, L2C",
     "EventCount": 3,
-    "Latitude": 34.4249,
-    "Longitude": -118.9212
+    "Latitude": 34.3992,
+    "Longitude": -118.8861
   },
   {
     "Date": "2026-12-05",
@@ -7503,8 +7392,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.opedogsports.com/nacsw-trials",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 43.4264,
-    "Longitude": -87.9899
+    "Latitude": 43.4439,
+    "Longitude": -87.9068
   },
   {
     "Date": "2026-12-05",
@@ -7513,8 +7402,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.southeastscent.com/nw3-elite-hoover-al/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 33.3372,
-    "Longitude": -86.8685
+    "Latitude": 33.3875,
+    "Longitude": -86.8561
   },
   {
     "Date": "2026-12-05",
@@ -7523,8 +7412,8 @@ const TRIALS_DATA =
     "EventLink": "https://yourdogsplace.com/nacsw-trials/",
     "TrialTypes": "L2V, ELT-S, NW3",
     "EventCount": 3,
-    "Latitude": 41.3128,
-    "Longitude": -75.3345
+    "Latitude": 41.2978,
+    "Longitude": -75.3133
   },
   {
     "Date": "2026-12-05",
@@ -7533,8 +7422,8 @@ const TRIALS_DATA =
     "EventLink": "https://thedoggiespot.com/",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 35.245,
-    "Longitude": -96.9125
+    "Latitude": 35.3021,
+    "Longitude": -96.8953
   },
   {
     "Date": "2026-12-05",
@@ -7543,8 +7432,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.patienceunlimited.com/nacsw.html",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 32.2512,
-    "Longitude": -111.0232
+    "Latitude": 32.2003,
+    "Longitude": -110.9471
   },
   {
     "Date": "2026-12-05",
@@ -7553,8 +7442,8 @@ const TRIALS_DATA =
     "EventLink": "https://chesapeakesearchdogs.org/",
     "TrialTypes": "ELT-S, L3E, NW1, NW2",
     "EventCount": 4,
-    "Latitude": 38.8746,
-    "Longitude": -76.5652
+    "Latitude": 38.8471,
+    "Longitude": -76.6252
   },
   {
     "Date": "2026-12-06",
@@ -7563,8 +7452,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.lovingpawsllc.com/premium-elt-elt",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 43.2185,
-    "Longitude": -88.2681
+    "Latitude": 43.2125,
+    "Longitude": -88.2281
   },
   {
     "Date": "2026-12-07",
@@ -7573,8 +7462,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.twonoseygirls.com/events.html",
     "TrialTypes": "ELT, ELT-S, L3I",
     "EventCount": 3,
-    "Latitude": 37.9982,
-    "Longitude": -121.2899
+    "Latitude": 37.9668,
+    "Longitude": -121.3063
   },
   {
     "Date": "2026-12-11",
@@ -7583,8 +7472,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.thesniffinghound.com/",
     "TrialTypes": "NW3, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 40.2552,
-    "Longitude": -75.7163
+    "Latitude": 40.307,
+    "Longitude": -75.682
   },
   {
     "Date": "2026-12-12",
@@ -7593,8 +7482,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.beyondelevationk9.com/",
     "TrialTypes": "NW3, ELT-S, L2E",
     "EventCount": 3,
-    "Latitude": 39.2918,
-    "Longitude": -105.2261
+    "Latitude": 39.2778,
+    "Longitude": -105.2534
   },
   {
     "Date": "2026-12-12",
@@ -7603,8 +7492,8 @@ const TRIALS_DATA =
     "EventLink": "https://wholedoginstitute.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 36.0109,
-    "Longitude": -78.9053
+    "Latitude": 36.0161,
+    "Longitude": -78.9226
   },
   {
     "Date": "2026-12-12",
@@ -7613,8 +7502,8 @@ const TRIALS_DATA =
     "EventLink": "https://cleverdogsohio.com/",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 39.8381,
-    "Longitude": -82.9253
+    "Latitude": 39.8818,
+    "Longitude": -82.9066
   },
   {
     "Date": "2026-12-12",
@@ -7623,8 +7512,8 @@ const TRIALS_DATA =
     "EventLink": "https://happydogconcepts.com/events",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 38.63,
-    "Longitude": -90.2163
+    "Latitude": 38.5521,
+    "Longitude": -90.1577
   },
   {
     "Date": "2026-12-12",
@@ -7633,8 +7522,8 @@ const TRIALS_DATA =
     "EventLink": "https://nosework.redhuskies.com/",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 39.5849,
-    "Longitude": -77.0137
+    "Latitude": 39.5422,
+    "Longitude": -77.0145
   },
   {
     "Date": "2026-12-18",
@@ -7643,8 +7532,8 @@ const TRIALS_DATA =
     "EventLink": "https://shamrockpotofgoldk9scenter.com/trials/pittstown-trial-info-12-18-2026-12-20-2026/",
     "TrialTypes": "ELT-S, L1C, NW3, ELT",
     "EventCount": 4,
-    "Latitude": 40.5445,
-    "Longitude": -74.9396
+    "Latitude": 40.631,
+    "Longitude": -74.9812
   },
   {
     "Date": "2026-12-19",
@@ -7653,8 +7542,8 @@ const TRIALS_DATA =
     "EventLink": "https://georgianosework.com/",
     "TrialTypes": "SMT, ELT-P",
     "EventCount": 2,
-    "Latitude": 34.0947,
-    "Longitude": -84.3373
+    "Latitude": 34.1174,
+    "Longitude": -84.2691
   },
   {
     "Date": "2026-12-19",
@@ -7663,8 +7552,8 @@ const TRIALS_DATA =
     "EventLink": "https://nosework.redhuskies.com/index.php/events/crownsville_dec2026/",
     "TrialTypes": "NW3, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 39.0637,
-    "Longitude": -76.546
+    "Latitude": 39.024,
+    "Longitude": -76.5555
   },
   {
     "Date": "2026-12-19",
@@ -7673,8 +7562,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.rewardingrover.com/",
     "TrialTypes": "ELT, L1E, NW1",
     "EventCount": 3,
-    "Latitude": 32.6224,
-    "Longitude": -117.107
+    "Latitude": 32.542,
+    "Longitude": -117.0751
   },
   {
     "Date": "2026-12-19",
@@ -7683,8 +7572,8 @@ const TRIALS_DATA =
     "EventLink": "https://cyberdogonline.net/?page_id=235",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 44.9593,
-    "Longitude": -122.9919
+    "Latitude": 44.9584,
+    "Longitude": -122.9972
   },
   {
     "Date": "2026-12-27",
@@ -7693,8 +7582,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.thesniffinghound.com/",
     "TrialTypes": "NW3, ELT-P, ELT-S",
     "EventCount": 3,
-    "Latitude": 39.9914,
-    "Longitude": -75.5824
+    "Latitude": 39.9866,
+    "Longitude": -75.5931
   },
   {
     "Date": "2026-12-27",
@@ -7703,8 +7592,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.fortheloveofdogsny.com/trials-events",
     "TrialTypes": "L2I, L3I, NW3, ELT",
     "EventCount": 4,
-    "Latitude": 41.0012,
-    "Longitude": -73.7739
+    "Latitude": 40.9746,
+    "Longitude": -73.8363
   },
   {
     "Date": "2026-12-27",
@@ -7713,8 +7602,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.k9ventureswi.net/",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 43.0706,
-    "Longitude": -88.313
+    "Latitude": 43.0849,
+    "Longitude": -88.3315
   },
   {
     "Date": "2026-12-28",
@@ -7723,8 +7612,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.releasecanine.com/nacsw",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 33.4619,
-    "Longitude": -112.1026
+    "Latitude": 33.4293,
+    "Longitude": -112.1185
   },
   {
     "Date": "2026-12-28",
@@ -7733,8 +7622,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.sniffalertfinish.com/",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 42.6888,
-    "Longitude": -71.3771
+    "Latitude": 42.6295,
+    "Longitude": -71.4133
   },
   {
     "Date": "2026-12-29",
@@ -7743,8 +7632,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.rightchoicedogtraining.net/eventandvolunteer",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 34.0189,
-    "Longitude": -84.1337
+    "Latitude": 33.9732,
+    "Longitude": -84.1287
   },
   {
     "Date": "2026-12-31",
@@ -7753,28 +7642,28 @@ const TRIALS_DATA =
     "EventLink": "https://pnwsniffers.com/nye-trial",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 44.5755,
-    "Longitude": -123.2414
+    "Latitude": 44.5934,
+    "Longitude": -123.2846
   },
   {
     "Date": "2027-01-01",
     "Location": "Emmitsburg, MD",
     "Host": "Red Huskies Nose Work, LLC",
     "EventLink": "https://nosework.redhuskies.com/",
-    "TrialTypes": "ELT, ELT-P, ELT-S",
+    "TrialTypes": "ELT-P, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 39.7402,
-    "Longitude": -77.3307
+    "Latitude": 39.7405,
+    "Longitude": -77.3165
   },
   {
     "Date": "2027-01-01",
     "Location": "Exton, PA",
     "Host": "Patricia Grassey",
     "EventLink": "https://www.thesniffinghound.com/",
-    "TrialTypes": "NW3, ELT-P, NW1, ELT-S",
+    "TrialTypes": "NW2, ELT-P, NW1, ELT-S",
     "EventCount": 4,
-    "Latitude": 40.005,
-    "Longitude": -75.5962
+    "Latitude": 39.984,
+    "Longitude": -75.6669
   },
   {
     "Date": "2027-01-01",
@@ -7783,8 +7672,8 @@ const TRIALS_DATA =
     "EventLink": "https://marinhumane.org/oh-behave/nose-work-events/",
     "TrialTypes": "NW3, SMT",
     "EventCount": 2,
-    "Latitude": 38.4629,
-    "Longitude": -122.6942
+    "Latitude": 38.4459,
+    "Longitude": -122.669
   },
   {
     "Date": "2027-01-02",
@@ -7793,8 +7682,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.k9slovetosearch.com/",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 33.3245,
-    "Longitude": -117.2389
+    "Latitude": 33.2752,
+    "Longitude": -117.2373
   },
   {
     "Date": "2027-01-03",
@@ -7803,8 +7692,8 @@ const TRIALS_DATA =
     "EventLink": "https://scentworkacrosstexas.com/nacsw-jan-3-4%2C-2027",
     "TrialTypes": "ELT-S, NW1, NW3",
     "EventCount": 3,
-    "Latitude": 30.2903,
-    "Longitude": -97.9743
+    "Latitude": 30.2873,
+    "Longitude": -97.9037
   },
   {
     "Date": "2027-01-08",
@@ -7813,8 +7702,8 @@ const TRIALS_DATA =
     "EventLink": "https://pawsplustraining.com/",
     "TrialTypes": "ELT, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 37.5983,
-    "Longitude": -76.4307
+    "Latitude": 37.5123,
+    "Longitude": -76.4837
   },
   {
     "Date": "2027-01-09",
@@ -7823,8 +7712,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.noseworkmagic.com/",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 48.779,
-    "Longitude": -122.4778
+    "Latitude": 48.7388,
+    "Longitude": -122.447
   },
   {
     "Date": "2027-01-09",
@@ -7833,8 +7722,8 @@ const TRIALS_DATA =
     "EventLink": "https://yourdogknows.net/",
     "TrialTypes": "NW1, NW2, L1I, L1C",
     "EventCount": 4,
-    "Latitude": 26.5311,
-    "Longitude": -81.949
+    "Latitude": 26.5238,
+    "Longitude": -81.9489
   },
   {
     "Date": "2027-01-09",
@@ -7843,8 +7732,8 @@ const TRIALS_DATA =
     "EventLink": "https://twonoseygirls.com/",
     "TrialTypes": "ELT-P, ELT",
     "EventCount": 2,
-    "Latitude": 37.1554,
-    "Longitude": -120.7434
+    "Latitude": 37.1652,
+    "Longitude": -120.7769
   },
   {
     "Date": "2027-01-09",
@@ -7853,8 +7742,8 @@ const TRIALS_DATA =
     "EventLink": "https://marinhumane.org/oh-behave/nose-work-events/",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 38.0848,
-    "Longitude": -122.5999
+    "Latitude": 38.1505,
+    "Longitude": -122.5443
   },
   {
     "Date": "2027-01-15",
@@ -7863,18 +7752,18 @@ const TRIALS_DATA =
     "EventLink": "http://beyondelevationk9.com",
     "TrialTypes": "NW1, NW2, L1I, L1C",
     "EventCount": 4,
-    "Latitude": 40.448,
-    "Longitude": -104.7268
+    "Latitude": 40.4686,
+    "Longitude": -104.7093
   },
   {
     "Date": "2027-01-15",
     "Location": "Upland, CA",
     "Host": "Agile Paws Dog Sports",
-    "EventLink": "https://agilepawsdogsports.com/",
+    "EventLink": "https://agilepawsdogsports.com/trials/january-2027-trial",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.0567,
-    "Longitude": -117.645
+    "Latitude": 34.1436,
+    "Longitude": -117.6877
   },
   {
     "Date": "2027-01-16",
@@ -7883,8 +7772,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.thesniffinghound.com/",
     "TrialTypes": "ELT, ELT-P, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 40.1455,
-    "Longitude": -74.8537
+    "Latitude": 40.0997,
+    "Longitude": -74.9015
   },
   {
     "Date": "2027-01-16",
@@ -7893,18 +7782,18 @@ const TRIALS_DATA =
     "EventLink": "https://www.byanosenosework.com/",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 32.883,
-    "Longitude": -86.6353
+    "Latitude": 32.8362,
+    "Longitude": -86.6173
   },
   {
     "Date": "2027-01-16",
     "Location": "Havre De Grace, MD",
     "Host": "Firezone GS",
-    "EventLink": "https://www.firezonegiantschnauzers.com/nose-work-trials",
+    "EventLink": "https://www.firezonegiantschnauzers.com/adas-shalom",
     "TrialTypes": "NW3, L2C, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 39.5065,
-    "Longitude": -76.0875
+    "Latitude": 39.5102,
+    "Longitude": -76.0695
   },
   {
     "Date": "2027-01-16",
@@ -7913,8 +7802,8 @@ const TRIALS_DATA =
     "EventLink": "https://riverpoodlestraining.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.749,
-    "Longitude": -82.0074
+    "Latitude": 29.6611,
+    "Longitude": -82.0534
   },
   {
     "Date": "2027-01-16",
@@ -7923,18 +7812,18 @@ const TRIALS_DATA =
     "EventLink": "https://www.fortheloveofdogsny.com/",
     "TrialTypes": "SMT, NW3",
     "EventCount": 2,
-    "Latitude": 41.0138,
-    "Longitude": -73.7411
+    "Latitude": 41.0826,
+    "Longitude": -73.7366
   },
   {
     "Date": "2027-01-16",
     "Location": "Tecumseh, OK",
     "Host": "The Doggie Spot, LLC",
     "EventLink": "https://thedoggiespot.com/",
-    "TrialTypes": "ELT, NW2, NW1",
+    "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 35.2863,
-    "Longitude": -96.904
+    "Latitude": 35.221,
+    "Longitude": -96.9093
   },
   {
     "Date": "2027-01-19",
@@ -7943,8 +7832,8 @@ const TRIALS_DATA =
     "EventLink": "https://dogshaveamazingnoses.com/events/",
     "TrialTypes": "ELT, ELT-S",
     "EventCount": 2,
-    "Latitude": 35.8241,
-    "Longitude": -86.4143
+    "Latitude": 35.8023,
+    "Longitude": -86.4342
   },
   {
     "Date": "2027-01-23",
@@ -7953,7 +7842,7 @@ const TRIALS_DATA =
     "EventLink": "https://www.rightchoicedogtraining.net/",
     "TrialTypes": "NW3, NW1, L2I",
     "EventCount": 3,
-    "Latitude": 34.0883,
+    "Latitude": 34.1606,
     "Longitude": -83.1872
   },
   {
@@ -7963,8 +7852,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.nosydogshouston.com/",
     "TrialTypes": "NW1, L1C, L1V, NW2",
     "EventCount": 4,
-    "Latitude": 30.289,
-    "Longitude": -95.4684
+    "Latitude": 30.3249,
+    "Longitude": -95.5336
   },
   {
     "Date": "2027-01-23",
@@ -7973,8 +7862,18 @@ const TRIALS_DATA =
     "EventLink": "https://www.pinkbiscuitk9s.com/",
     "TrialTypes": "ELT-P, L2I, L3C",
     "EventCount": 3,
-    "Latitude": 34.4095,
-    "Longitude": -118.5694
+    "Latitude": 34.4355,
+    "Longitude": -118.5465
+  },
+  {
+    "Date": "2027-01-30",
+    "Location": "Cumming, GA",
+    "Host": "Georgia Nosework LLC",
+    "EventLink": "https://georgianosework.com/",
+    "TrialTypes": "NW3, ELT",
+    "EventCount": 2,
+    "Latitude": 34.2115,
+    "Longitude": -84.165
   },
   {
     "Date": "2027-01-30",
@@ -7983,8 +7882,8 @@ const TRIALS_DATA =
     "EventLink": "https://wholedoginstitute.com/",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 36.0042,
-    "Longitude": -78.9388
+    "Latitude": 35.9686,
+    "Longitude": -78.9446
   },
   {
     "Date": "2027-01-30",
@@ -7993,8 +7892,8 @@ const TRIALS_DATA =
     "EventLink": "http://impetusanimaltraining.com/",
     "TrialTypes": "NW3, L1I, NW2",
     "EventCount": 3,
-    "Latitude": 36.1596,
-    "Longitude": -115.1555
+    "Latitude": 36.196,
+    "Longitude": -115.111
   },
   {
     "Date": "2027-01-30",
@@ -8003,8 +7902,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.seasidesniffers.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 38.2768,
-    "Longitude": -122.643
+    "Latitude": 38.2458,
+    "Longitude": -122.6649
   },
   {
     "Date": "2027-01-30",
@@ -8013,8 +7912,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.rewardingrover.com/",
     "TrialTypes": "ELT-S, NW3",
     "EventCount": 2,
-    "Latitude": 33.1387,
-    "Longitude": -117.2051
+    "Latitude": 33.1377,
+    "Longitude": -117.1574
   },
   {
     "Date": "2027-01-30",
@@ -8023,8 +7922,18 @@ const TRIALS_DATA =
     "EventLink": "https://www.sniffhappenstx.com/Jan-NACSW-Trial",
     "TrialTypes": "L2C, ELT-S, NW3",
     "EventCount": 3,
-    "Latitude": 29.5635,
-    "Longitude": -97.9723
+    "Latitude": 29.569,
+    "Longitude": -97.9986
+  },
+  {
+    "Date": "2027-02-06",
+    "Location": "Bel Air, MD",
+    "Host": "Firezone GS, LLC",
+    "EventLink": "https://www.firezonegiantschnauzers.com/nose-work-trials",
+    "TrialTypes": "ELT, ELT-S, NW2",
+    "EventCount": 3,
+    "Latitude": 39.5074,
+    "Longitude": -76.3311
   },
   {
     "Date": "2027-02-06",
@@ -8033,18 +7942,18 @@ const TRIALS_DATA =
     "EventLink": "https://dogshaveamazingnoses.com/events/",
     "TrialTypes": "NW2",
     "EventCount": 1,
-    "Latitude": 35.838,
-    "Longitude": -86.3501
+    "Latitude": 35.7979,
+    "Longitude": -86.4245
   },
   {
     "Date": "2027-02-12",
     "Location": "Paso Robles, CA",
     "Host": "Diane Baley DBA All Fur Fun",
-    "EventLink": "https://allfurfunk9.com/trials",
+    "EventLink": "https://allfurfunk9.com/paso-robles",
     "TrialTypes": "NW3, ELT-S, NW1",
     "EventCount": 3,
-    "Latitude": 35.6506,
-    "Longitude": -120.6728
+    "Latitude": 35.606,
+    "Longitude": -120.6738
   },
   {
     "Date": "2027-02-13",
@@ -8053,8 +7962,8 @@ const TRIALS_DATA =
     "EventLink": "https://shamrockpotofgoldk9scenter.com/",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 40.472,
-    "Longitude": -74.8839
+    "Latitude": 40.5437,
+    "Longitude": -74.8576
   },
   {
     "Date": "2027-02-13",
@@ -8063,8 +7972,8 @@ const TRIALS_DATA =
     "EventLink": "https://twonoseygirls.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 37.6211,
-    "Longitude": -121.0364
+    "Latitude": 37.6192,
+    "Longitude": -121.0444
   },
   {
     "Date": "2027-02-13",
@@ -8073,8 +7982,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.fortheloveofdogsny.com/nacsw-trials",
     "TrialTypes": "L1I, ELT-S, NW3, ELT",
     "EventCount": 4,
-    "Latitude": 40.9042,
-    "Longitude": -73.8249
+    "Latitude": 40.9147,
+    "Longitude": -73.8191
   },
   {
     "Date": "2027-02-13",
@@ -8083,8 +7992,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.thesniffinghound.com/",
     "TrialTypes": "ELT, ELT-P, NW2",
     "EventCount": 3,
-    "Latitude": 40.0351,
-    "Longitude": -75.4382
+    "Latitude": 40.0117,
+    "Longitude": -75.4036
   },
   {
     "Date": "2027-02-19",
@@ -8093,8 +8002,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.rewardingrover.com/",
     "TrialTypes": "NW3, ELT-S, NW2",
     "EventCount": 3,
-    "Latitude": 33.2148,
-    "Longitude": -117.2241
+    "Latitude": 33.2145,
+    "Longitude": -117.2263
   },
   {
     "Date": "2027-02-20",
@@ -8103,8 +8012,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.rightchoicedogtraining.net/eventandvolunteer",
     "TrialTypes": "L3I, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 34.6051,
-    "Longitude": -83.5386
+    "Latitude": 34.6245,
+    "Longitude": -83.5727
   },
   {
     "Date": "2027-02-21",
@@ -8113,8 +8022,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.patienceunlimited.com/nacsw.html",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 31.9319,
-    "Longitude": -110.3413
+    "Latitude": 31.9236,
+    "Longitude": -110.3145
   },
   {
     "Date": "2027-02-22",
@@ -8123,8 +8032,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.gentlepets.com/gtpt-events/nacsw%E2%84%A2-elt%2Felt-trials",
     "TrialTypes": "ELT",
     "EventCount": 1,
-    "Latitude": 35.669,
-    "Longitude": -120.6899
+    "Latitude": 35.6396,
+    "Longitude": -120.6802
   },
   {
     "Date": "2027-02-26",
@@ -8133,8 +8042,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.allaboutthenose.com/trials#nacsw-l1c-l1i-nw1-nw2",
     "TrialTypes": "L1C, L1I, NW2, NW1",
     "EventCount": 4,
-    "Latitude": 33.2127,
-    "Longitude": -96.6332
+    "Latitude": 33.1827,
+    "Longitude": -96.6583
   },
   {
     "Date": "2027-02-26",
@@ -8143,18 +8052,18 @@ const TRIALS_DATA =
     "EventLink": "http://www.javak9s.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 34.1339,
-    "Longitude": -118.805
+    "Latitude": 34.1164,
+    "Longitude": -118.8
   },
   {
     "Date": "2027-02-27",
     "Location": "Brooksville, FL",
     "Host": "Hoppin’ in the Hills",
-    "EventLink": "https://hoppininthehillscom.wordpress.com",
+    "EventLink": "https://hoppininthehillscom.wordpress.com/trial-february-27-28-2027-nw3-elt-brooksville/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 28.6016,
-    "Longitude": -82.4054
+    "Latitude": 28.5855,
+    "Longitude": -82.3894
   },
   {
     "Date": "2027-02-27",
@@ -8163,8 +8072,8 @@ const TRIALS_DATA =
     "EventLink": "https://wholedoginstitute.com/",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 35.717,
-    "Longitude": -77.9313
+    "Latitude": 35.6751,
+    "Longitude": -77.9599
   },
   {
     "Date": "2027-03-05",
@@ -8173,8 +8082,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.firezonegiantschnauzers.com/nose-work-trials",
     "TrialTypes": "SMT, NW3",
     "EventCount": 2,
-    "Latitude": 39.9014,
-    "Longitude": -75.4792
+    "Latitude": 39.8842,
+    "Longitude": -75.4958
   },
   {
     "Date": "2027-03-06",
@@ -8183,8 +8092,8 @@ const TRIALS_DATA =
     "EventLink": "https://riverpoodlestraining.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.7678,
-    "Longitude": -82.0726
+    "Latitude": 29.8255,
+    "Longitude": -81.9842
   },
   {
     "Date": "2027-03-06",
@@ -8193,8 +8102,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.pinkbiscuitk9s.com/",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 34.3529,
-    "Longitude": -119.0758
+    "Latitude": 34.3169,
+    "Longitude": -119.0368
   },
   {
     "Date": "2027-03-08",
@@ -8203,8 +8112,8 @@ const TRIALS_DATA =
     "EventLink": "https://agilepawsdogsports.com/",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 34.158,
-    "Longitude": -117.8453
+    "Latitude": 34.1221,
+    "Longitude": -117.8484
   },
   {
     "Date": "2027-03-11",
@@ -8213,8 +8122,8 @@ const TRIALS_DATA =
     "EventLink": "https://spdtc.com/events-at-spdtc/",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 44.6887,
-    "Longitude": -93.249
+    "Latitude": 44.6755,
+    "Longitude": -93.1948
   },
   {
     "Date": "2027-03-12",
@@ -8223,8 +8132,18 @@ const TRIALS_DATA =
     "EventLink": "https://www.doggonefunnc.com/",
     "TrialTypes": "ELT-S, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 36.2226,
-    "Longitude": -79.9636
+    "Latitude": 36.1889,
+    "Longitude": -79.9642
+  },
+  {
+    "Date": "2027-03-13",
+    "Location": "Boca Raton, FL",
+    "Host": "West Palm Dog, LLC",
+    "EventLink": "https://palmbeachdogtraining.com/nacsw",
+    "TrialTypes": "NW1, NW2, L1C, L1I",
+    "EventCount": 4,
+    "Latitude": 26.3091,
+    "Longitude": -80.1217
   },
   {
     "Date": "2027-03-13",
@@ -8233,8 +8152,8 @@ const TRIALS_DATA =
     "EventLink": "https://kbpdogtraining.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.0546,
-    "Longitude": -93.9733
+    "Latitude": 42.0385,
+    "Longitude": -93.8922
   },
   {
     "Date": "2027-03-13",
@@ -8243,8 +8162,8 @@ const TRIALS_DATA =
     "EventLink": "https://doggoneright.net/k9-nose-work-trialsorts-html/",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 30.4646,
-    "Longitude": -90.4199
+    "Latitude": 30.5517,
+    "Longitude": -90.4369
   },
   {
     "Date": "2027-03-13",
@@ -8253,8 +8172,8 @@ const TRIALS_DATA =
     "EventLink": "https://nwk9sniffers.org/",
     "TrialTypes": "ELT-P, L1V, L1I",
     "EventCount": 3,
-    "Latitude": 47.3391,
-    "Longitude": -122.2318
+    "Latitude": 47.4168,
+    "Longitude": -122.2134
   },
   {
     "Date": "2027-03-13",
@@ -8263,8 +8182,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.successfulsniffer.com/",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 33.446,
-    "Longitude": -112.0608
+    "Latitude": 33.416,
+    "Longitude": -112.099
   },
   {
     "Date": "2027-03-13",
@@ -8273,8 +8192,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.thesniffinghound.com/",
     "TrialTypes": "ELT, ELT-P, NW1, ELT-S",
     "EventCount": 4,
-    "Latitude": 39.7122,
-    "Longitude": -75.5336
+    "Latitude": 39.7787,
+    "Longitude": -75.5653
   },
   {
     "Date": "2027-03-15",
@@ -8283,8 +8202,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.k9slovetosearch.com/",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 33.9968,
-    "Longitude": -117.3807
+    "Latitude": 34.0008,
+    "Longitude": -117.4036
   },
   {
     "Date": "2027-03-19",
@@ -8293,8 +8212,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.yourdogsplace.com/",
     "TrialTypes": "L2C, ELT-P, ELT-S, L1I",
     "EventCount": 4,
-    "Latitude": 41.5472,
-    "Longitude": -75.2552
+    "Latitude": 41.6099,
+    "Longitude": -75.3017
   },
   {
     "Date": "2027-03-19",
@@ -8303,8 +8222,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.furbetterfurworse.com/",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 41.4646,
-    "Longitude": -90.5185
+    "Latitude": 41.5024,
+    "Longitude": -90.5569
   },
   {
     "Date": "2027-03-19",
@@ -8313,8 +8232,8 @@ const TRIALS_DATA =
     "EventLink": "https://dogshaveamazingnoses.com/events/",
     "TrialTypes": "ELT, NW1",
     "EventCount": 2,
-    "Latitude": 36.1158,
-    "Longitude": -86.0863
+    "Latitude": 36.0712,
+    "Longitude": -86.1158
   },
   {
     "Date": "2027-03-20",
@@ -8323,8 +8242,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.baystatesniffers.com/",
     "TrialTypes": "NW1, L1C, L2I",
     "EventCount": 3,
-    "Latitude": 42.0963,
-    "Longitude": -71.2192
+    "Latitude": 42.1414,
+    "Longitude": -71.2359
   },
   {
     "Date": "2027-03-20",
@@ -8333,8 +8252,8 @@ const TRIALS_DATA =
     "EventLink": "https://blmcmutts.com/",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 37.4563,
-    "Longitude": -122.2776
+    "Latitude": 37.4532,
+    "Longitude": -122.2759
   },
   {
     "Date": "2027-03-20",
@@ -8343,8 +8262,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.sniffhappenstx.com/march-2027-nacsw-trial",
     "TrialTypes": "L1E, ELT-S, ELT",
     "EventCount": 3,
-    "Latitude": 29.5657,
-    "Longitude": -98.3056
+    "Latitude": 29.6204,
+    "Longitude": -98.2744
   },
   {
     "Date": "2027-03-20",
@@ -8353,8 +8272,8 @@ const TRIALS_DATA =
     "EventLink": "https://happydogconcepts.com/events",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 38.9305,
-    "Longitude": -90.9813
+    "Latitude": 38.9388,
+    "Longitude": -90.9656
   },
   {
     "Date": "2027-03-25",
@@ -8363,8 +8282,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.thesniffinghound.com/",
     "TrialTypes": "NW3, ELT-S, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 40.1269,
-    "Longitude": -75.5702
+    "Latitude": 40.1406,
+    "Longitude": -75.5779
   },
   {
     "Date": "2027-03-25",
@@ -8373,8 +8292,8 @@ const TRIALS_DATA =
     "EventLink": "https://2psyched4dogs.com/",
     "TrialTypes": "NW1, NW3, ELT",
     "EventCount": 3,
-    "Latitude": 43.1251,
-    "Longitude": -77.5902
+    "Latitude": 43.1836,
+    "Longitude": -77.5955
   },
   {
     "Date": "2027-03-26",
@@ -8383,8 +8302,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.nmcsw.com/",
     "TrialTypes": "ELT, NW3, L2I, NW1",
     "EventCount": 4,
-    "Latitude": 35.068,
-    "Longitude": -106.6084
+    "Latitude": 35.1126,
+    "Longitude": -106.6665
   },
   {
     "Date": "2027-03-26",
@@ -8393,8 +8312,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.fortheloveofdogsny.com/",
     "TrialTypes": "SMT, NW2",
     "EventCount": 2,
-    "Latitude": 40.0664,
-    "Longitude": -74.9239
+    "Latitude": 40.1323,
+    "Longitude": -74.9325
   },
   {
     "Date": "2027-03-27",
@@ -8403,8 +8322,8 @@ const TRIALS_DATA =
     "EventLink": "https://cleverdogsohio.com/",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 39.8203,
-    "Longitude": -82.9097
+    "Latitude": 39.8741,
+    "Longitude": -82.871
   },
   {
     "Date": "2027-04-02",
@@ -8413,8 +8332,8 @@ const TRIALS_DATA =
     "EventLink": "https://spdtc.com/events-at-spdtc/",
     "TrialTypes": "ELT, NW2, NW1",
     "EventCount": 3,
-    "Latitude": 45.2744,
-    "Longitude": -93.0296
+    "Latitude": 45.2926,
+    "Longitude": -92.9546
   },
   {
     "Date": "2027-04-02",
@@ -8423,8 +8342,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.twopawsupdogtrainingllc.com/",
     "TrialTypes": "ELT, NW3, NW2, NW1",
     "EventCount": 4,
-    "Latitude": 44.0629,
-    "Longitude": -103.2711
+    "Latitude": 44.0856,
+    "Longitude": -103.2435
   },
   {
     "Date": "2027-04-03",
@@ -8433,8 +8352,8 @@ const TRIALS_DATA =
     "EventLink": "https://riverpoodlestraining.com/n-fl-christian-apr-3-4",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 29.79,
-    "Longitude": -82.0061
+    "Latitude": 29.7976,
+    "Longitude": -82.0623
   },
   {
     "Date": "2027-04-03",
@@ -8443,8 +8362,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.nose-it-all.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.465,
-    "Longitude": -80.0061
+    "Latitude": 40.471,
+    "Longitude": -80.0194
   },
   {
     "Date": "2027-04-03",
@@ -8453,8 +8372,8 @@ const TRIALS_DATA =
     "EventLink": "https://southeastscent.com/events",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 34.27,
-    "Longitude": -85.1672
+    "Latitude": 34.2302,
+    "Longitude": -85.1364
   },
   {
     "Date": "2027-04-03",
@@ -8463,8 +8382,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.pinkbiscuitk9s.com/",
     "TrialTypes": "NW1, NW2, ELT-S, L2I",
     "EventCount": 4,
-    "Latitude": 34.2177,
-    "Longitude": -118.98
+    "Latitude": 34.2907,
+    "Longitude": -118.9493
   },
   {
     "Date": "2027-04-03",
@@ -8473,8 +8392,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.patienceunlimited.com/",
     "TrialTypes": "NW3, NW1, NW2",
     "EventCount": 3,
-    "Latitude": 32.2255,
-    "Longitude": -110.9906
+    "Latitude": 32.2463,
+    "Longitude": -110.9592
   },
   {
     "Date": "2027-04-03",
@@ -8483,8 +8402,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.superdogevents.com/",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 42.5086,
-    "Longitude": -88.1785
+    "Latitude": 42.4731,
+    "Longitude": -88.1331
   },
   {
     "Date": "2027-04-03",
@@ -8493,8 +8412,8 @@ const TRIALS_DATA =
     "EventLink": "https://northwestobedienceclub.org/",
     "TrialTypes": "NW3, ELT-P",
     "EventCount": 2,
-    "Latitude": 42.3124,
-    "Longitude": -88.4282
+    "Latitude": 42.3599,
+    "Longitude": -88.4578
   },
   {
     "Date": "2027-04-05",
@@ -8503,8 +8422,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.fortheloveofdogsny.com/trials-events",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 41.327,
-    "Longitude": -74.2974
+    "Latitude": 41.3983,
+    "Longitude": -74.3203
   },
   {
     "Date": "2027-04-07",
@@ -8513,8 +8432,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.aboutfacek9academy.com",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 47.0764,
-    "Longitude": -122.8824
+    "Latitude": 47.0592,
+    "Longitude": -122.9267
   },
   {
     "Date": "2027-04-09",
@@ -8523,8 +8442,8 @@ const TRIALS_DATA =
     "EventLink": "https://hoppininthehillscom.wordpress.com/",
     "TrialTypes": "NW1, L1C, NW2",
     "EventCount": 3,
-    "Latitude": 28.3708,
-    "Longitude": -82.5234
+    "Latitude": 28.3417,
+    "Longitude": -82.4923
   },
   {
     "Date": "2027-04-10",
@@ -8533,8 +8452,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.noseworkaddictsllc.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 41.3276,
-    "Longitude": -81.5074
+    "Latitude": 41.3715,
+    "Longitude": -81.5698
   },
   {
     "Date": "2027-04-10",
@@ -8543,8 +8462,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.beyondelevationk9.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.8479,
-    "Longitude": -105.5564
+    "Latitude": 40.7759,
+    "Longitude": -105.5744
   },
   {
     "Date": "2027-04-10",
@@ -8553,8 +8472,18 @@ const TRIALS_DATA =
     "EventLink": "https://kbpdogtraining.com/",
     "TrialTypes": "NW2, ELT",
     "EventCount": 2,
-    "Latitude": 41.3766,
-    "Longitude": -94.0372
+    "Latitude": 41.3002,
+    "Longitude": -93.9953
+  },
+  {
+    "Date": "2027-04-16",
+    "Location": "Laramie, WY",
+    "Host": "Mountain Dogs, LLC",
+    "EventLink": "https://mountaindogs.org/",
+    "TrialTypes": "ELT-S, NW2, ELT-P, NW3",
+    "EventCount": 4,
+    "Latitude": 41.3217,
+    "Longitude": -105.5811
   },
   {
     "Date": "2027-04-16",
@@ -8563,8 +8492,18 @@ const TRIALS_DATA =
     "EventLink": "https://agilepawsdogsports.com/",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 34.0518,
-    "Longitude": -117.6155
+    "Latitude": 34.1372,
+    "Longitude": -117.6028
+  },
+  {
+    "Date": "2027-04-17",
+    "Location": "Columbus, MT",
+    "Host": "Canine Connection, LLC",
+    "EventLink": "https://canineconnection23.godaddysites.com/",
+    "TrialTypes": "NW3, ELT",
+    "EventCount": 2,
+    "Latitude": 45.6789,
+    "Longitude": -109.2041
   },
   {
     "Date": "2027-04-17",
@@ -8573,8 +8512,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.dooverdogtraining.com/trials",
     "TrialTypes": "ELT-S, L2E, L2C, L1I",
     "EventCount": 4,
-    "Latitude": 42.6687,
-    "Longitude": -78.6187
+    "Latitude": 42.6321,
+    "Longitude": -78.6115
   },
   {
     "Date": "2027-04-17",
@@ -8583,8 +8522,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.pawsnsniff.com/",
     "TrialTypes": "ELT-S, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 40.828,
-    "Longitude": -75.436
+    "Latitude": 40.8384,
+    "Longitude": -75.4311
   },
   {
     "Date": "2027-04-19",
@@ -8593,8 +8532,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.gentlepets.com/gtpt-events/nacsw%E2%84%A2-elt-sl2c-trials",
     "TrialTypes": "ELT-S, L2C",
     "EventCount": 2,
-    "Latitude": 35.5789,
-    "Longitude": -120.6453
+    "Latitude": 35.6576,
+    "Longitude": -120.6663
   },
   {
     "Date": "2027-04-24",
@@ -8603,8 +8542,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.lovingpawsllc.com/k9nw-trials",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 42.6432,
-    "Longitude": -88.5718
+    "Latitude": 42.6571,
+    "Longitude": -88.5765
   },
   {
     "Date": "2027-04-24",
@@ -8613,8 +8552,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.dooverdogtraining.com/trials",
     "TrialTypes": "NW3, NW2",
     "EventCount": 2,
-    "Latitude": 42.2695,
-    "Longitude": -78.6248
+    "Latitude": 42.2664,
+    "Longitude": -78.6976
   },
   {
     "Date": "2027-04-30",
@@ -8623,8 +8562,18 @@ const TRIALS_DATA =
     "EventLink": "https://www.wagginwork.com/",
     "TrialTypes": "NW3, NW2, L2I, NW1, L2C",
     "EventCount": 5,
-    "Latitude": 41.0715,
-    "Longitude": -73.9436
+    "Latitude": 41.0801,
+    "Longitude": -73.9045
+  },
+  {
+    "Date": "2027-05-01",
+    "Location": "Blue Ridge, VA",
+    "Host": "Canny K9 Companions, LLC",
+    "EventLink": "https://www.cannyk9companions.com/",
+    "TrialTypes": "NW3, NW2, NW1",
+    "EventCount": 3,
+    "Latitude": 37.4032,
+    "Longitude": -79.8232
   },
   {
     "Date": "2027-05-01",
@@ -8633,8 +8582,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.p4tnosework.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.2017,
-    "Longitude": -103.8336
+    "Latitude": 40.2588,
+    "Longitude": -103.8163
   },
   {
     "Date": "2027-05-01",
@@ -8643,8 +8592,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.trailsandtailsdogschool.com/events",
     "TrialTypes": "NW1, NW2, NW3",
     "EventCount": 3,
-    "Latitude": 45.8965,
-    "Longitude": -111.3569
+    "Latitude": 45.824,
+    "Longitude": -111.2994
   },
   {
     "Date": "2027-05-01",
@@ -8653,8 +8602,8 @@ const TRIALS_DATA =
     "EventLink": "https://virginiahowe.com/",
     "TrialTypes": "L2I, L3I",
     "EventCount": 2,
-    "Latitude": 43.9978,
-    "Longitude": -70.3286
+    "Latitude": 44.0327,
+    "Longitude": -70.3292
   },
   {
     "Date": "2027-05-01",
@@ -8663,8 +8612,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.pinkbiscuitk9s.com/",
     "TrialTypes": "NW1, NW2, ELT",
     "EventCount": 3,
-    "Latitude": 34.3883,
-    "Longitude": -119.0795
+    "Latitude": 34.3265,
+    "Longitude": -119.026
   },
   {
     "Date": "2027-05-01",
@@ -8673,8 +8622,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.baystatesniffers.com/",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 42.0956,
-    "Longitude": -71.1388
+    "Latitude": 42.0827,
+    "Longitude": -71.2126
   },
   {
     "Date": "2027-05-07",
@@ -8683,8 +8632,18 @@ const TRIALS_DATA =
     "EventLink": "https://www.opedogsports.com/nacsw-trials",
     "TrialTypes": "ELT, NW3",
     "EventCount": 2,
-    "Latitude": 43.4357,
-    "Longitude": -88.8312
+    "Latitude": 43.4967,
+    "Longitude": -88.8735
+  },
+  {
+    "Date": "2027-05-07",
+    "Location": "South Sterling, PA",
+    "Host": "Paws n' Sniff",
+    "EventLink": "http://www.pawsnsniff.com/",
+    "TrialTypes": "ELT-S, NW1, NW3",
+    "EventCount": 3,
+    "Latitude": 41.2976,
+    "Longitude": -75.3185
   },
   {
     "Date": "2027-05-07",
@@ -8693,8 +8652,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.javak9s.com/",
     "TrialTypes": "ELT, L1C, L1I",
     "EventCount": 3,
-    "Latitude": 34.3121,
-    "Longitude": -117.6377
+    "Latitude": 34.3964,
+    "Longitude": -117.6524
   },
   {
     "Date": "2027-05-08",
@@ -8703,8 +8662,18 @@ const TRIALS_DATA =
     "EventLink": "https://carolynbarney.com/",
     "TrialTypes": "NW1, NW2",
     "EventCount": 2,
-    "Latitude": 42.6414,
-    "Longitude": -71.8698
+    "Latitude": 42.63,
+    "Longitude": -71.7801
+  },
+  {
+    "Date": "2027-05-15",
+    "Location": "Forest Junction, WI",
+    "Host": "NEW K9Scent Work LLC",
+    "EventLink": "https://newk9scentwork.com/",
+    "TrialTypes": "NW3, NW1, L2C",
+    "EventCount": 3,
+    "Latitude": 44.2462,
+    "Longitude": -88.159
   },
   {
     "Date": "2027-05-15",
@@ -8713,8 +8682,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.saints2source.com/",
     "TrialTypes": "NW2, NW1, L1I, ELT-P",
     "EventCount": 4,
-    "Latitude": 41.6959,
-    "Longitude": -74.7101
+    "Latitude": 41.6901,
+    "Longitude": -74.7201
   },
   {
     "Date": "2027-05-15",
@@ -8723,8 +8692,8 @@ const TRIALS_DATA =
     "EventLink": "https://thedoggiespot.com/",
     "TrialTypes": "NW3, NW1",
     "EventCount": 2,
-    "Latitude": 35.3552,
-    "Longitude": -96.9277
+    "Latitude": 35.3427,
+    "Longitude": -96.8969
   },
   {
     "Date": "2027-05-22",
@@ -8733,8 +8702,8 @@ const TRIALS_DATA =
     "EventLink": "https://sites.google.com/view/two-tails-unlimited",
     "TrialTypes": "NW3, NW1, L1C",
     "EventCount": 3,
-    "Latitude": 41.0244,
-    "Longitude": -95.5493
+    "Latitude": 41.0291,
+    "Longitude": -95.6123
   },
   {
     "Date": "2027-05-29",
@@ -8743,8 +8712,8 @@ const TRIALS_DATA =
     "EventLink": "https://blmcmutts.com/events",
     "TrialTypes": "NW3",
     "EventCount": 1,
-    "Latitude": 37.4228,
-    "Longitude": -122.2085
+    "Latitude": 37.4689,
+    "Longitude": -122.2146
   },
   {
     "Date": "2027-05-29",
@@ -8753,8 +8722,8 @@ const TRIALS_DATA =
     "EventLink": "https://savvydogsports.com/trials/",
     "TrialTypes": "NW3, L2I, NW1",
     "EventCount": 3,
-    "Latitude": 42.8341,
-    "Longitude": -77.3114
+    "Latitude": 42.8491,
+    "Longitude": -77.2935
   },
   {
     "Date": "2027-06-05",
@@ -8763,8 +8732,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.dooverdogtraining.com/trials",
     "TrialTypes": "ELT-S, L3I, ELT",
     "EventCount": 3,
-    "Latitude": 42.9765,
-    "Longitude": -78.8346
+    "Latitude": 42.9782,
+    "Longitude": -78.7988
   },
   {
     "Date": "2027-06-05",
@@ -8773,8 +8742,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.yourdogsplace.com/",
     "TrialTypes": "ELT-P, ELT-S, L3C",
     "EventCount": 3,
-    "Latitude": 41.4324,
-    "Longitude": -75.6654
+    "Latitude": 41.379,
+    "Longitude": -75.6309
   },
   {
     "Date": "2027-06-05",
@@ -8783,8 +8752,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.countryk9nosework.com/",
     "TrialTypes": "NW2, ELT-P",
     "EventCount": 2,
-    "Latitude": 45.4131,
-    "Longitude": -117.2828
+    "Latitude": 45.433,
+    "Longitude": -117.2824
   },
   {
     "Date": "2027-06-05",
@@ -8793,8 +8762,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.noseworkaddictsllc.com/",
     "TrialTypes": "SMT",
     "EventCount": 1,
-    "Latitude": 41.3676,
-    "Longitude": -80.4339
+    "Latitude": 41.38,
+    "Longitude": -80.368
   },
   {
     "Date": "2027-06-12",
@@ -8803,8 +8772,8 @@ const TRIALS_DATA =
     "EventLink": "https://trustyourdogk9events.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 45.4782,
-    "Longitude": -122.637
+    "Latitude": 45.4778,
+    "Longitude": -122.6607
   },
   {
     "Date": "2027-06-19",
@@ -8813,8 +8782,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.superdogevents.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 42.4701,
-    "Longitude": -88.2857
+    "Latitude": 42.4223,
+    "Longitude": -88.2816
   },
   {
     "Date": "2027-06-26",
@@ -8823,8 +8792,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.k9inscentives.com/",
     "TrialTypes": "NW3, NW1, L2I",
     "EventCount": 3,
-    "Latitude": 39.9936,
-    "Longitude": -74.9494
+    "Latitude": 40.0197,
+    "Longitude": -74.9865
   },
   {
     "Date": "2027-06-26",
@@ -8833,8 +8802,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.outsidetheboxdogtraining.com/events",
     "TrialTypes": "ELT, NW2",
     "EventCount": 2,
-    "Latitude": 44.8651,
-    "Longitude": -93.0462
+    "Latitude": 44.8545,
+    "Longitude": -93.0663
   },
   {
     "Date": "2027-06-29",
@@ -8843,8 +8812,8 @@ const TRIALS_DATA =
     "EventLink": "https://ev-ryearthdog.com/",
     "TrialTypes": "ELT-P, NW2, NW1, L1I, L2C",
     "EventCount": 5,
-    "Latitude": 40.028,
-    "Longitude": -75.0024
+    "Latitude": 39.9827,
+    "Longitude": -74.9603
   },
   {
     "Date": "2027-07-02",
@@ -8853,8 +8822,8 @@ const TRIALS_DATA =
     "EventLink": "https://shamrockpotofgoldk9scenter.com/",
     "TrialTypes": "ELT-P, NW3, ELT-S, NW2",
     "EventCount": 4,
-    "Latitude": 42.2595,
-    "Longitude": -72.8714
+    "Latitude": 42.2501,
+    "Longitude": -72.8417
   },
   {
     "Date": "2027-09-11",
@@ -8863,8 +8832,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.wagginwork.com/",
     "TrialTypes": "NW3, ELT, ELT-P",
     "EventCount": 3,
-    "Latitude": 41.7084,
-    "Longitude": -73.2634
+    "Latitude": 41.7032,
+    "Longitude": -73.2301
   },
   {
     "Date": "2027-09-17",
@@ -8873,8 +8842,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.yourdogsplace.com/",
     "TrialTypes": "ELT, L2V, ELT-S, EST",
     "EventCount": 4,
-    "Latitude": 41.892,
-    "Longitude": -75.6898
+    "Latitude": 41.9184,
+    "Longitude": -75.6828
   },
   {
     "Date": "2027-09-25",
@@ -8883,8 +8852,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.noseworkaddictsllc.com/",
     "TrialTypes": "ELT, ELT-P",
     "EventCount": 2,
-    "Latitude": 41.6836,
-    "Longitude": -81.4437
+    "Latitude": 41.656,
+    "Longitude": -81.4216
   },
   {
     "Date": "2027-10-29",
@@ -8893,8 +8862,8 @@ const TRIALS_DATA =
     "EventLink": "https://pawsplustraining.com/",
     "TrialTypes": "NW3, NW1, NW2, ELT",
     "EventCount": 4,
-    "Latitude": 37.8279,
-    "Longitude": -78.2879
+    "Latitude": 37.8159,
+    "Longitude": -78.2548
   },
   {
     "Date": "2027-10-30",
@@ -8903,8 +8872,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.nose-it-all.com/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.1899,
-    "Longitude": -79.7658
+    "Latitude": 40.1152,
+    "Longitude": -79.7211
   },
   {
     "Date": "2027-11-27",
@@ -8913,8 +8882,8 @@ const TRIALS_DATA =
     "EventLink": "http://www.siriusk9solutions.net/",
     "TrialTypes": "NW3, ELT",
     "EventCount": 2,
-    "Latitude": 40.6888,
-    "Longitude": -74.8273
+    "Latitude": 40.6415,
+    "Longitude": -74.8147
   },
   {
     "Date": "2027-11-27",
@@ -8923,8 +8892,8 @@ const TRIALS_DATA =
     "EventLink": "https://www.sniffhappenstx.com/",
     "TrialTypes": "L1E, L2E, NW3",
     "EventCount": 3,
-    "Latitude": 29.7296,
-    "Longitude": -98.1586
+    "Latitude": 29.7065,
+    "Longitude": -98.1125
   }
 ]
 ;
